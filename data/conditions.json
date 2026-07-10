@@ -1,0 +1,1397 @@
+[
+  {
+    "id": "agnimandya",
+    "name": "Weak digestion",
+    "also_known_as": [
+      "agnimandya",
+      "low digestive fire",
+      "poor appetite",
+      "sluggish digestion"
+    ],
+    "description": "A general feeling of heaviness, bloating, gas, or poor appetite after eating, where food feels like it sits undigested.",
+    "ayurvedic_view": "Ayurveda frames digestion through 'agni' (digestive fire). When agni is low (agnimandya), food is incompletely processed and forms 'ama' (undigested residue), often linked to aggravated Kapha and Vata. The aim is to gently rekindle agni rather than suppress symptoms.",
+    "primary_dosha": [
+      "kapha",
+      "vata"
+    ],
+    "lifestyle": [
+      "Eat at regular times and only when genuinely hungry",
+      "Make lunch the largest meal, when agni is naturally strongest",
+      "Avoid eating late at night or snacking continuously",
+      "Take a short walk after meals"
+    ],
+    "diet": [
+      "Favour warm, freshly cooked, lightly spiced food",
+      "Sip warm water or ginger water with meals instead of cold drinks",
+      "Reduce heavy, oily, cold and overly processed foods"
+    ],
+    "red_flags": [
+      "Unintentional weight loss",
+      "Difficulty or pain on swallowing",
+      "Vomiting blood or black/tarry stools",
+      "Persistent symptoms beyond 2-3 weeks despite changes",
+      "Severe or worsening abdominal pain"
+    ],
+    "citations": [
+      {
+        "source_id": "charaka",
+        "locator": "Sūtrasthāna / Cikitsāsthāna (agni & grahaṇī)",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "constipation",
+    "name": "Occasional constipation",
+    "also_known_as": [
+      "vibandha",
+      "irregular bowels",
+      "hard stools"
+    ],
+    "description": "Infrequent, hard, or difficult-to-pass stools on an occasional basis.",
+    "ayurvedic_view": "Classically related to aggravated Vata, which is dry, light and mobile, drying the colon (purīṣavaha srotas). The approach favours warmth, moisture, oleation and adequate fibre and fluids.",
+    "primary_dosha": [
+      "vata"
+    ],
+    "lifestyle": [
+      "Keep a regular daily routine, including a consistent time to use the toilet",
+      "Drink enough warm water through the day",
+      "Gentle daily movement and yoga"
+    ],
+    "diet": [
+      "Increase cooked vegetables, fruit (e.g. stewed prunes/figs) and whole grains",
+      "A little warm ghee or healthy fats can help lubricate",
+      "Reduce dry, cold and overly processed foods"
+    ],
+    "red_flags": [
+      "Blood in the stool",
+      "A sudden, unexplained change in bowel habit",
+      "Severe abdominal pain or inability to pass gas",
+      "Unintentional weight loss",
+      "Constipation alternating with diarrhoea over weeks"
+    ],
+    "citations": [
+      {
+        "source_id": "ashtanga_hridaya",
+        "locator": "Vāta management",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "stress",
+    "name": "Everyday stress and low mood",
+    "also_known_as": [
+      "tension",
+      "feeling overwhelmed",
+      "mental fatigue"
+    ],
+    "description": "General, everyday stress, mental tiredness, or feeling overwhelmed — not a diagnosed mental health condition.",
+    "ayurvedic_view": "Often linked to aggravated Vata (restlessness, racing mind) and depleted ojas (vitality/resilience). The classical approach combines calming, grounding routines with rasāyana (rejuvenating) and medhya (mind-supporting) herbs.",
+    "primary_dosha": [
+      "vata"
+    ],
+    "lifestyle": [
+      "Keep regular sleep and meal times",
+      "Daily breathing practice (prāṇāyāma) or meditation",
+      "Warm oil self-massage (abhyaṅga) to settle Vata",
+      "Limit caffeine and screen time, especially at night"
+    ],
+    "diet": [
+      "Favour warm, nourishing, easily digested meals",
+      "Stay hydrated; include healthy fats"
+    ],
+    "red_flags": [
+      "Persistent low mood, hopelessness, or loss of interest for 2+ weeks",
+      "Any thoughts of self-harm — seek help immediately",
+      "Panic attacks, or stress that stops you functioning",
+      "Stress driven by an untreated medical problem"
+    ],
+    "citations": [
+      {
+        "source_id": "charaka",
+        "locator": "Rasāyana & medhya (Cikitsāsthāna)",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "sleep",
+    "name": "Occasional poor sleep",
+    "also_known_as": [
+      "anidra",
+      "difficulty falling asleep",
+      "restless sleep"
+    ],
+    "description": "Occasional trouble falling or staying asleep — not chronic clinical insomnia.",
+    "ayurvedic_view": "Disturbed sleep (anidra) is classically associated with aggravated Vata and an overactive mind. Grounding routines, warmth, and calming herbs are used to settle the nervous system before sleep.",
+    "primary_dosha": [
+      "vata",
+      "pitta"
+    ],
+    "lifestyle": [
+      "Consistent bed and wake times, including weekends",
+      "Wind down without screens for an hour before bed",
+      "Warm foot or scalp oil massage in the evening",
+      "A warm, lightly spiced milk drink before bed (if dairy suits you)"
+    ],
+    "diet": [
+      "Avoid heavy meals, caffeine and stimulants late in the day"
+    ],
+    "red_flags": [
+      "Insomnia most nights for several weeks",
+      "Loud snoring with daytime sleepiness or pauses in breathing (possible sleep apnoea)",
+      "Sleep problems alongside low mood or anxiety",
+      "Daytime sleepiness causing accidents or impaired functioning"
+    ],
+    "citations": [
+      {
+        "source_id": "ashtanga_hridaya",
+        "locator": "Nidrā (sleep)",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "cold_cough",
+    "name": "Seasonal cold and cough",
+    "also_known_as": [
+      "common cold",
+      "kasa",
+      "pratishyaya",
+      "sore throat"
+    ],
+    "description": "Everyday upper-respiratory symptoms — runny nose, mild cough, sore throat — typically self-limiting.",
+    "ayurvedic_view": "Commonly viewed as aggravated Kapha (congestion, mucus), sometimes with Vata (dry cough). Warming, drying and expectorant herbs are used to clear excess Kapha and soothe the throat.",
+    "primary_dosha": [
+      "kapha",
+      "vata"
+    ],
+    "lifestyle": [
+      "Rest and keep warm",
+      "Steam inhalation for congestion",
+      "Warm salt-water gargles for a sore throat"
+    ],
+    "diet": [
+      "Warm fluids: ginger, tulsi or honey-lemon teas",
+      "Light, warm, easily digested food",
+      "Avoid cold drinks and heavy dairy while congested"
+    ],
+    "red_flags": [
+      "Difficulty breathing or chest pain",
+      "High fever that persists or keeps rising",
+      "Coughing up blood",
+      "Symptoms lasting more than ~10 days or worsening after improving",
+      "Cold/cough in a very young infant, elderly, or immunocompromised person"
+    ],
+    "citations": [
+      {
+        "source_id": "sushruta",
+        "locator": "Kāsa & pratiśyāya",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "low_immunity",
+    "name": "General immunity support",
+    "also_known_as": [
+      "vyadhikshamatva",
+      "resilience",
+      "frequent minor infections"
+    ],
+    "description": "General interest in supporting the body's resilience and recovery — wellness support, not treatment of any specific infection.",
+    "ayurvedic_view": "Ayurveda speaks of 'vyādhikṣamatva' (resistance to disease) and 'ojas', the subtle essence of healthy digestion and tissues. Rasāyana herbs and good digestion are central to building it.",
+    "primary_dosha": [
+      "kapha",
+      "vata",
+      "pitta"
+    ],
+    "lifestyle": [
+      "Adequate sleep and stress management",
+      "Regular moderate exercise",
+      "Good digestion as the foundation (strong agni, low ama)"
+    ],
+    "diet": [
+      "Fresh, varied, seasonal whole foods",
+      "Adequate protein and a range of vegetables and fruit"
+    ],
+    "red_flags": [
+      "Recurrent serious or unusual infections (may indicate an underlying condition)",
+      "Persistent fever, night sweats, or unexplained weight loss",
+      "Any new immunity concern while on immunosuppressive medication"
+    ],
+    "citations": [
+      {
+        "source_id": "charaka",
+        "locator": "Rasāyana (Cikitsāsthāna 1)",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "joint_discomfort",
+    "name": "Occasional joint stiffness",
+    "also_known_as": [
+      "sandhigata vata",
+      "stiff joints",
+      "joint aches"
+    ],
+    "description": "Occasional, mild joint stiffness or aches — for example after exertion or in cold weather.",
+    "ayurvedic_view": "Joint stiffness is classically linked to Vata in the joints (sandhigata vāta), sometimes with ama. Warming, anti-inflammatory and oleating approaches are favoured.",
+    "primary_dosha": [
+      "vata",
+      "kapha"
+    ],
+    "lifestyle": [
+      "Warm oil massage over stiff joints",
+      "Gentle mobility and yoga; avoid sudden cold exposure",
+      "Maintain a healthy weight to reduce joint load"
+    ],
+    "diet": [
+      "Anti-inflammatory spices (turmeric, ginger)",
+      "Reduce cold, dry and overly processed foods"
+    ],
+    "red_flags": [
+      "Hot, red, severely swollen, or intensely painful joint",
+      "Joint pain with fever",
+      "Pain following significant injury",
+      "Progressive joint deformity or loss of function",
+      "Persistent symptoms — get a proper diagnosis (e.g. arthritis types differ in treatment)"
+    ],
+    "citations": [
+      {
+        "source_id": "charaka",
+        "locator": "Vātavyādhi (Cikitsāsthāna 28)",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "skin_health",
+    "name": "Skin health (mild blemishes, dull skin)",
+    "also_known_as": [
+      "twak vikara",
+      "mild acne",
+      "dull complexion"
+    ],
+    "description": "General support for clearer, healthier-looking skin — mild blemishes or dullness, not a diagnosed skin disease.",
+    "ayurvedic_view": "Skin is considered an outward reflection of digestion, blood (rakta) and Pitta. Cooling, blood-supporting ('rakta-shodhana') herbs and good digestion are emphasised.",
+    "primary_dosha": [
+      "pitta",
+      "kapha"
+    ],
+    "lifestyle": [
+      "Gentle, consistent skin cleansing",
+      "Manage stress and sleep, which affect skin",
+      "Stay hydrated"
+    ],
+    "diet": [
+      "Favour fresh vegetables and fruit; reduce excess fried, very spicy and sugary foods",
+      "Support digestion to reduce ama"
+    ],
+    "red_flags": [
+      "Severe, cystic, or scarring acne",
+      "A rapidly changing, bleeding or irregular mole",
+      "Widespread rash, especially with fever or feeling unwell",
+      "Any skin lesion that does not heal"
+    ],
+    "citations": [
+      {
+        "source_id": "sushruta",
+        "locator": "Kuṣṭha & rakta (skin/blood)",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "fatigue",
+    "name": "General low energy",
+    "also_known_as": [
+      "klama",
+      "tiredness",
+      "low vitality"
+    ],
+    "description": "General tiredness or low energy not explained by an obvious medical cause — wellness support.",
+    "ayurvedic_view": "Low energy can reflect depleted ojas, weak agni, or aggravated doshas. The approach combines restoring digestion, rest, and rasāyana (rejuvenating) support.",
+    "primary_dosha": [
+      "vata",
+      "kapha"
+    ],
+    "lifestyle": [
+      "Prioritise consistent, adequate sleep",
+      "Gentle, regular exercise to build (not drain) energy",
+      "Manage stress load"
+    ],
+    "diet": [
+      "Regular, nourishing, easily digested meals",
+      "Adequate protein, iron-rich foods and hydration"
+    ],
+    "red_flags": [
+      "Severe or sudden fatigue, or fatigue with breathlessness or chest pain",
+      "Fatigue with unexplained weight loss, fever, or night sweats",
+      "Persistent fatigue lasting weeks — rule out anaemia, thyroid, diabetes, etc.",
+      "Fatigue with low mood or loss of interest"
+    ],
+    "citations": [
+      {
+        "source_id": "charaka",
+        "locator": "Rasāyana / ojas",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "acidity",
+    "name": "Occasional acidity and heartburn",
+    "also_known_as": [
+      "amlapitta",
+      "acid reflux",
+      "heartburn"
+    ],
+    "description": "Occasional burning in the chest or upper abdomen, sour taste, or discomfort after eating.",
+    "ayurvedic_view": "Classically 'amlapitta' — aggravated Pitta with excess sourness/heat in the digestive tract. Cooling, soothing and Pitta-pacifying foods and herbs are favoured.",
+    "primary_dosha": [
+      "pitta"
+    ],
+    "lifestyle": [
+      "Avoid lying down soon after eating",
+      "Eat smaller, regular meals; avoid overeating",
+      "Manage stress, which aggravates Pitta"
+    ],
+    "diet": [
+      "Reduce very spicy, sour, fried, fermented foods, alcohol and excess caffeine",
+      "Favour cooling foods; sip cool (not iced) water"
+    ],
+    "red_flags": [
+      "Difficulty or pain swallowing",
+      "Vomiting blood, or black/tarry stools",
+      "Unintentional weight loss",
+      "Chest pain — rule out a cardiac cause, which can mimic heartburn",
+      "Frequent symptoms most days for weeks (possible GERD)"
+    ],
+    "citations": [
+      {
+        "source_id": "charaka",
+        "locator": "Amlapitta",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "blood_sugar",
+    "name": "Metabolic and blood-sugar wellness",
+    "also_known_as": [
+      "prameha",
+      "madhumeha",
+      "blood sugar balance"
+    ],
+    "description": "General lifestyle support for healthy metabolism and blood-sugar balance. NOT a treatment for diabetes.",
+    "ayurvedic_view": "The classical category 'prameha/madhumeha' covers urinary and metabolic disorders, strongly linked to aggravated Kapha and lifestyle. Ayurveda emphasises diet, movement and bitter/astringent herbs — alongside, never instead of, medical care.",
+    "primary_dosha": [
+      "kapha"
+    ],
+    "lifestyle": [
+      "Regular physical activity",
+      "Maintain a healthy weight",
+      "Consistent meal timing; avoid frequent sugary snacking"
+    ],
+    "diet": [
+      "Favour whole grains, legumes, vegetables and fibre",
+      "Reduce refined sugar, refined carbohydrates and sweetened drinks"
+    ],
+    "red_flags": [
+      "Diagnosed diabetes — only change anything with your doctor; some herbs can lower blood sugar and interact with medication",
+      "Excessive thirst, frequent urination, blurred vision, or unexplained weight loss (get tested)",
+      "Symptoms of low blood sugar if you are on glucose-lowering medication"
+    ],
+    "citations": [
+      {
+        "source_id": "sushruta",
+        "locator": "Prameha",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "memory_focus",
+    "name": "Memory and focus support",
+    "also_known_as": [
+      "medhya",
+      "concentration",
+      "mental clarity"
+    ],
+    "description": "General support for memory, focus and mental clarity — wellness, not treatment of any cognitive disorder.",
+    "ayurvedic_view": "Ayurveda describes 'medhya rasāyana' — herbs and practices that nourish the mind and intellect (medhā). Calm Vata, good sleep and these herbs are combined.",
+    "primary_dosha": [
+      "vata"
+    ],
+    "lifestyle": [
+      "Protect sleep — memory consolidates during sleep",
+      "Regular meditation or breathing practice",
+      "Reduce multitasking and digital overload"
+    ],
+    "diet": [
+      "Balanced diet with healthy fats; stay hydrated"
+    ],
+    "red_flags": [
+      "Noticeable, progressive memory loss affecting daily life",
+      "Confusion, disorientation, or personality change",
+      "Sudden memory loss or difficulty speaking — could be a stroke; seek emergency care",
+      "Memory problems with low mood"
+    ],
+    "citations": [
+      {
+        "source_id": "charaka",
+        "locator": "Medhya rasāyana (Cikitsāsthāna 1)",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "urinary_health",
+    "name": "Urinary tract comfort",
+    "also_known_as": [
+      "mutrakrichra",
+      "burning urination",
+      "urinary wellness"
+    ],
+    "description": "General support for a comfortable, healthy urinary tract — mild burning or urgency, or being prone to minor issues. Not a treatment for diagnosed urinary infections.",
+    "ayurvedic_view": "The urinary channel (mūtravaha srotas) is closely tied to Pitta (heat/burning) and water balance. Cooling, soothing, diuretic (mutrala) herbs and good hydration are emphasised.",
+    "primary_dosha": [
+      "pitta",
+      "kapha"
+    ],
+    "lifestyle": [
+      "Drink enough water through the day",
+      "Don't hold urine for long periods; maintain good hygiene"
+    ],
+    "diet": [
+      "Cooling, hydrating foods; reduce very spicy, sour and fried foods",
+      "Coriander/cumin/fennel water are traditional soothing drinks"
+    ],
+    "red_flags": [
+      "Fever with back or flank pain (possible kidney infection) — see a doctor promptly",
+      "Blood in the urine",
+      "Inability to pass urine, or severe pain",
+      "Symptoms in pregnancy, in men, in children, or that recur — get assessed",
+      "Persistent symptoms beyond a couple of days (untreated infections can spread)"
+    ],
+    "citations": [
+      {
+        "source_id": "sushruta",
+        "locator": "Mūtrakṛcchra",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "menstrual_wellness",
+    "name": "Menstrual comfort",
+    "also_known_as": [
+      "artava",
+      "period cramps",
+      "cycle wellness",
+      "PMS"
+    ],
+    "description": "General support for menstrual comfort — mild cramps, bloating or mood changes around the cycle. Not a treatment for diagnosed reproductive conditions.",
+    "ayurvedic_view": "Menstruation is governed largely by Vata (apāna vāyu) for smooth downward flow, with Pitta and Kapha influences. Cramping is often a Vata aggravation; warmth, antispasmodic herbs and calm are favoured.",
+    "primary_dosha": [
+      "vata",
+      "pitta"
+    ],
+    "lifestyle": [
+      "Rest and gentle warmth (e.g. a warm compress) during cramps",
+      "Gentle yoga/stretching; reduce intense exertion if uncomfortable",
+      "Manage stress, which can worsen symptoms"
+    ],
+    "diet": [
+      "Warm, easily digested food around the period",
+      "Warming, antispasmodic spices (ginger, fennel) as teas"
+    ],
+    "red_flags": [
+      "Very heavy bleeding (e.g. soaking a pad every hour, or large clots)",
+      "Severe pain not relieved by usual measures, or pain getting worse over cycles",
+      "Bleeding between periods or after intercourse",
+      "A sudden change in your usual pattern",
+      "Possibility of pregnancy with pain/bleeding — seek care",
+      "Periods stopping unexpectedly (and not due to known menopause)"
+    ],
+    "citations": [
+      {
+        "source_id": "charaka",
+        "locator": "Ārtava / yoni vyāpat",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "heart_wellness",
+    "name": "Heart and circulation wellness",
+    "also_known_as": [
+      "hridaya",
+      "cardiovascular wellness",
+      "cholesterol balance"
+    ],
+    "description": "General lifestyle support for a healthy heart and circulation. NOT a treatment for heart disease, and never a substitute for cardiac care.",
+    "ayurvedic_view": "The heart (hṛdaya) is the seat of circulation and, classically, of ojas and emotion. Excess Kapha (and ama) relate to sluggish circulation and lipids; calming Vata supports rhythm. 'Hridya' (heart-supporting) herbs are used alongside diet and exercise.",
+    "primary_dosha": [
+      "kapha",
+      "vata"
+    ],
+    "lifestyle": [
+      "Regular aerobic exercise as appropriate for you",
+      "Don't smoke; manage stress and sleep",
+      "Maintain a healthy weight and blood pressure"
+    ],
+    "diet": [
+      "More whole foods, vegetables, fibre and healthy fats",
+      "Reduce excess salt, fried foods, refined carbs and sugar"
+    ],
+    "red_flags": [
+      "Chest pain or pressure, especially spreading to arm/jaw/back — call emergency services",
+      "Sudden breathlessness, fainting, or palpitations with dizziness",
+      "Diagnosed heart condition — only change anything with your cardiologist",
+      "Swelling of the legs with breathlessness",
+      "Known high blood pressure/cholesterol — these need proper medical management"
+    ],
+    "citations": [
+      {
+        "source_id": "charaka",
+        "locator": "Hṛdroga",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "liver_wellness",
+    "name": "Liver and digestion support",
+    "also_known_as": [
+      "yakrit",
+      "liver wellness",
+      "bitter tonic"
+    ],
+    "description": "General support for healthy liver function and the digestion of fats — wellness only. Not a treatment for liver disease.",
+    "ayurvedic_view": "The liver (yakṛt) is a key Pitta organ and seat of the agni that transforms blood and fats. Bitter (tikta), Pitta-pacifying and 'yakriduttejaka' (liver-stimulating) herbs are traditionally used to support it.",
+    "primary_dosha": [
+      "pitta"
+    ],
+    "lifestyle": [
+      "Limit or avoid alcohol",
+      "Maintain a healthy weight and regular activity",
+      "Avoid unnecessary supplements/medicines that stress the liver"
+    ],
+    "diet": [
+      "Bitter greens and vegetables; reduce excess fried, fatty and very rich foods",
+      "Stay well hydrated"
+    ],
+    "red_flags": [
+      "Yellowing of the skin or eyes (jaundice)",
+      "Dark urine with pale stools",
+      "Severe pain in the upper-right abdomen",
+      "Swelling of the abdomen, easy bruising, or confusion",
+      "Any of these need urgent medical assessment — do not self-treat liver disease"
+    ],
+    "citations": [
+      {
+        "source_id": "charaka",
+        "locator": "Yakṛt / kāmalā (jaundice)",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "hair_health",
+    "name": "Hair and scalp wellness",
+    "also_known_as": [
+      "kesha",
+      "hair fall",
+      "scalp health"
+    ],
+    "description": "General support for healthy hair and scalp — mild thinning, dryness or dullness. Not a treatment for medical hair-loss conditions.",
+    "ayurvedic_view": "Hair (kesha) is considered a by-product (upadhātu) of bone tissue and is strongly linked to Pitta (premature greying/thinning) and to nutrition and stress. Cooling, nourishing 'keshya' herbs and scalp oiling are favoured.",
+    "primary_dosha": [
+      "pitta",
+      "vata"
+    ],
+    "lifestyle": [
+      "Regular scalp oiling and gentle massage",
+      "Manage stress and protect sleep",
+      "Avoid harsh heat/chemical treatment"
+    ],
+    "diet": [
+      "Adequate protein, iron and a varied whole-food diet",
+      "Address digestion so nutrients are absorbed"
+    ],
+    "red_flags": [
+      "Sudden patchy hair loss or bald patches",
+      "Hair loss with other symptoms (fatigue, weight change) — possible thyroid/nutritional cause",
+      "Redness, scaling, scarring or itching of the scalp",
+      "Hair loss after starting a medication or illness — get advice"
+    ],
+    "citations": [
+      {
+        "source_id": "bhavaprakasha",
+        "locator": "Keshya dravya",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "headache",
+    "name": "Occasional tension headache",
+    "also_known_as": [
+      "shirahshula",
+      "tension headache",
+      "stress headache"
+    ],
+    "description": "Occasional mild-to-moderate tension-type headaches, often linked to stress, screens, posture or skipped meals. Not for severe, sudden or recurrent headaches.",
+    "ayurvedic_view": "Headache (śiraḥśūla) is classified by dosha: Vata (tight, throbbing, with tension), Pitta (burning, light-sensitive, heat-related) or Kapha (heavy, dull, congested). Calming Vata/Pitta and easing tension are the usual aims for everyday tension headaches.",
+    "primary_dosha": [
+      "vata",
+      "pitta"
+    ],
+    "lifestyle": [
+      "Regular meals, hydration and sleep; don't skip meals",
+      "Breaks from screens; attention to neck/shoulder posture",
+      "Relaxation, breathing practice; gentle head/neck oil massage"
+    ],
+    "diet": [
+      "Stay hydrated; avoid known dietary triggers",
+      "Avoid excess caffeine and its withdrawal"
+    ],
+    "red_flags": [
+      "A sudden, severe 'worst-ever' (thunderclap) headache — call emergency services",
+      "Headache with fever and a stiff neck, or a rash",
+      "Headache with confusion, weakness, vision loss, slurred speech, or after a head injury",
+      "A new or changed headache pattern, especially over age 50",
+      "Headaches that are frequent, worsening, or wake you from sleep"
+    ],
+    "citations": [
+      {
+        "source_id": "ashtanga_hridaya",
+        "locator": "Śiraḥśūla",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "diarrhea",
+    "name": "Occasional loose stools",
+    "description": "Occasional loose or watery stools are a common, usually short-lived experience. They often follow a clear trigger such as a heavy or unfamiliar meal, eating something that did not agree with you, a brief change in routine, travel, or a passing tummy upset. In most healthy adults this settles on its own within a day or two as the digestive system recovers. The main practical concern with any loose stools is keeping up with fluids, since extra water and salts are lost. This entry is for mild, occasional episodes only and is educational in nature; it is not medical advice and is not intended to diagnose, treat, or cure any condition. If symptoms are severe, persistent, or accompanied by any of the warning signs listed below, seek care from a qualified clinician.",
+    "ayurvedic_view": "In classical Ayurveda, loose stools are described as atisara, the excessive and repeated passage of watery stool. The texts frame it as a disturbance of the digestive fire (agni) and the stool-carrying channel (purishavaha srotas), in which weakened or overwhelmed agni allows excess fluid (kleda/jala) to enter the intestines instead of being absorbed, so water is expelled with the stool. Causes named in the classics include heavy, oily, or incompatible foods (viruddha ahara), unclean food or water, emotional disturbance (such as fear or grief), and changes in season or routine. Vata is regarded as the primary dosha that drives the watery contents downward and outward, while Pitta and Kapha (and ama, undigested residue) may also be involved depending on the qualities of the stool; the classics accordingly describe Vata-, Pitta-, and Kapha-predominant as well as combined forms of atisara. The traditional supportive approach for a mild episode is to rest, gently rekindle agni, favor light warm digestible food, and restore lost fluids. This is a general educational summary, not a treatment plan, and it does not replace professional medical assessment.",
+    "primary_dosha": [
+      "vata",
+      "pitta",
+      "kapha"
+    ],
+    "lifestyle": [
+      "Rest and avoid overexertion while the digestion recovers; the classical emphasis is on calming and rebuilding the digestive fire (agni)",
+      "Prioritize fluids: sip warm water, well-cooled boiled water, or an oral rehydration solution (ORS) throughout the day to replace fluids and salts that are lost",
+      "Wash hands well before eating and after using the toilet, and be cautious with food and water hygiene, especially while traveling",
+      "Keep the abdomen warm and comfortable; gentle rest is preferred over vigorous activity or heavy exercise",
+      "Eat small, simple amounts rather than large meals until stools normalize",
+      "Avoid alcohol and minimize caffeine, which can further irritate the gut and worsen fluid loss",
+      "Manage stress with slow breathing or quiet rest, since classical texts note emotional disturbance as a contributing factor",
+      "Note that classical texts traditionally caution against forcibly suppressing a mild episode too early; this is an educational/historical observation only and should never override seeking medical care when any warning sign below is present"
+    ],
+    "diet": [
+      "Favor light, warm, easily digestible foods such as thin rice gruel (peya/manda), well-cooked soft rice, and moong dal soup",
+      "Plain cooked rice with a little cumin is a traditional gentle choice",
+      "Buttermilk (takra) prepared thin and lightly spiced with roasted cumin and a pinch of rock salt is a classical staple for loose stools",
+      "Ripe banana and cooked apple (or unsweetened apple puree) are gentle, binding foods",
+      "Pomegranate (juice or arils) is traditionally valued as supportive and astringent for the gut",
+      "Sip ginger or cumin-coriander-fennel tea, and use warm water rather than cold drinks",
+      "Avoid heavy, oily, fried, very spicy, and raw foods, as well as dairy heavy in milk, until stools return to normal",
+      "Avoid raw salads, uncooked vegetables, and unfamiliar street foods during recovery",
+      "Reintroduce regular foods gradually as appetite and stool consistency improve"
+    ],
+    "also_known_as": [
+      "Atisara",
+      "Loose motions",
+      "Occasional diarrhea",
+      "Loose stools",
+      "Upset stomach"
+    ],
+    "red_flags": [
+      "Signs of significant dehydration in an adult: marked thirst, very dry mouth, little or no urine for 8 or more hours, dark urine, sunken eyes, rapid heartbeat, fast or weak breathing, dizziness or fainting on standing, or unusual drowsiness or confusion",
+      "Signs of dehydration in a baby or young child: no wet diaper (or no urine) for many hours, no tears when crying, dry mouth, a sunken soft spot (fontanelle) on a baby's head, or unusual sleepiness, floppiness, or being difficult to wake",
+      "Blood in the stool, black tarry stools, or stool that contains pus or mucus with blood",
+      "Diarrhea lasting more than 2 to 3 days in an adult, or that keeps returning or is not improving",
+      "High fever (for example 102 F / 39 C or above) or fever with shaking chills alongside the diarrhea",
+      "Severe, constant, sudden, or one-sided abdominal pain, or pain that is worsening rather than easing",
+      "Persistent vomiting that prevents keeping down any fluids",
+      "Frequent, high-volume watery stools (for example many episodes within a few hours) that are causing rapid fluid loss",
+      "Diarrhea in an infant, young child, pregnant person, older adult, or anyone with a weakened immune system or serious chronic illness (such as diabetes, kidney, or heart disease), where care should be sought early and promptly",
+      "Recent foreign travel, recent hospital stay, or recent course of antibiotics with new diarrhea",
+      "Significant unintended weight loss, or diarrhea that repeatedly wakes the person from sleep at night",
+      "Any rapid worsening, severe weakness, reduced alertness, signs of shock, or a general sense that something is seriously wrong — seek emergency care"
+    ],
+    "citations": [
+      {
+        "source_id": "charaka",
+        "locator": "Charaka Samhita, Chikitsa Sthana, Chapter 19 (Atisara Chikitsa)",
+        "note": "Classical chapter on atisara (diarrhea): causes, dosha involvement (including vataja/pittaja/kaphaja/sannipataja and bhayaja/shokaja types), and management framework.",
+        "requires_verification": true
+      },
+      {
+        "source_id": "sushruta",
+        "locator": "Sushruta Samhita, Uttara Tantra, Chapter 40 (Atisara Pratishedha)",
+        "note": "Classical description and management of atisara; chapter number should be verified against the edition used.",
+        "requires_verification": true
+      },
+      {
+        "source_id": "ashtanga_hridaya",
+        "locator": "Ashtanga Hridaya, Chikitsa Sthana, Chapter 9 (Atisara Chikitsa)",
+        "note": "Vagbhata's account of atisara, including dietary measures such as peya/takra; chapter number should be verified.",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "ibs",
+    "name": "Irritable bowel-type discomfort",
+    "description": "A common, long-term pattern of gut discomfort in which the bowels feel \"unsettled\" without any structural disease being present. People often notice bowel habits that swing between loose and hard (sometimes day to day), crampy lower-abdominal pain that may ease after passing stool or gas, bloating and a feeling of fullness, excess gas, and at times a sudden urge to go. Symptoms tend to come and go in waves and are frequently linked to stress, irregular meals, poor sleep, or certain foods. This entry is about that functional, \"sensitive gut\" pattern only. It is not about inflammatory bowel disease (such as Crohn's disease or ulcerative colitis) or any condition causing bleeding or unexplained weight loss, which are different and need medical evaluation. This kind of discomfort is often more manageable with steady routines, mindful eating, and stress care. This information is educational and is not a diagnosis or treatment; if you are unsure about your symptoms, please see a qualified healthcare professional.",
+    "ayurvedic_view": "In classical Ayurveda this pattern is understood within the framework of Grahani, the function of the small-intestinal region that \"holds\" food and governs absorption, and it is closely tied to Agni (digestive fire). The root cause is described as Agni-mandya (weak or irregular digestive fire) and the consequent formation of Ama (undigested, sticky metabolic residue), which disturbs the Grahani and the gut channels (Annavaha and Purishavaha srotas). When Agni becomes vishama (irregular), the bowels alternate; when it becomes tikshna (sharp/heated), there is urgency and looseness; when it becomes manda (dull/slow), there is heaviness, bloating, and incomplete elimination. Vata governs the irregularity, cramping, gas, and the alternating quality; Pitta contributes burning, urgency, and loose stool; Kapha-Ama contributes mucus, heaviness, and a coated tongue. Classical texts recognise Grahani Roga in vataja, pittaja, kaphaja and sannipataja (combined) forms; for this irregular, alternating sensitive-gut pattern Vata is usually the leading dosha. Because the mind and gut are linked, the texts emphasize that worry, grief, suppressed natural urges (vega-dharana), and irregular living aggravate Grahani. The general classical approach is to gently rekindle and steady Agni, support digestion of Ama with light warm food and digestive spices, restore a regular daily rhythm (dinacharya), and calm Vata and the mind, rather than to forcefully suppress symptoms. (Educational framing only; not a prescription.)",
+    "primary_dosha": [
+      "Vata",
+      "Pitta",
+      "Kapha"
+    ],
+    "lifestyle": [
+      "Keep meal times regular and eat in a calm, unhurried setting; avoid skipping meals or eating very late at night.",
+      "Eat to about three-quarters full and chew thoroughly to ease the load on digestion.",
+      "Follow a steady daily routine (dinacharya): consistent wake, meal, and sleep times help settle an irregular, Vata-type gut.",
+      "Build in daily stress care such as slow breathing (e.g., nadi shodhana / alternate-nostril breathing), gentle yoga, or meditation, since stress strongly drives these symptoms.",
+      "Take a short, gentle walk after meals to support digestion rather than lying down immediately.",
+      "Prioritize 7-8 hours of regular sleep; poor or irregular sleep tends to worsen gut sensitivity.",
+      "Do not suppress natural urges for stool, gas, or urination (vega-dharana), and allow unhurried time for the bowels, ideally at the same time each day.",
+      "Keep a simple symptom-and-food diary to notice personal triggers, and reduce alcohol, smoking, and excess caffeine.",
+      "Favor gentle, regular movement over intense, depleting exercise during flare-ups."
+    ],
+    "diet": [
+      "Favor warm, freshly cooked, easy-to-digest meals (such as well-cooked rice, moong dal, khichdi, and cooked vegetables) over cold, raw, dry, or leftover foods.",
+      "Sip warm water or warm cumin/fennel/ginger water through the day to support Agni and ease bloating.",
+      "Use gentle digestive spices in cooking, such as cumin, fennel, coriander, ginger, and a little ajwain (carom), which traditionally help gas and cramping.",
+      "Eat at a relaxed pace and avoid overeating; leave a little space in the stomach.",
+      "Limit common gut irritants for sensitive guts: very spicy, fried, or oily food, excess caffeine, alcohol, and carbonated drinks.",
+      "Be cautious with very gas-forming or heavy foods during flare-ups (e.g., large amounts of beans/legumes, raw cabbage-family vegetables, and heavy dairy if it disagrees with you).",
+      "Include adequate fluids and gentle, soluble fiber (such as cooked oats or soaked/cooked vegetables) and increase fiber gradually to avoid extra gas.",
+      "Avoid ice-cold drinks and frozen foods, which classically dampen Agni.",
+      "Notice and reduce your own personal trigger foods rather than following a single rigid diet."
+    ],
+    "also_known_as": [
+      "Grahani Roga",
+      "Grahani dosha",
+      "Irritable bowel-type discomfort",
+      "Sensitive or irritable gut",
+      "Functional bowel discomfort",
+      "Spastic bowel (older term)"
+    ],
+    "red_flags": [
+      "Blood in the stool, black tarry stools, or bleeding from the rectum.",
+      "Unintentional or unexplained weight loss.",
+      "Persistent diarrhea or pain that wakes you from sleep at night.",
+      "New onset of these symptoms for the first time at age 50 or older.",
+      "Fever along with abdominal pain or diarrhea.",
+      "Sudden, severe, or unrelenting abdominal pain - especially if the pain is steady (not crampy), localized, or so severe you cannot get comfortable - seek emergency care.",
+      "Severe, constant, or rapidly worsening abdominal pain (especially pain that is localized and steady rather than crampy).",
+      "A hard, swollen, or rigid abdomen, or vomiting with inability to pass stool or gas (possible bowel obstruction - seek emergency care).",
+      "Signs of significant dehydration: very little or no urine, dizziness or fainting, rapid heartbeat, or confusion - especially with ongoing diarrhea or vomiting, and especially in infants, young children, or older adults - seek prompt medical care.",
+      "Persistent vomiting, or vomiting blood or material that looks like coffee grounds.",
+      "A new, persistent change in bowel habits lasting more than a few weeks, or stools that become persistently narrow/pencil-thin.",
+      "Difficulty swallowing, or a feeling of a lump or mass in the abdomen.",
+      "During pregnancy: severe abdominal pain, any vaginal bleeding, or being unable to keep fluids down - seek urgent medical care; and discuss any persistent or new gut symptoms in pregnancy with your clinician.",
+      "Symptoms in anyone who is frail, elderly, immunocompromised, or has a serious existing illness.",
+      "A personal or strong family history of colorectal cancer, celiac disease, or inflammatory bowel disease (Crohn's or ulcerative colitis).",
+      "Anemia or marked, unexplained fatigue alongside the gut symptoms.",
+      "Symptoms that do not improve with sensible self-care, or that keep recurring or steadily worsen - see a qualified healthcare professional for proper evaluation."
+    ],
+    "citations": [
+      {
+        "source_id": "charaka",
+        "locator": "Charaka Samhita, Chikitsa Sthana, Chapter 15 (Grahani Chikitsa)",
+        "note": "Classical chapter on Grahani Roga: role of Agni and Ama, the alternating/vishama-agni presentation, the doshic (vataja/pittaja/kaphaja/sannipataja) forms, and dietary/regimen-based management. Educational reference.",
+        "requires_verification": true
+      },
+      {
+        "source_id": "ashtanga_hridaya",
+        "locator": "Ashtanga Hridaya, Nidana Sthana, Chapter 8 (Grahani-dosha Nidana)",
+        "note": "Causes and classification of Grahani disorders by dosha. Section reference cited from general knowledge; verify exact chapter/verse numbering against a published edition.",
+        "requires_verification": true
+      },
+      {
+        "source_id": "sushruta",
+        "locator": "Sushruta Samhita, Uttara Tantra (Atisara/Grahani related chapters)",
+        "note": "Supportive classical framing for bowel/Agni disorders. Exact chapter and verse to be confirmed against a standard edition.",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "nausea",
+    "name": "Occasional nausea",
+    "also_known_as": [
+      "hrillasa",
+      "chhardi (urge to vomit)",
+      "queasiness",
+      "feeling sick",
+      "motion sickness",
+      "travel sickness"
+    ],
+    "description": "An occasional unsettled, queasy feeling in the stomach with an urge to be sick — for example after a heavy or unfamiliar meal, on an empty stomach, while travelling, or when anxious. This entry is educational and covers short-lived, everyday queasiness and motion sickness only; it is not a diagnosis and not for persistent or severe vomiting. It does not replace advice from a qualified clinician.",
+    "ayurvedic_view": "In classical Ayurveda, nausea (hṛllāsa, the urge that precedes chardi/vomiting) is understood as the contents of the stomach moving the wrong way — apāna vāyu and the natural downward flow reversing into an upward (ūrdhva) movement along the annavaha srotas (digestive channel). It is described as a tridoshic phenomenon: aggravated Kapha (excess, heaviness, an unsettled, sweet/sticky feeling), Pitta (sourness, heat, burning queasiness), and Vata (especially in motion sickness, where erratic movement disturbs the senses and the gut), with ama (undigested residue) from heavy or incompatible food a frequent trigger. The everyday aim described in traditional texts is to settle the stomach, ease the reversed flow, and support gentle, downward-moving digestion rather than to forcibly suppress the symptom. This is general educational context, not a prescription.",
+    "primary_dosha": [
+      "kapha",
+      "pitta",
+      "vata"
+    ],
+    "lifestyle": [
+      "Sip fluids slowly in small amounts rather than drinking a lot at once",
+      "Get fresh air and rest; avoid strong smells, stuffy rooms and rich food until it settles",
+      "For travel: look at the horizon, sit facing forward, avoid reading on the move, and keep the area well ventilated",
+      "Slow, steady breathing may help ease the queasy, anxious feeling as a comfort measure",
+      "Avoid lying down flat immediately after eating"
+    ],
+    "diet": [
+      "Fresh ginger is traditionally used to settle the stomach — a small piece with a pinch of salt, or ginger tea, sipped slowly. If you are pregnant, breastfeeding, or take regular medication (especially blood thinners), check with a clinician before using ginger regularly",
+      "Eat small, light, easily digested meals; avoid heavy, oily, very sweet or strongly spiced food while queasy",
+      "Try plain, dry, bland foods (e.g. toast, plain rice, crackers) until the stomach settles",
+      "Cooling, soothing sips such as fennel, cardamom, mint or coriander water may help",
+      "Avoid alcohol, strong coffee and overeating, which can trigger or worsen it"
+    ],
+    "red_flags": [
+      "Vomiting blood, or vomit that looks like coffee grounds",
+      "Severe or persistent vomiting, or inability to keep any fluids down for more than about 24 hours (sooner in infants and young children)",
+      "Signs of dehydration: very little or dark urine, dizziness, dry mouth, marked weakness, lethargy or reduced alertness — urgent and fast-developing in babies, young children, older adults, or anyone frail",
+      "Nausea with severe or worsening abdominal pain, or a rigid or very tender belly",
+      "Nausea or vomiting with chest pain or pressure, breathlessness, sweating, or pain spreading to the arm, neck or jaw — a heart attack can present mainly as nausea with little or no chest pain (more often in women, older adults and people with diabetes); call emergency services immediately",
+      "Nausea/vomiting with excessive thirst, frequent urination, fruity-smelling breath, deep or rapid breathing, drowsiness or confusion — possible diabetic ketoacidosis, a medical emergency, especially in anyone with diabetes; seek emergency care",
+      "Nausea with high fever, a stiff neck, severe headache, confusion, or a rash",
+      "Vomiting after a head injury, or with sudden severe headache, vision changes, weakness, numbness or slurred speech",
+      "Green/bile-stained vomit, or vomiting with no passing of stool or gas (possible bowel obstruction)",
+      "Yellowing of the skin or eyes, dark urine and pale stools alongside the nausea",
+      "Possible pregnancy with severe or relentless vomiting (hyperemesis), or any new medication, supplement, or suspected poisoning thought to be the cause",
+      "Unexplained, ongoing nausea lasting more than a few days, or with unintentional weight loss — get it assessed by a clinician"
+    ],
+    "citations": [
+      {
+        "source_id": "charaka",
+        "locator": "Cikitsāsthāna — Chardi cikitsā (vomiting/nausea)",
+        "requires_verification": true
+      },
+      {
+        "source_id": "ashtanga_hridaya",
+        "locator": "Chardi (nausea & vomiting)",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "respiratory_support",
+    "name": "Breathing and respiratory wellness",
+    "description": "General lifestyle support for comfortable breathing and a healthy chest and airways — for example easing seasonal chest congestion, helping a productive (mucusy) cough clear, and keeping the throat and bronchial passages clear during damp or cold weather. This is everyday wellness support for the respiratory tract, not a diagnosis, treatment, or cure for asthma, COPD, pneumonia, COVID-19, or any diagnosed lung condition. If you are unwell or unsure, please see a qualified healthcare professional.",
+    "ayurvedic_view": "Breathing is governed by prāṇa vāyu (a sub-type of Vata) moving through the respiratory channel (prāṇavaha srotas), with the chest and lungs as a key seat of Kapha. Seasonal congestion and a productive cough (kāsa) are classically read as aggravated Kapha accumulating in the chest, often blocking the smooth flow of Vata; a dry, tickling cough leans more toward Vata, and a hot, irritated chest toward Pitta. The traditional aim is to liquefy and clear excess Kapha, support easy downward and outward movement of Vata, and protect the delicate channel lining — using warming, drying, and expectorant (kaphaghna) measures rather than suppressing the cough that is helping clear mucus. Strengthening digestion (agni) to reduce ama is seen as foundational, since poorly digested residue is thought to feed chest congestion. This is a traditional explanatory framework offered for education, not a medical diagnosis.",
+    "primary_dosha": [
+      "kapha",
+      "vata"
+    ],
+    "lifestyle": [
+      "Keep the chest and back warm; avoid sudden cold, damp drafts and cold wind",
+      "Steam inhalation (plain, or with a little tulsi/eucalyptus if it suits you) to loosen congestion — keep a safe distance to avoid scald burns, and keep children well away from hot water and steam",
+      "Gentle prāṇāyāma and slow breathing practice once acute symptoms settle, to support easy breathing — stop and seek advice if any breathing practice causes breathlessness, dizziness, chest discomfort, or makes you feel worse",
+      "Stay gently active and upright in the day; avoid lying flat for long periods when congested",
+      "Avoid smoking and smoky, dusty or polluted air, which irritate the airways",
+      "Avoid applying eucalyptus or other strong essential oils near the face or nose of infants and young children, as they can trigger breathing difficulty"
+    ],
+    "diet": [
+      "Favour warm fluids — ginger, tulsi, or honey-lemon teas — to thin and move mucus (honey is for adults and children over 1 year only — never give honey to a baby under 12 months because of the risk of infant botulism)",
+      "Warming spices such as ginger, black pepper, turmeric and a little cinnamon in food or tea",
+      "Light, warm, freshly cooked, easily digested meals to keep agni strong",
+      "Reduce cold drinks, iced foods, heavy dairy, and sweet or fried foods, which can increase Kapha and mucus",
+      "Stay well hydrated, which helps keep secretions loose and easier to clear"
+    ],
+    "also_known_as": [
+      "shvasana wellness",
+      "pranavaha srotas support",
+      "bronchial support",
+      "chest congestion",
+      "productive cough",
+      "kasa",
+      "kapha in the chest"
+    ],
+    "red_flags": [
+      "Difficulty breathing, shortness of breath at rest, gasping, or being unable to speak in full sentences — seek emergency care",
+      "Bluish lips, face or fingertips, or fast, labored breathing — call emergency services",
+      "Chest pain or tightness, especially with breathlessness, sweating, or pain spreading to the arm or jaw — treat as a possible cardiac emergency and call emergency services",
+      "Sudden swelling of the lips, tongue, throat or face, widespread hives, or sudden breathing difficulty after a food, sting, or medicine — treat as a possible severe allergic reaction (anaphylaxis) and call emergency services",
+      "Choking, or the sudden feeling that something is stuck in the throat or airway — seek immediate help",
+      "Coughing up blood, or rusty, pink, or frothy sputum",
+      "Coughing up green, yellow, or foul-smelling phlegm together with a high or persistent fever, or feeling very unwell (possible chest infection/pneumonia) — get medical assessment",
+      "High or persistent fever with confusion, drowsiness, severe weakness, fainting, or being unable to keep fluids down — seek urgent medical care (possible severe infection or low oxygen)",
+      "Wheezing, noisy breathing, or a whistling sound that is new, worsening, or recurrent — get assessed for asthma or other airway disease",
+      "A cough lasting more than about 3 weeks, or one that keeps returning, worsens after first improving, or wakes you at night",
+      "Unexplained weight loss, drenching night sweats, or a chronic cough (possible TB or other serious disease — get tested)",
+      "Suspected contagious respiratory infection such as COVID-19 or influenza, or symptoms that are spreading to others — isolate where possible and follow local testing and medical advice, especially if you are high-risk",
+      "Symptoms in a young infant, an elderly or frail person, in pregnancy, or in anyone with a known heart or lung condition, weakened immunity, or other chronic illness — seek advice early",
+      "Already diagnosed with asthma, COPD, or another lung condition — manage with your doctor and do not stop or replace prescribed inhalers or medication with these wellness measures"
+    ],
+    "citations": [
+      {
+        "source_id": "charaka",
+        "locator": "Cikitsāsthāna 18 (Kāsa cikitsā) & Sūtrasthāna (prāṇavaha srotas)",
+        "requires_verification": true,
+        "note": "Classical framing of cough (kāsa) by dosha and of the breath-carrying channel; confirm exact verse numbers against a specific edition."
+      },
+      {
+        "source_id": "sushruta",
+        "locator": "Uttaratantra (Kāsa & Shvāsa)",
+        "requires_verification": true,
+        "note": "Classical description of cough and breathing disorders; section-level locator pending verse confirmation."
+      }
+    ]
+  },
+  {
+    "id": "weight_management",
+    "name": "Healthy weight support",
+    "description": "Practical, everyday lifestyle and dietary habits that support a healthy body weight, steady energy, and good metabolism. This is general wellness education rooted in classical Ayurvedic principles around balanced nourishment, regular movement, sound sleep, and mindful eating. It is not a treatment, diagnosis, or cure for any medical condition, and it is not a weight-loss program. The aim is gentle, sustainable support for your overall sense of balance, not rapid change or a target number on a scale.",
+    "ayurvedic_view": "In classical Ayurveda, healthy weight is understood through the lens of agni (digestive and metabolic fire) and the proper formation of the dhatus (body tissues), especially meda dhatu (fat tissue). Balanced agni (sama-agni) allows food to be digested and tissues to form in proportion. When agni is sluggish (mandagni), the texts describe accumulation of ama (undigested metabolic residue) and excess meda, discussed under sthaulya/medoroga. This is classically framed as predominantly a Kapha disorder, often with disturbed Vata-Pitta movement in the medovaha srotas (the channels carrying fat). Because meda forms from earlier dhatus and depends on agni, the classical approach centers on kindling and steadying agni, clearing the srotas, reducing kapha- and ama-promoting habits, supporting regular elimination, daily routine (dinacharya), and movement (vyayama), all adapted to the person's constitution (prakriti) and current imbalance (vikriti), rather than forceful restriction. This is general wellness framing, not a diagnosis or treatment.",
+    "primary_dosha": [
+      "kapha",
+      "vata",
+      "pitta"
+    ],
+    "lifestyle": [
+      "Keep a consistent daily rhythm (dinacharya): regular wake, meal, and sleep times help steady metabolism.",
+      "Aim for adequate, regular movement most days; classical texts emphasize daily exercise (vyayama) suited to your capacity, such as brisk walking, yoga, or other activity you enjoy.",
+      "Avoid daytime sleeping (divasvapna) and excessive sedentary time, which are classically associated with kapha and meda accumulation.",
+      "Prioritize good night sleep; both too little and too much sleep can disrupt appetite and metabolism.",
+      "Eat mindfully and without distraction; chew well and stop before feeling overly full.",
+      "Manage stress with calming practices like gentle yoga, pranayama (breath work), or meditation, since stress can affect eating patterns.",
+      "Stay gently active after meals (a short walk) rather than lying down.",
+      "Set realistic, gradual goals and track how you feel (energy, digestion, sleep) rather than focusing only on weight."
+    ],
+    "diet": [
+      "Favor freshly cooked, warm, lighter meals that are easy to digest; this supports agni and reduces ama.",
+      "Include plenty of vegetables, whole grains, legumes, and fiber-rich foods for steady fullness.",
+      "Use warming, digestive spices in cooking such as ginger, black pepper, cumin, turmeric, and fenugreek (in normal culinary amounts).",
+      "Reduce heavy, oily, deep-fried, very sweet, and highly processed foods, which are classically kapha- and meda-increasing.",
+      "Sip warm water through the day; some traditions favor warm water with a little ginger to support digestion.",
+      "Keep regular meal timing, make lunch the main meal when digestion is typically strongest, and keep dinner lighter and earlier.",
+      "Limit sugary drinks, excess dairy, and frequent snacking between meals; allow time for the previous meal to digest.",
+      "Choose moderate portions and honor genuine hunger rather than eating out of habit or emotion."
+    ],
+    "also_known_as": [
+      "Medoroga",
+      "Sthaulya",
+      "Atisthaulya",
+      "Healthy metabolism support",
+      "Weight balance support",
+      "Kapha balance for weight"
+    ],
+    "red_flags": [
+      "Rapid or unexplained weight loss without trying (for example, losing a noticeable amount over weeks to months): get a prompt medical check-up.",
+      "Rapid or unexplained weight gain, or sudden swelling of the legs, ankles, abdomen, or face, which can signal fluid retention and needs medical assessment.",
+      "Severe or worsening shortness of breath, chest pain or pressure, or breathlessness when lying flat or at rest: seek emergency care immediately.",
+      "Excessive thirst, frequent urination, blurred vision, or persistent fatigue (possible high blood sugar or diabetes): get tested by a clinician.",
+      "Signs of an eating disorder such as extreme restriction or fasting, binge eating, self-induced vomiting, laxative or diuretic misuse, intense fear of weight gain, or distorted body image: seek professional help. If someone is very underweight, fainting, or has chest pain or an irregular heartbeat, treat it as an emergency.",
+      "Fainting, severe or persistent dizziness, palpitations, very low energy, confusion, or feeling faint on standing while changing diet or exercise: stop and get medical advice.",
+      "Persistent unexplained fatigue, feeling cold, constipation, or hair thinning, which could suggest a thyroid or hormonal issue: get evaluated.",
+      "Weight change with other concerning symptoms such as ongoing fever, drenching night sweats, a new lump, persistent abdominal pain, or a change in bowel or bladder habits: see a clinician.",
+      "Use of weight-loss pills, 'fat-burner' supplements, appetite suppressants, diuretics, laxatives, or unregulated herbal products: these can be unsafe and interact with medicines; seek urgent care for a racing or irregular heartbeat, agitation, severe vomiting or diarrhoea, or signs of dehydration.",
+      "Pregnancy, breastfeeding, or being a child or adolescent: do not pursue weight-loss diets without guidance from a qualified healthcare provider.",
+      "Existing medical conditions (such as diabetes, heart, kidney, liver, or thyroid disease) or use of regular medication: consult your clinician before significant diet or exercise changes, as doses may need adjusting.",
+      "Any new severe abdominal pain, persistent vomiting or diarrhoea, or signs of dehydration: seek prompt medical care."
+    ],
+    "citations": [
+      {
+        "source_id": "charaka",
+        "locator": "Charaka Samhita, Sutrasthana, Chapter 21 (Ashtau Ninditiya Adhyaya) on the eight despised constitutions, including atisthaulya (excessive obesity)",
+        "note": "Classical description of sthaulya/medoroga, its causes (including sedentary habits, daytime sleep, heavy/sweet diet), and lifestyle-based management.",
+        "requires_verification": true
+      },
+      {
+        "source_id": "sushruta",
+        "locator": "Sushruta Samhita, Sutrasthana, Chapter 15 (Doshadhatumalakshayavriddhi) and Chikitsasthana sections on medoroga",
+        "note": "Discussion of dhatu balance, meda increase/decrease, and management of obesity-related imbalance.",
+        "requires_verification": true
+      },
+      {
+        "source_id": "ashtanga_hridaya",
+        "locator": "Ashtanga Hridaya, Sutrasthana, Chapter 14 (Dvividhopakramaniya) on santarpana/apatarpana and management of sthaulya",
+        "note": "Reduction-oriented (apatarpana) regimen, diet and lifestyle measures for excess meda.",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "eye_health",
+    "name": "Eye wellness",
+    "description": "General support for everyday eye comfort. This entry is about keeping the eyes feeling rested and at ease during ordinary life, especially with long hours of screens, reading, driving, or close work. Common, non-serious sensations people notice include tiredness or heaviness around the eyes, mild dryness or grittiness, brief blurring that clears with blinking or rest, watering in wind or glare, and a tight or achey feeling after a long day. These usually ease with breaks, blinking, sleep, and gentler habits. This is educational wellness guidance for comfort and self-care only. It is not a way to diagnose, treat, or cure any eye condition, and it does not replace an eye exam or care from a qualified eye-care professional (optometrist or ophthalmologist).",
+    "ayurvedic_view": "In Ayurveda the eyes (netra/akshi) are considered a seat of the fire element (tejas) and are especially governed by alochaka pitta, the sub-dosha of pitta responsible for perception of form and light. Because of this fiery nature, the eyes are classically viewed as predominantly a pitta sense organ that is comforted by cooling, soothing measures and irritated by excess heat. The structures around the eye also involve vata (which governs movement, focusing, and, when aggravated, dryness and fatigue) and kapha (which provides lubrication, moisture, and stability; in excess it can bring heaviness or stickiness). Everyday eye discomfort is understood as a localised disturbance of balance in these doshas rather than as disease. Classical texts describe the eye in the context of the channels (srotas) and the head region; healthy flow of nourishment to the eyes, supported by good digestion (agni) and the nourishing essence of well-formed tissues (notably the rasa and rakta dhatus and the eye-supportive quality of ojas), is seen as the basis of comfortable, clear sight. Tradition repeatedly cautions that the eyes are delicate and easily strained by heat, glare, smoke, dust, wind, excessive close gazing, suppression of natural urges such as tears, irregular sleep (especially daytime sleep and late nights), and overly pungent, sour, salty, fried, or heating food and drink. The general approach to wellness is therefore protective and balancing: shielding the eyes from heat and irritants, favouring cooling and nourishing foods and routines, ensuring adequate rest, and following supportive daily practices (dinacharya) so the eyes are not overtaxed. This is a framing for general comfort and balance, not a treatment plan for any eye disorder.",
+    "primary_dosha": [
+      "pitta",
+      "vata",
+      "kapha"
+    ],
+    "lifestyle": [
+      "Follow the 20-20-20 idea: every 20 minutes of close or screen work, look at something far away (about 20 feet) for around 20 seconds to relax the eyes.",
+      "Blink fully and often during screen use; concentration tends to reduce blinking and leave eyes feeling dry.",
+      "Take regular short breaks from screens, reading, and fine work rather than long unbroken sessions.",
+      "Set up comfortable, glare-free lighting; avoid working in harsh glare, very dim light, or with screens much brighter than the room.",
+      "Keep screens slightly below eye level and at a comfortable distance to reduce strain on the eyes and neck.",
+      "Protect the eyes from strong sun, wind, smoke, and dust (for example with sunglasses), in line with classical caution against smoke, dust, and harsh sun.",
+      "Prioritise adequate, regular sleep; Ayurveda particularly cautions against habitual daytime sleeping and against staying up very late, both seen as taxing for the eyes.",
+      "Rest tired eyes with palming (cupping warm, clean palms gently over closed eyes); if you wish to refresh them with water, use clean, potable water on the closed lids, and never try to force open an eye that is painful or injured.",
+      "Practise gentle eye-relaxation and slow eye movements only to the point of comfort, never straining or forcing.",
+      "Stay well hydrated and avoid prolonged dry, very air-conditioned, or windy environments that dry the eyes.",
+      "Avoid rubbing the eyes, especially with unwashed hands; maintain clean hygiene around the eye area.",
+      "Do not put oils, ghee, herbal pastes, kajal, or any home preparation directly into the eyes without guidance from a qualified practitioner, as the eye is delicate and easily injured or infected.",
+      "Reduce close work in the evening when possible and let the eyes wind down before sleep."
+    ],
+    "diet": [
+      "Favour a cooling, pitta-pacifying diet, since the eyes are linked to alochaka pitta and the fire element.",
+      "Include fresh, water-rich foods and ensure good general hydration.",
+      "Traditionally, ghee (in normal dietary amounts) is valued in Ayurveda as nourishing and cooling for the eyes; use as a regular food, not as an eye drop.",
+      "Cooked, easily digested vegetables, especially leafy greens and gourds, are considered supportive and cooling.",
+      "Foods rich in natural colour and nutrients, such as carrots, amla (Indian gooseberry), and seasonal fruits, are traditionally regarded as wholesome for the eyes; amla in particular is a classically prized rasayana often associated with eye support.",
+      "Soaked almonds and other wholesome fats are traditionally considered nourishing in moderation.",
+      "Reduce foods and habits that aggravate pitta and the eyes: very spicy/pungent, very sour, very salty, deep-fried, excessively hot, fermented, or alkaline (kshara) items, in keeping with classical cautions.",
+      "Limit alcohol, excess caffeine, and smoking, which can heat and dry the system and irritate the eyes.",
+      "Keep meal timing regular and avoid overeating, supporting steady digestion (agni), which Ayurveda links to overall tissue and eye health.",
+      "Treat any food, herb, or supplement only as general nourishment; for any specific eye complaint, seek professional advice rather than self-dosing."
+    ],
+    "also_known_as": [
+      "Netra swasthya (eye wellness)",
+      "Netra (eye)",
+      "Akshi (eye)",
+      "Drishti (vision/sight)",
+      "Eye comfort",
+      "Eye strain / digital eye strain",
+      "Computer vision syndrome (modern term)",
+      "Asthenopia (modern term for eye fatigue)"
+    ],
+    "red_flags": [
+      "Sudden loss or marked decrease of vision in one or both eyes, whether painful OR painless - painless sudden vision loss can signal a blocked retinal blood vessel and is just as urgent; seek emergency eye care immediately.",
+      "Sudden onset of many new floaters, flashes of light, or a dark curtain or shadow moving across the field of vision - possible retinal detachment emergency, seek urgent care.",
+      "Sudden severe eye pain, especially with a red eye, headache, nausea/vomiting, or seeing halos around lights - this can signal a sight-threatening emergency (such as acute angle-closure glaucoma) and needs immediate care.",
+      "Chemical splash in the eye - immediately rinse (irrigate) the open eye with plenty of clean water or saline for at least 15-20 minutes and seek urgent medical attention while or after rinsing.",
+      "Any object that is stuck, embedded, or has penetrated the eye, or a high-speed/impact eye injury - do NOT rub, press, attempt to remove it, or flush it out; protect/shield the eye without putting pressure on it and get emergency care immediately.",
+      "A loose particle (such as dust or an eyelash) that does not gently flush out, or persistent foreign-body sensation - if simple rinsing does not clear it, seek prompt care rather than rubbing the eye.",
+      "A red, painful eye, or blurred vision, in someone who wears contact lenses - remove the lens and seek prompt care, as this can indicate a serious infection (microbial keratitis).",
+      "Eye exposure to welding arcs, sun lamps, intense UV, or strong glare causing pain hours later ('arc eye'/photokeratitis), or any heat/thermal burn to the eye - seek prompt medical assessment.",
+      "Intense or unusual sensitivity to light (photophobia) together with eye pain and redness - can indicate inflammation inside the eye (such as iritis/uveitis) or corneal involvement and needs prompt eye care.",
+      "Persistent or worsening eye redness, pain, or marked light sensitivity that does not settle with rest.",
+      "Thick, coloured, or pus-like discharge, or eyelids stuck shut on waking - signs of possible infection needing assessment.",
+      "New double vision, or a drooping eyelid, or a pupil that suddenly looks different in size or shape - seek prompt medical evaluation.",
+      "Eye symptoms with severe headache, weakness, numbness, facial droop, or difficulty speaking - call emergency services, as this may signal a stroke.",
+      "A bulging or protruding eye, or new and persistent swelling around the eye.",
+      "Blurred vision, eye pain, or vision changes in a person with diabetes, high blood pressure, or known eye disease - arrange professional review.",
+      "Eye discomfort, blurring, redness, excessive watering, or unusual sensitivity in babies and young children, who cannot reliably report symptoms - seek professional assessment.",
+      "Eye pain or visual changes during or after recent eye surgery or eye procedures.",
+      "Persistent dryness, irritation, watering, or tired eyes that do not improve with rest and basic eye-care habits over a couple of weeks - see an optometrist or ophthalmologist for an exam.",
+      "Headaches or eye strain associated with reading or screens that keep recurring - may indicate a need for an eye test or updated glasses.",
+      "Any new or changing symptom that worries you - this educational guidance is not a substitute for examination by a qualified eye-care professional."
+    ],
+    "citations": [
+      {
+        "source_id": "ashtanga_hridaya",
+        "locator": "Sutrasthana, Dinacharya (daily regimen) and Sutrasthana chapters on eye care / netra (e.g. references to anjana, eye washing, and protection of the eyes)",
+        "note": "Classical guidance on daily eye-care routines, cooling practices, and protection of the eyes from strain, smoke, and sun.",
+        "requires_verification": true
+      },
+      {
+        "source_id": "charaka",
+        "locator": "Sutrasthana 5 (Matrashitiya) - regimen including eye-care practices such as anjana and care of the senses; also Sutrasthana 7 (Navegandharaniya) on not suppressing natural urges including tears",
+        "note": "Framing of sense-organ care and lifestyle factors (suppression of tears, day-sleep) affecting the eyes.",
+        "requires_verification": true
+      },
+      {
+        "source_id": "sushruta",
+        "locator": "Uttara Tantra, Shalakya / netra rogas introductory chapters - description of the eye, its structures, and causative factors (nidana) for eye disturbance",
+        "note": "Anatomical and etiological framing of the eye, including aggravating habits (staring, glare, heat, smoke, improper diet). Cited for general framing only, not treatment.",
+        "requires_verification": true
+      },
+      {
+        "source_id": "bhavaprakasha",
+        "locator": "Nighantu sections on dietary articles such as ghrita (ghee), amalaki (amla), and triphala traditionally associated with eye-supportive nourishment",
+        "note": "Dietary and dravya references traditionally linked with eye wellness; cited for general nutritional framing only.",
+        "requires_verification": true
+      },
+      {
+        "source_id": "modern_research",
+        "locator": "Patient-education references on ophthalmic emergencies (acute angle-closure glaucoma, retinal detachment, chemical and penetrating eye injury, microbial keratitis in contact-lens wearers, photokeratitis)",
+        "note": "Used to verify and strengthen the emergency red-flag list, including the correction not to irrigate or manipulate a penetrating/embedded foreign body.",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "oral_health",
+    "name": "Mouth and gum wellness",
+    "description": "Mouth and gum wellness covers everyday care of the teeth, gums, tongue, and breath. A comfortable mouth typically feels fresh, with firm pink gums, clean-feeling teeth, and breath that stays pleasant through the day. Simple daily habits such as gentle brushing, cleaning the tongue, rinsing after meals, and staying hydrated support this comfort over time. Mild, occasional issues like morning breath, slight gum tenderness, or a coated tongue are common and usually settle with a consistent routine and attention to diet. This entry shares general educational and traditional wellness practices; it is not dental advice and does not diagnose, treat, or cure any condition, nor does it replace examination and care by a qualified dentist or doctor.",
+    "ayurvedic_view": "In classical Ayurveda, oral care falls under dinacharya (daily regimen) and the broader topic of mukha roga (disorders of the mouth). The mouth is considered a seat of Kapha, and Bodhaka Kapha governs moisture, taste perception, and the protective lining of the mouth. The teeth are framed in relation to Asthi dhatu (bone tissue), which is governed by Vata, so steadiness of the teeth and gums is linked to Vata. Healthy gums and a clean mucosa relate to the Rasa and Rakta dhatus and their channels (rasavaha and raktavaha srotas). Imbalance is understood through dosha: aggravated Kapha with ama (undigested residue) is associated with coating, stickiness, dullness and odour; aggravated Pitta with heat, redness, a bleeding tendency and burning; aggravated Vata with dryness, sensitivity, and receding or unsteady gums. The traditional emphasis is on preventive daily practices to keep these in balance: dantadhavana (tooth cleaning, classically with bitter/astringent twigs such as neem or khadira), jihva nirlekhana (tongue scraping), and gandusha/kavala (oil holding/swishing). The aim is to clear ama, support Bodhaka Kapha, and keep the oral channels clean. This is a wellness framing only and is not a substitute for dental diagnosis or treatment.",
+    "primary_dosha": [
+      "kapha",
+      "pitta",
+      "vata"
+    ],
+    "lifestyle": [
+      "Brush gently twice daily with a soft brush and clean between the teeth (floss or interdental brushes) as advised by your dentist; traditional bitter-astringent tooth powders (e.g. neem or triphala based) may be used, but follow your dentist's brushing and cleaning guidance",
+      "Scrape the tongue (jihva nirlekhana) once each morning with a clean copper or stainless scraper, using gentle front-to-back strokes",
+      "If you wish to try oil pulling (kavala/gandusha), swish about a tablespoon of sesame or coconut oil gently for a few minutes before brushing, then spit it out (do not swallow) and rinse; stop if it causes any discomfort, and never let it replace brushing or a dental visit",
+      "Rinse the mouth with plain warm water after meals to clear food residue",
+      "Stay well hydrated through the day; sip water if the mouth feels dry",
+      "Replace your toothbrush regularly and keep oral tools clean",
+      "Avoid tobacco, betel/areca-nut chewing, and excessive alcohol, which are hard on the gums and oral lining and raise the risk of oral cancer",
+      "Keep regular professional dental check-ups and cleanings as advised by your dentist"
+    ],
+    "diet": [
+      "Favour fresh, warm, easy-to-digest meals to limit ama (residue linked to coating and odour)",
+      "Include naturally astringent and bitter foods traditionally valued for the mouth, such as a triphala water rinse or pomegranate",
+      "Crunchy fibrous vegetables and fruits (in moderation) can help mechanically clean the teeth",
+      "Reduce frequent sugary, sticky, and refined snacks and sweetened drinks, which feed plaque and feel heavy for Kapha",
+      "Limit very sour, very salty, fermented, and excessively spicy or hot foods if you notice gum heat, burning, or sensitivity (Pitta-type)",
+      "Be mindful of very cold, dry, or rough foods if you tend toward dryness and sensitivity (Vata-type)",
+      "Spices such as clove, cardamom, and fennel are traditionally chewed in small amounts to freshen breath after meals",
+      "Limit between-meal grazing so saliva can help clean the mouth between meals"
+    ],
+    "also_known_as": [
+      "Oral hygiene",
+      "Dental and gum care",
+      "Mukha swasthya (mouth wellness)",
+      "Mukha roga (classical term for oral/mouth disorders)",
+      "Danta and danta-mula care (teeth and gum-root)",
+      "Halitosis care (Mukha daurgandhya, for breath)"
+    ],
+    "red_flags": [
+      "EMERGENCY — call emergency services now: spreading swelling of the face, jaw, or neck, swelling under the tongue or in the floor of the mouth, or any difficulty breathing or swallowing (this can be a rapidly life-threatening infection such as Ludwig's angina)",
+      "Severe toothache or mouth pain with fever, a swollen face, swelling that is closing an eye, or feeling generally unwell — seek urgent dental or medical care the same day, as this can signal a spreading infection or abscess",
+      "A knocked-out adult (permanent) tooth — seek emergency dental care ideally within about 1 hour; do not scrub the tooth, keep it moist in milk, saliva, or held inside the cheek, not in water",
+      "A broken or cracked tooth, a loose adult tooth, or teeth that suddenly shift or no longer meet properly",
+      "Gums that bleed easily, spontaneously, or persistently (more than a brief spot after brushing), or bleeding that does not settle within a week or two of good care — especially if you take blood thinners or have a bleeding disorder",
+      "Gums that are markedly red, swollen, painful, or pulling away/receding from the teeth, or visible pus, an abscess, or a persistent pimple-like bump on the gum",
+      "A mouth sore, ulcer, white or red patch, lump, or rough area that does not heal within about 2–3 weeks — see a dentist or doctor promptly, particularly if you use tobacco, areca/betel nut, or alcohol, or have an unexplained lump in the neck or one-sided ear pain (possible oral cancer)",
+      "Bad breath or a persistent bad taste that does not improve despite good oral care, which may point to gum disease or another underlying condition",
+      "Severe or worsening tooth sensitivity to hot, cold, or sweet, or pain when biting down",
+      "Persistent, bothersome dry mouth, which can raise the risk of decay and may relate to medications or other health conditions",
+      "Difficulty opening the mouth (trismus/locked jaw), or jaw pain with locking, clicking, or trouble chewing",
+      "Any oral symptom alongside a weakened immune system, uncontrolled diabetes, pregnancy, a bleeding disorder, or use of blood thinners — get professional evaluation sooner rather than later",
+      "In children: dental injury, persistent gum swelling, ongoing mouth pain, or refusal to eat or drink because of mouth pain"
+    ],
+    "citations": [
+      {
+        "source_id": "charaka",
+        "locator": "Sūtrasthāna 5 (Matrāśitīya Adhyāya) — dantadhavana, jihva nirlekhana, gandusha/kavala within dinacharya",
+        "requires_verification": true,
+        "note": "Classical basis for daily tooth cleaning, tongue scraping, and oil holding/swishing; confirm exact verse numbers in a reliable edition."
+      },
+      {
+        "source_id": "sushruta",
+        "locator": "Nidānasthāna / Cikitsāsthāna — Mukha Roga (diseases of the mouth) and gandusha/kavala",
+        "requires_verification": true,
+        "note": "Classical framing of mukha roga by dosha and of gandusha/kavala practices; confirm chapter and verse references."
+      },
+      {
+        "source_id": "ashtanga_hridaya",
+        "locator": "Sūtrasthāna 2 (Dinacharyā Adhyāya) — danta-dhavana, jihva-nirlekhana, gandusha",
+        "requires_verification": true,
+        "note": "Daily-regimen oral-care practices with indications/contraindications; confirm exact verse numbers."
+      }
+    ]
+  },
+  {
+    "id": "vitality",
+    "name": "Energy, stamina and vitality",
+    "description": "General support for everyday vigour, physical stamina and a healthy sense of vitality, including reproductive vigour as a normal part of overall wellness. This is wellness support for feeling strong, resilient and energetic - it is not a treatment for erectile dysfunction, low libido as a medical symptom, or infertility, all of which need proper medical assessment.",
+    "ayurvedic_view": "Ayurveda frames vitality through 'ojas' - the subtle essence of well-digested food and healthy tissues (dhātus) that underlies strength, immunity, lustre and stamina. Ojas is considered Kapha-like in quality (stable, unctuous, nourishing), which is why building (bṛṃhaṇa) and rejuvenating (rasāyana) therapy is central to restoring it. Vigour depends on strong 'agni' (digestive fire), well-formed tissues culminating in 'shukra dhātu' (the reproductive tissue, considered the finest essence of nutrition), and balanced 'prāṇa' and 'apāna vāyu'. Depleted vigour is classically seen as kṣaya (depletion) of ojas/shukra, most often with aggravated Vata (dryness, depletion, over-exertion) and weak agni producing 'ama' that blocks nourishment. The wellness approach uses 'rasāyana' (rejuvenation, building ojas) and 'vājīkaraṇa' (the classical branch supporting reproductive vitality and strength) - nourishing, grounding and tonic in nature - built on a foundation of good digestion, rest and a steady daily routine. Reproductive vitality (vājīkaraṇa) is presented here only as general wellbeing and never as a remedy for a diagnosed condition.",
+    "primary_dosha": [
+      "vata",
+      "kapha"
+    ],
+    "lifestyle": [
+      "Protect consistent, adequate sleep - ojas and tissue repair are restored during rest",
+      "Build stamina with regular, progressive exercise that energises rather than exhausts; avoid chronic over-training, which depletes ojas",
+      "Manage stress; a settled mind and calm Vata support both vitality and reproductive wellbeing",
+      "Keep a steady daily routine (dinacharya); warm oil self-massage (abhyaṅga) is traditionally grounding and strengthening",
+      "Avoid known depletors of vigour - smoking, excess alcohol, and recreational drugs"
+    ],
+    "diet": [
+      "Favour regular, freshly cooked, easily digested and nourishing meals so that strong digestion can build healthy tissue",
+      "Include adequate good-quality protein and healthy fats; traditional 'bṛṃhaṇa' (building) and rasāyana foods include milk (if it suits you), ghee, soaked almonds, dates and dried fruits",
+      "Tissue-nourishing additions such as soaked nuts and seeds are valued in vājīkaraṇa diets",
+      "Support agni first - heaviness, bloating or poor appetite mean nourishment is not being absorbed, so address digestion before piling on rich foods",
+      "Stay hydrated; reduce highly processed, very dry or stimulant-heavy intake that taxes the system"
+    ],
+    "also_known_as": [
+      "ojas",
+      "vajikarana",
+      "bala",
+      "stamina",
+      "vigour",
+      "general vitality"
+    ],
+    "red_flags": [
+      "New, persistent, or worsening fatigue and loss of stamina lasting more than a few weeks - get checked for treatable causes such as anaemia, thyroid problems, diabetes, or low testosterone",
+      "Severe or sudden exhaustion, or low energy with breathlessness, chest pain, or palpitations - seek urgent medical care, as this can be cardiac",
+      "Fainting, collapse, or near-fainting during or just after exertion - seek urgent medical assessment, as exertional blackouts can signal a serious heart-rhythm or structural heart problem",
+      "Low energy with very pale skin, a fast or pounding heartbeat, or breathlessness on mild effort - can indicate severe anaemia and needs prompt medical assessment",
+      "Low energy or low vitality together with unexplained weight loss, fever, drenching night sweats, or swollen lymph nodes - see a doctor promptly",
+      "Signs of heat exhaustion or heat stroke during hard exercise - confusion, stopping sweating, very high temperature, severe weakness, or collapse - stop, cool down, and call emergency services",
+      "Erectile dysfunction, persistent loss of libido, or difficulty conceiving - these are medical concerns needing proper evaluation, not self-managed with tonics; new erectile dysfunction can be an early warning sign of heart or blood-vessel disease and warrants a check",
+      "A painful erection lasting more than about 4 hours (priapism) - this is a medical emergency and needs immediate treatment to avoid lasting damage; it can be triggered by some 'stamina'/aphrodisiac products and by erectile-dysfunction medicines",
+      "Blood in the semen or urine, testicular pain, lumps or swelling, or any persistent genital or pelvic symptom - needs prompt medical assessment",
+      "Fatigue or low vigour alongside persistent low mood, hopelessness, or loss of interest - and any thoughts of self-harm, which need immediate help",
+      "Symptoms of low energy in someone with a known chronic illness, or who is pregnant or breastfeeding - get individual medical advice before using any tonic or 'vitality' supplement",
+      "Do not rely on aphrodisiac or 'stamina' products in place of medical care, and never combine them with prescription medicines (for example nitrates or blood-pressure drugs) without a doctor's or pharmacist's guidance"
+    ],
+    "citations": [
+      {
+        "source_id": "charaka",
+        "locator": "Cikitsāsthāna 1 (Rasāyana) & Cikitsāsthāna 2 (Vājīkaraṇa)",
+        "requires_verification": true,
+        "note": "Classical basis for rasāyana (rejuvenation/ojas) and vājīkaraṇa (reproductive vitality and strength) as wellness, not treatment. Exact verse numbers to be confirmed against a specific edition."
+      },
+      {
+        "source_id": "sushruta",
+        "locator": "Cikitsāsthāna (Vājīkaraṇa adhyāya)",
+        "requires_verification": true,
+        "note": "Suśruta's section on vājīkaraṇa and strengthening; locator at section level, verses to be verified."
+      }
+    ]
+  },
+  {
+    "id": "allergic_rhinitis",
+    "name": "Seasonal nasal allergy comfort",
+    "description": "Everyday seasonal nasal-allergy symptoms — bouts of sneezing, a clear runny or blocked nose, an itchy nose or watery eyes — that tend to come and go with pollen, dust, or seasonal change. This is general comfort and wellness information, not medical advice and not a treatment, cure, or diagnosis for any allergy, asthma, or other condition.",
+    "ayurvedic_view": "In traditional Ayurveda this pattern is often described as 'pratiśyāya' affecting the respiratory channels (prāṇavaha srotas) and the nose, classically understood as a combined Kapha–Vata aggravation: excess Kapha is associated with the clear watery discharge, congestion and heaviness, while mobile Vata is linked to the repeated sneezing, itching and erratic flare-ups. Allergic over-reactivity is also traditionally connected to weak digestion (agni) and accumulated 'ama' lowering resilience. The classical approach favours warming, drying, Kapha-clearing measures, calming Vata, supporting agni, and gentle nasal care (e.g. traditional nasya or steam) — while reducing exposure to triggers. This is a traditional wellness model, not a clinical diagnosis.",
+    "primary_dosha": [
+      "kapha",
+      "vata"
+    ],
+    "also_known_as": [
+      "pratishyaya",
+      "vata-kapha pratishyaya",
+      "seasonal nasal allergy",
+      "hay fever",
+      "sneezing and runny nose"
+    ],
+    "lifestyle": [
+      "Reduce contact with known triggers (pollen, dust, strong smells); keep windows shut on high-pollen days and rinse face/hands after being outdoors",
+      "Steam inhalation to ease congestion, and gentle warmth around the head and chest",
+      "Traditional saline nasal rinse or nasya as suits you, to soothe and clear the nasal passages",
+      "Keep a regular routine with adequate sleep and gentle daily movement to settle Vata and support resilience",
+      "Avoid sudden cold-air exposure and cold, damp environments that traditionally aggravate Kapha"
+    ],
+    "diet": [
+      "Favour warm, freshly cooked, lightly spiced food; sip warm water or ginger/tulsi tea",
+      "Use warming, Kapha-clearing spices such as ginger, black pepper, turmeric and cumin",
+      "A little honey (taken warm, not heated) is traditionally used to help reduce excess Kapha; note that honey should never be given to children under 12 months",
+      "Reduce cold drinks, iced foods, heavy dairy, curd/yoghurt and overly heavy or fried foods while symptomatic",
+      "Support digestion to limit ama: eat at regular times and avoid overeating"
+    ],
+    "red_flags": [
+      "Signs of a severe allergic reaction (anaphylaxis) — swelling of the lips, tongue or throat, trouble swallowing or speaking, sudden widespread hives, wheeze, dizziness or fainting, pale or clammy skin, collapse, or a sudden sense of something being seriously wrong: call emergency services immediately and use an adrenaline auto-injector if prescribed",
+      "Difficulty breathing, wheezing, chest tightness, rapid breathing, lips or face turning blue, or being unable to speak in full sentences — this is a medical emergency; call emergency services",
+      "New, worsening or persistent breathing problems such as wheeze or breathlessness in someone with or without known asthma — get urgent medical care",
+      "Symptoms starting soon after a new food, insect sting, or medication — get prompt medical advice, as these reactions can escalate quickly",
+      "Severe or worsening headache with a stiff neck, high fever, confusion, unusual drowsiness, or sensitivity to light — these can signal a serious infection such as meningitis; seek emergency care",
+      "Swelling, redness or pain around an eye, a bulging eye, or double or reduced vision — these can indicate spread of a sinus infection and need urgent medical assessment",
+      "High or persistent fever, facial pain or pressure, or thick yellow-green nasal discharge — may indicate a sinus infection rather than allergy; see a clinician",
+      "Nosebleeds, blood-stained discharge, or persistent blockage on only one side of the nose — needs medical assessment",
+      "Symptoms that are severe, last for weeks, disrupt sleep or daily life, or don't improve with usual comfort measures — see a clinician for proper assessment and diagnosis",
+      "New or worsening nasal symptoms in someone with known asthma, in young children, in pregnancy, or in the elderly or immunocompromised — check with a clinician",
+      "Before using nasal rinses or nasya, use only clean (previously boiled and cooled, or distilled/sterile) water, never untreated tap water; stop and seek advice if it causes pain, bleeding or worsening symptoms"
+    ],
+    "citations": [
+      {
+        "source_id": "ashtanga_hridaya",
+        "locator": "Uttarasthāna — Nāsāroga / pratiśyāya (diseases of the nose)",
+        "requires_verification": true,
+        "note": "Locator for pratishyaya should be confirmed against a primary edition before publication."
+      },
+      {
+        "source_id": "charaka",
+        "locator": "Cikitsāsthāna — pratiśyāya (within respiratory/Kapha disorders)",
+        "requires_verification": true,
+        "note": "Specific chapter/verse for pratishyaya should be confirmed against a primary edition before publication."
+      }
+    ]
+  },
+  {
+    "id": "hemorrhoids",
+    "name": "Hemorrhoid (piles) comfort",
+    "description": "Hemorrhoids, commonly called piles, are swollen veins and cushions of tissue in and around the lower rectum and anus. They are very common and often mild, causing itching, a feeling of fullness, mild discomfort during or after passing stools, or occasional small streaks of bright red blood on the toilet paper or stool surface. Many cases are linked to straining, hard stools, prolonged sitting, low-fibre eating, or pregnancy. Mild piles frequently settle with gentle changes to diet, bowel habits, and daily routine. This entry is educational and supportive of comfort for mild discomfort; it is not a diagnosis or treatment. Any rectal bleeding, severe pain, or persistent or recurring symptoms should be evaluated by a qualified healthcare professional.",
+    "ayurvedic_view": "In Ayurveda, hemorrhoids are described as 'arsha'. It is classically considered a tridoshic condition rooted in weak digestion (mandagni) and, above all, in vitiated apana vayu — the Vata subtype that governs the smooth downward flow in the lower abdomen and rectum. Disturbed apana, often from chronic constipation, straining or prolonged sitting, leads to the formation of the hemorrhoidal masses. Presentations are described by dosha: Vata-type (hard, dry, painful, with constipation), Pitta-type (soft, inflamed, with bleeding and burning), and Kapha-type (large, soft, pale, itchy, with mucus/discharge). The traditional aim is to restore agni, soften the stool, and support the natural downward movement of apana vayu rather than to force or suppress it — alongside, never instead of, medical assessment of any bleeding.",
+    "primary_dosha": [
+      "vata",
+      "pitta",
+      "kapha"
+    ],
+    "also_known_as": [
+      "Piles",
+      "Arsha (Sanskrit)",
+      "Arsh",
+      "Bavasir",
+      "Anal cushions",
+      "Hemorrhoidal disease"
+    ],
+    "lifestyle": [
+      "Avoid straining during bowel movements; let stool pass naturally and do not sit on the toilet for long periods or push hard",
+      "Respond promptly to the urge to pass stool rather than holding it back, which supports the natural downward flow of apana vayu",
+      "Take short, frequent breaks to stand and walk if your work involves prolonged sitting; consider a cushion for hard seats",
+      "Build a gentle, regular daily routine (dinacharya) with consistent meal and toilet times to encourage predictable bowel movements",
+      "A warm sitz bath (sitting in plain warm water for 10-15 minutes), if comfortable and approved by your clinician, may ease local discomfort",
+      "Keep the anal area clean and dry; gently pat rather than rub after bathing",
+      "Engage in regular moderate movement such as walking and gentle yoga; avoid prolonged heavy lifting and breath-holding strain",
+      "Manage stress and aim for adequate sleep, as both influence digestion and bowel regularity"
+    ],
+    "diet": [
+      "Gradually increase dietary fibre from cooked vegetables, fruits, and whole grains to keep stool soft and bulky",
+      "Drink adequate warm water and fluids through the day to prevent hard, dry stools",
+      "Soaked raisins, soaked figs, stewed apple or pear, and ripe fruits are gentle, traditionally favoured bowel-softening foods",
+      "Buttermilk (takra) is traditionally valued in arsha and may be included as part of a balanced diet if it suits you",
+      "A small amount of healthy fat, such as warm milk with a little ghee at night, is traditionally used to lubricate the bowel and support easy elimination",
+      "Reduce very spicy, fried, excessively sour, and heavily processed foods that aggravate Pitta and can worsen burning",
+      "Limit alcohol and excess caffeine, which can be dehydrating and irritating",
+      "Avoid chronic constipation triggers such as skipping meals, eating very late, or a consistently low-fibre, dry diet",
+      "Introduce fibre slowly and with enough fluids to avoid bloating and gas"
+    ],
+    "red_flags": [
+      "Heavy or persistent rectal bleeding, blood that fills the toilet bowl, passing clots, or bleeding that does not stop — seek urgent care",
+      "Lightheadedness, dizziness, fainting, a racing or pounding heartbeat, or feeling faint on standing — possible signs of significant blood loss; call emergency services",
+      "Black, tarry, or maroon-coloured stools, which can indicate bleeding higher in the digestive tract and need urgent evaluation",
+      "Dark or bright red blood mixed throughout the stool (rather than a small streak on the surface), or bleeding without a clear hemorrhoid cause",
+      "Severe, sudden, or worsening anal pain, or a painful hard lump at the anus (possible thrombosed hemorrhoid) needing prompt assessment",
+      "A change in bowel habits lasting more than a few weeks (new constipation, diarrhoea, narrowing/pencil-thin stools, or alternating pattern)",
+      "Unexplained weight loss, persistent fatigue, or paleness/breathlessness suggesting anaemia from ongoing blood loss",
+      "Any rectal bleeding in someone over age 40-50, or with a family or personal history of colorectal cancer, inflammatory bowel disease, or polyps",
+      "Fever, chills, significant swelling, pus, or spreading redness around the anus, which may signal infection or abscess",
+      "A lump or tissue that protrudes and cannot be pushed back in, or that becomes very painful, bluish, or hard",
+      "Inability to pass stool or gas together with abdominal pain and bloating (possible bowel obstruction) — seek urgent care",
+      "Symptoms during pregnancy or postpartum that are severe, bleeding heavily, or not improving, or any worrying new symptoms while pregnant",
+      "Bleeding while taking blood-thinning medication, or with a known bleeding disorder",
+      "Mild symptoms that do not improve after about a week of gentle self-care, or that keep recurring"
+    ],
+    "citations": [
+      {
+        "source_id": "sushruta",
+        "locator": "Sushruta Samhita, Nidana Sthana 2 (Arsha Nidana) and Chikitsa Sthana 6 (Arsha Chikitsa)",
+        "note": "Classical description of arsha, dosha involvement, and clinical features; exact section/verse requires verification against a printed edition.",
+        "requires_verification": true
+      },
+      {
+        "source_id": "charaka",
+        "locator": "Charaka Samhita, Chikitsa Sthana, Arsha Chikitsa (chapter 14)",
+        "note": "Classical framing of arsha in relation to agni, apana vayu, diet such as takra/buttermilk, and management; chapter number and details require verification.",
+        "requires_verification": true
+      },
+      {
+        "source_id": "ashtanga_hridaya",
+        "locator": "Ashtanga Hridaya, Nidana Sthana 7 and Chikitsa Sthana 8 (Arsha sections)",
+        "note": "Supporting classical account of arsha pathology and dietary/lifestyle guidance; exact section requires verification.",
+        "requires_verification": true
+      }
+    ]
+  }
+]

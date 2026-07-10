@@ -1,0 +1,131 @@
+/* ===========================================================================
+   Āyus — App bridge styles
+   Adds styling for the App Router's anchor-based nav (the original CSS targeted
+   `.nav button`; App-Router Topbar uses `<Link>` anchors). Keeps the original
+   visual design intact.
+   =========================================================================== */
+
+.nav a.nav-link,
+.nav .nav-icon {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  background: none;
+  border: none;
+  padding: 8px 14px;
+  border-radius: var(--r-pill);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  position: relative;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+.nav a.nav-link:hover,
+.nav .nav-icon:hover {
+  color: var(--green);
+  background: var(--green-glow);
+}
+.nav a.nav-link[aria-current="page"] {
+  color: var(--green);
+  background: var(--green-glow);
+}
+.nav .nav-icon svg {
+  width: 20px;
+  height: 20px;
+  transition: transform var(--transition);
+}
+.nav .nav-icon:hover svg { transform: rotate(30deg); }
+
+/* Mobile drawer links (original CSS targeted .mobile-nav-panel button) */
+.mobile-nav-panel a {
+  display: block;
+  font-family: var(--sans);
+  font-size: 16px;
+  color: var(--ink);
+  background: none;
+  border: none;
+  padding: 14px 16px;
+  border-radius: var(--r-sm);
+  cursor: pointer;
+  text-align: left;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+.mobile-nav-panel a:hover {
+  background: var(--green-glow);
+  color: var(--green);
+}
+.mobile-nav-panel .theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--sans);
+  font-size: 16px;
+  color: var(--ink);
+  background: none;
+  border: none;
+  padding: 14px 16px;
+  border-radius: var(--r-sm);
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  transition: all var(--transition-fast);
+}
+.mobile-nav-panel .theme-toggle:hover {
+  background: var(--green-glow);
+  color: var(--green);
+}
+.mobile-nav-panel .theme-toggle svg { width: 20px; height: 20px; }
+
+/* Brand link — strip Link defaults */
+.brand { text-decoration: none; color: inherit; }
+
+/* Hero CTAs wrapped in Link: keep button look */
+.hero-cta a,
+.share-row a,
+.section-head a,
+.text-center a,
+.modal-cta a {
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.fav-chip a { color: var(--green); text-decoration: none; }
+.fav-chip a:hover { color: var(--saffron); }
+
+.ms-empty a, .journal-empty a { color: var(--green); }
+
+/* ---- Citation rendering (engine ResolvedCitation shape) ---- */
+.ind-cites, .cite { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; min-width: 0; }
+.cite { font-size: 12px; color: var(--ink-soft); align-items: center; gap: 6px; max-width: 100%; }
+.cite > span:last-of-type { flex: 1 1 auto; min-width: 0; overflow-wrap: break-word; }
+.cite .src-title { color: var(--ink); font-weight: 500; }
+.cite .pd { font-size: 9px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--green-2); border: 1px solid rgba(47,106,77,0.3); border-radius: var(--r-pill); padding: 1px 7px; margin-left: 4px; font-weight: 600; }
+.cite .cite-note { color: var(--ink-faint); font-style: italic; margin-left: 4px; }
+
+/* Je-header: make mood/energy sit on the right side */
+.je-header { gap: 12px; flex-wrap: wrap; }
+.je-energy { margin-left: auto; }
+
+/* The mobile-nav container needs to allow clicks when open */
+.mobile-nav.open { pointer-events: auto; }
+.mobile-nav button { width: auto; }
+
+/* Bundle: search count badge */
+.searchbar .search-kbd { pointer-events: none; user-select: none; }
+
+/* Disclose button text alignment */
+.disclose { font-weight: 500; }
+.disclose[aria-expanded="true"]::after { content: ""; }
+
+/* Result chain nodes — make sure they wrap nicely */
+.chain .node { white-space: nowrap; }
+
+/* Library filter chips empty placeholder */
+.lib-filters:empty { display: none; }
+
+/* Mint-size tier + kind pills spacing on result cards */
+.sol-card .kind-pill { margin-bottom: 10px; }
+

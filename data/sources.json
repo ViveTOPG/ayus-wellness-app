@@ -1,0 +1,56 @@
+[
+  {
+    "id": "charaka",
+    "title": "Charaka Saṃhitā",
+    "kind": "classical",
+    "author": "Agniveśa, redacted by Charaka",
+    "translation": "Public-domain English translations exist (e.g. A.C. Kaviratna & P. Sharma, 1890s; later editions)",
+    "public_domain": true,
+    "note": "Foundational text of Ayurvedic internal medicine (kāyacikitsā). Locators given at section (sthāna) level; exact verse numbers should be confirmed against a specific edition during expansion."
+  },
+  {
+    "id": "sushruta",
+    "title": "Suśruta Saṃhitā",
+    "kind": "classical",
+    "author": "Suśruta",
+    "translation": "K.K. Bhishagratna English translation (1907-1916), public domain",
+    "public_domain": true,
+    "note": "Foundational text emphasising surgery (śalya) and materia medica."
+  },
+  {
+    "id": "ashtanga_hridaya",
+    "title": "Aṣṭāṅga Hṛdaya",
+    "kind": "classical",
+    "author": "Vāgbhaṭa",
+    "translation": "Multiple English translations available",
+    "public_domain": true,
+    "note": "Concise synthesis of Charaka and Suśruta; widely used reference."
+  },
+  {
+    "id": "bhavaprakasha",
+    "title": "Bhāvaprakāśa Nighaṇṭu",
+    "kind": "materia_medica",
+    "author": "Bhāvamiśra",
+    "translation": "Standard materia medica (nighaṇṭu) of single drugs",
+    "public_domain": true,
+    "note": "Classical reference for the properties (dravyaguṇa) of individual herbs."
+  },
+  {
+    "id": "api",
+    "title": "The Ayurvedic Pharmacopoeia of India (API)",
+    "kind": "materia_medica",
+    "author": "Govt. of India, Ministry of AYUSH",
+    "translation": null,
+    "public_domain": false,
+    "note": "Official Indian government standard for identity, properties and dosage of Ayurvedic drugs. Used here as a properties/dosage reference; consult the official volumes for authoritative detail."
+  },
+  {
+    "id": "modern_research",
+    "title": "Modern peer-reviewed research (reference to be attached)",
+    "kind": "modern_research",
+    "author": null,
+    "translation": null,
+    "public_domain": false,
+    "note": "PLACEHOLDER. Where an indication is tiered 'preliminary' or 'clinical', the specific study (journal, year, DOI) must be attached here. Until then the citation carries requires_verification = true so the engine never overstates the evidence."
+  }
+]

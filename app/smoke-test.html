@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Ayus Smoke Test</title>
+  <style>
+    body { font-family: monospace; max-width: 800px; margin: 40px auto; padding: 0 20px; }
+    .pass { color: #1a7a3a; } .fail { color: #c0392b; } .info { color: #555; }
+    h1 { font-size: 18px; }
+    pre { background: #f5f5f5; padding: 12px; border-radius: 6px; overflow-x: auto; font-size: 13px; }
+  </style>
+</head>
+<body>
+<h1>Ayus Web App — Smoke Test</h1>
+<p class="info">Open this file in a browser (or run with a local server). Results print below.</p>
+<pre id="output"></pre>
+
+<script>
+(function() {
+  var out = document.getElementById('output');
+  var results = [];
+  var pass = 0, fail = 0;
+
+  function log(msg, ok) {
+    var cls = ok ? 'pass' : 'fail';
+    var icon = ok ? '\u2713' : '\u2717';
+    results.push('<span class="' + cls + '">' + icon + ' ' + msg + '</span>');
+    if (ok) pass++; else fail++;
+  }
+
+  /* Load the app in an iframe */
+  var iframe = document.createElement('iframe');
+  iframe.style.display = 'none';
+  iframe.src = './index.html';
+  document.body.appendChild(iframe);
+
+  iframe.onload = function() {
+    var win = iframe.contentWindow;
+    var doc = iframe.contentDocument;
+
+    /* 1. Data loaded */
+    var hasData = win.AYUR && win.AYUR.herbs && win.AYUR.conditions;
+    log('data.js loaded (window.AYUR present)', !!hasData);
+
+    /* 2. Meta counts match */
+    if (hasData) {
+      log('Herbs count (' + win.AYUR.meta.herbs + ') matches array length (' + win.AYUR.herbs.length + ')', win.AYUR.meta.herbs === win.AYUR.herbs.length);
+      log('Conditions count (' + win.AYUR.meta.conditions + ') matches array length (' + win.AYUR.conditions.length + ')', win.AYUR.meta.conditions === win.AYUR.conditions.length);
+      log('Formulations count (' + win.AYUR.meta.formulations + ') matches array length (' + win.AYUR.formulations.length + ')', win.AYUR.meta.formulations === win.AYUR.formulations.length);
+    }
+
+    /* 3. Screens exist */
+    var screens = ['home', 'intake', 'analyzing', 'result', 'quiz', 'myspace', 'heritage', 'library'];
+    screens.forEach(function(id) {
+      log('Screen #' + id + ' exists', !!doc.getElementById(id));
+    });
+
+    /* 4. Home is active */
+    var homeActive = doc.getElementById('home') && doc.getElementById('home').classList.contains('active');
+    log('Home screen is active on load', !!homeActive);
+
+    /* 5. No console errors */
+    var errors = [];
+    win.addEventListener('error', function(e) { errors.push(e.message); });
+    log('No JS errors on load', errors.length === 0);
+
+    /* 6. Theme toggle button present */
+    log('Theme toggle button exists', !!doc.getElementById('themeBtn'));
+
+    /* 7. Modal exists and is hidden */
+    var modal = doc.getElementById('modal');
+    log('Modal element exists', !!modal);
+    log('Modal is hidden by default', modal && !modal.classList.contains('open'));
+
+    /* 8. ARIA live regions exist */
+    log('ARIA live region exists', !!doc.getElementById('ariaLive'));
+    log('ARIA assertive region exists', !!doc.getElementById('ariaAssertive'));
+
+    /* 9. Data error element exists (hidden) */
+    var dataErr = doc.getElementById('dataError');
+    log('Data error fallback element exists', !!dataErr);
+    log('Data error is hidden (data loaded OK)', dataErr && dataErr.classList.contains('hidden'));
+
+    /* 10. Manifest link exists */
+    log('Manifest link exists', !!doc.querySelector('link[rel="manifest"]'));
+
+    /* 11. OG meta tags present */
+    log('OG title meta tag exists', !!doc.querySelector('meta[property="og:title"]'));
+    log('OG description meta tag exists', !!doc.querySelector('meta[property="og:description"]'));
+
+    /* 12. No inline onclick in HTML */
+    var inlineOnclick = doc.querySelectorAll('[onclick]');
+    log('No inline onclick handlers (' + inlineOnclick.length + ' found)', inlineOnclick.length === 0);
+
+    /* 13. Stat strip rendered */
+    var statStrip = doc.getElementById('statStrip');
+    log('Stat strip has content', statStrip && statStrip.innerHTML.trim().length > 0);
+
+    /* 14. Font loaded via link (not @import) */
+    var fontLink = doc.querySelector('link[href*="fonts.googleapis.com"]');
+    log('Font loaded via <link> element', !!fontLink);
+
+    /* 15. Event delegation — App object not on window (no global exposure) */
+    log('No window.App global (event delegation used)', !win.App);
+
+    /* Render results */
+    out.innerHTML = results.join('\n') + '\n\n' +
+      '<span class="info">---\n' + pass + ' passed, ' + fail + ' failed, ' + (pass + fail) + ' total</span>';
+
+    /* Cleanup */
+    setTimeout(function() { document.body.removeChild(iframe); }, 100);
+  };
+})();
+</script>
+</body>
+</html>

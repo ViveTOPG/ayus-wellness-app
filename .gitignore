@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnpm-store/
+
+# Next.js
+web/.next/
+web/out/
+web/.turbo/
+
+# Local data / embeddings (large or generated)
+data/chroma_db/
+data/*.db
+*.sqlite3
+
+# Logs & local server
+*.log
+app/server.log
+app/server.err.log
+
+# Backups / editor
+*.bak
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# OS / misc
+desktop.ini
+.cache/
+coverage/
+dist/
+build/
+
+# Local agent / IDE state
+.claude/
+
+# Optional CI (add when token has workflow scope)
+.github/workflows/

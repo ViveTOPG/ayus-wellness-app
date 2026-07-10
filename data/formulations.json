@@ -1,0 +1,773 @@
+[
+  {
+    "id": "triphala",
+    "name": "Triphala",
+    "sanskrit_name": "Triphalā",
+    "type": "churna (powder)",
+    "ingredients": [
+      "amalaki",
+      "bibhitaki",
+      "haritaki"
+    ],
+    "description": "The 'three fruits' — a balanced, tridoshic combination of Amalaki, Bibhitaki and Haritaki. One of the most widely used Ayurvedic formulas, valued as both a gentle bowel regulator and a rasāyana (rejuvenative). Equal parts of the three fruits balance each other across all three doshas.",
+    "indications": [
+      {
+        "condition_id": "constipation",
+        "rationale": "Mildly laxative and 'anulomana' (restores downward movement) without harsh purging; Haritaki in particular gently relieves Vata-type constipation while the blend tones the gut.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "ashtanga_hridaya",
+            "locator": "Triphalā uses",
+            "requires_verification": true
+          },
+          {
+            "source_id": "modern_research",
+            "locator": "Preliminary studies on bowel regularity",
+            "requires_verification": true
+          }
+        ]
+      },
+      {
+        "condition_id": "agnimandya",
+        "rationale": "Cleanses ama and supports digestion and assimilation over time; a classic daily rasāyana for gut health.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "charaka",
+            "locator": "Rasāyana / Triphalā",
+            "requires_verification": true
+          }
+        ]
+      },
+      {
+        "condition_id": "skin_health",
+        "rationale": "By supporting clean digestion and elimination (reducing ama), Triphala is traditionally used to indirectly support clear skin.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "bhavaprakasha",
+            "locator": "Triphalā",
+            "requires_verification": true
+          }
+        ]
+      },
+      {
+        "condition_id": "eye_health",
+        "rationale": "Triphala is the canonical netrya/chakshushya (eye-supporting) formula in Ayurveda, and that support is held to be structural to its three fruits rather than incidental. Two of the three components traditionally carry the explicit karma chakshushya: Amalaki and Bibhitaki. By dravyaguna first principles the rationale is Pitta-centred — the eye (seat of alochaka pitta) is treated as a Pitta-dominant organ, so heat/aggravated Pitta is its chief disturber. Amalaki is shita (cooling) in virya and a sour-predominant rasayana that is pitta-shamana and vayasthapana, making it the lead drug that cools and nourishes the eye while resisting age-related degeneration. The predominantly kashaya (astringent) rasa of the blend (strongest in Haritaki and Bibhitaki) is toning/shoshana, traditionally used to firm tissue and reduce excess irritation/secretion. Because the three fruits are taken in equal parts and are regarded as tridosha-balancing, the formula is gentle enough for sustained daily rasayana use, and Triphala's gut-cleansing, ama-reducing action is held to support the eye indirectly by keeping srotas clear. Classically this is described both internally (Triphala with ghee/honey; the Triphala-ghrita preparation) and externally as a netra-dhavana (Triphala-decoction eye wash) for ocular comfort. This rests on classical/materia-medica usage, NOT on controlled human trials.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "ashtanga_hridaya",
+            "locator": "Uttara-sthana, netra-roga / Triphala netra use (Triphala-ghrita, netra-dhavana)",
+            "requires_verification": true,
+            "note": "Triphala is named as netrya/chakshushya and used internally and as an eye wash in the ophthalmology section; confirm exact chapter/verse against a specific edition before relying on it."
+          },
+          {
+            "source_id": "bhavaprakasha",
+            "locator": "Haritakyadi varga — Amalaki and Bibhitaki (chakshushya karma)",
+            "requires_verification": true,
+            "note": "Materia medica lists chakshushya (eye-supporting) among the actions of the Triphala fruits Amalaki and Bibhitaki, supporting the component-level rationale; confirm exact entry/edition."
+          },
+          {
+            "source_id": "modern_research",
+            "locator": "Preliminary/in-vitro and small-trial reports on Triphala and ocular-surface/antioxidant effects",
+            "requires_verification": true
+          }
+        ]
+      },
+      {
+        "condition_id": "weight_management",
+        "rationale": "Dravyaguna first principles: medoroga/sthaulya is fundamentally a Kapha-medas excess driven by mandagni (weak fire) with accumulating ama and kleda. Triphala (Amalaki + Bibhitaki + Haritaki) suits this pattern: its predominant Kashaya (astringent) rasa with Laghu-Ruksha guna is drying and de-bulking against Kapha and medas (lekhana/medohara action), while Haritaki and Bibhitaki contribute Ushna virya and dipana-pachana to rekindle agni and digest ama. Combined with gentle anulomana (koshtha-shuddhi), this keeps srotas clear and elimination moving rather than purging harshly. So Triphala does not 'burn fat' directly; it supports a medoroga lifestyle by tonifying digestion, reducing ama/kleda, and lightening Kapha-medas as an adjunct to diet and activity. The modern human evidence is limited and not independently verified here, so it is tiered 'preliminary': small or uncontrolled human data should be treated as suggestive only, and the effect framed as modest and supportive, not a treatment for obesity.",
+        "evidence_tier": "preliminary",
+        "citations": [
+          {
+            "source_id": "charaka",
+            "locator": "Sthaulya / medoroga (Sutrasthana 21, 'ati-sthula'); lekhana and medohara dravyas",
+            "requires_verification": true
+          },
+          {
+            "source_id": "bhavaprakasha",
+            "locator": "Triphala / Haritaki, Bibhitaki, Amalaki — kashaya rasa, ruksha-laghu guna, kapha-medohara",
+            "requires_verification": true
+          },
+          {
+            "source_id": "modern_research",
+            "locator": "Modern human research on Triphala and body weight / waist circumference — specific verified reference (journal, year, DOI) to be attached; evidence currently limited and unverified",
+            "requires_verification": true
+          }
+        ]
+      }
+    ],
+    "typical_dosage": "~3-5 g of powder with warm water at night, or as tablets per label. Start low.",
+    "safety": [
+      "May cause loose stools or cramping if the dose is too high — reduce the amount",
+      "Avoid in pregnancy unless advised (Haritaki can be strongly downward-moving)",
+      "May affect absorption of some medicines taken at the same time — separate by ~2 hours"
+    ],
+    "citations": [
+      {
+        "source_id": "ashtanga_hridaya",
+        "locator": "Triphalā",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "trikatu",
+    "name": "Trikatu",
+    "sanskrit_name": "Trikaṭu",
+    "type": "churna (powder)",
+    "ingredients": [
+      "ginger",
+      "pippali",
+      "black_pepper"
+    ],
+    "description": "The 'three pungents' — dried Ginger, Long pepper (Pippali) and Black pepper in equal parts. A strongly warming digestive and metabolic stimulant used to kindle agni, clear Kapha and ama, and enhance the absorption of other herbs.",
+    "indications": [
+      {
+        "condition_id": "agnimandya",
+        "rationale": "Three powerful dipana-pachana spices combined; strongly rekindles a sluggish digestive fire and clears ama and Kapha.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "charaka",
+            "locator": "dipana-pachana yogas",
+            "requires_verification": true
+          }
+        ]
+      },
+      {
+        "condition_id": "cold_cough",
+        "rationale": "Warming and drying; helps break up and clear Kapha-type congestion in the chest and sinuses.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "bhavaprakasha",
+            "locator": "Trikaṭu",
+            "requires_verification": true
+          }
+        ]
+      }
+    ],
+    "typical_dosage": "A small pinch to ~1-2 g with honey before meals, short courses.",
+    "safety": [
+      "Strongly heating — can aggravate Pitta, acidity, gastritis or ulcers; avoid if you run hot or have reflux",
+      "The peppers (piperine) significantly enhance drug absorption — can raise blood levels of medicines; check with a professional",
+      "Avoid medicinal doses in pregnancy",
+      "Not for long-term continuous use"
+    ],
+    "citations": [
+      {
+        "source_id": "bhavaprakasha",
+        "locator": "Trikaṭu",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "sitopaladi",
+    "name": "Sitopaladi Churna",
+    "sanskrit_name": "Sitopalādi cūrṇa",
+    "type": "churna (powder)",
+    "ingredients": [
+      "Rock sugar (Sitopala)",
+      "Vamsha lochana (bamboo silica)",
+      "pippali",
+      "cardamom",
+      "Cinnamon (Tvak)"
+    ],
+    "description": "A classic, gentle respiratory formula combining rock sugar, bamboo silica, Long pepper, Cardamom and Cinnamon. Soothing yet warming, it is the household go-to for coughs and respiratory discomfort, suitable across age groups in appropriate doses.",
+    "indications": [
+      {
+        "condition_id": "cold_cough",
+        "rationale": "Balances soothing/cooling (rock sugar, bamboo) with warming, Kapha-clearing spices (Pippali, cinnamon) to ease both dry and productive cough and soothe the airways.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "bhavaprakasha",
+            "locator": "Sitopalādi",
+            "requires_verification": true
+          }
+        ]
+      },
+      {
+        "condition_id": "respiratory_support",
+        "rationale": "Balances soothing, cooling ingredients (rock sugar, bamboo silica) with warming, Kapha-clearing spices (Pippali, cinnamon, cardamom) to ease both dry and productive cough and support the airways — the canonical household respiratory churna.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "bhavaprakasha",
+            "locator": "Sitopaladi curna",
+            "requires_verification": true
+          }
+        ]
+      }
+    ],
+    "typical_dosage": "~1-3 g with honey or ghee, 2-3 times daily during symptoms (lower for children, per guidance).",
+    "safety": [
+      "Generally gentle and well tolerated",
+      "Contains sugar — note if diabetic",
+      "Use age-appropriate doses for children and confirm honey is appropriate (not for infants under 1 year)"
+    ],
+    "citations": [
+      {
+        "source_id": "bhavaprakasha",
+        "locator": "Sitopalādi cūrṇa",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "chyawanprash",
+    "name": "Chyawanprash",
+    "sanskrit_name": "Cyavanaprāśa",
+    "type": "avaleha (herbal jam)",
+    "ingredients": [
+      "amalaki",
+      "Ghee & honey",
+      "Pippali, cardamom, cinnamon and many supporting herbs"
+    ],
+    "description": "A flagship rasāyana: a sweet herbal jam built on a base of Amalaki and dozens of supporting herbs in ghee and honey. Traditionally taken daily, especially in colder months, to support strength, immunity and respiratory health across all ages.",
+    "indications": [
+      {
+        "condition_id": "low_immunity",
+        "rationale": "A comprehensive rasāyana centred on vitamin-C-rich Amalaki; traditionally builds ojas, strength and resilience, with a focus on the respiratory system.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "charaka",
+            "locator": "Cyavanaprāśa rasāyana (Cikitsāsthāna 1)",
+            "requires_verification": true
+          },
+          {
+            "source_id": "modern_research",
+            "locator": "Preliminary immunomodulatory studies",
+            "requires_verification": true
+          }
+        ]
+      },
+      {
+        "condition_id": "fatigue",
+        "rationale": "A nourishing, building tonic traditionally used to restore strength and vitality, particularly during convalescence or seasonal change.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "charaka",
+            "locator": "Rasāyana",
+            "requires_verification": true
+          }
+        ]
+      },
+      {
+        "condition_id": "vitality",
+        "rationale": "The flagship rasāyana: an Amalaki-based avaleha traditionally taken daily to build ojas, strength and stamina — the classical foundation for sustained vigour and vitality across all ages.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "charaka",
+            "locator": "Cikitsāsthāna 1 (Cyavanaprāśa rasāyana)",
+            "requires_verification": true
+          }
+        ]
+      }
+    ],
+    "typical_dosage": "~1-2 teaspoons daily, often with warm milk, in the morning.",
+    "safety": [
+      "Contains sugar/honey — note if diabetic (sugar-free versions exist)",
+      "Quality varies between brands; some contain heating herbs that may not suit everyone in summer or with Pitta",
+      "Confirm ingredients if pregnant or giving to young children"
+    ],
+    "citations": [
+      {
+        "source_id": "charaka",
+        "locator": "Cyavanaprāśa",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "hingvashtak",
+    "name": "Hingvashtak Churna",
+    "sanskrit_name": "Hiṅgvaṣṭaka cūrṇa",
+    "type": "churna (powder)",
+    "ingredients": [
+      "Asafoetida (Hing, Ferula assa-foetida)",
+      "ginger",
+      "black_pepper",
+      "pippali",
+      "ajwain",
+      "cumin",
+      "Black cumin (Kala jeera)",
+      "Rock salt (Saindhava lavana)"
+    ],
+    "description": "The 'eight-ingredient asafoetida powder' — a warming digestive blend taken with the first bites of food. Built around hing (asafoetida) and pungent digestive spices to kindle agni, relieve gas and bloating, and ease the downward movement of Vata.",
+    "indications": [
+      {
+        "condition_id": "agnimandya",
+        "rationale": "Combines several dipana-pachana spices with asafoetida (a potent carminative) to strongly relieve gas, bloating and sluggish digestion, especially Vata-type.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "bhavaprakasha",
+            "locator": "Hiṅgvaṣṭaka",
+            "requires_verification": true
+          }
+        ]
+      }
+    ],
+    "typical_dosage": "~2-3 g mixed into the first portion of a meal (often with ghee or warm water).",
+    "safety": [
+      "Strongly heating — can aggravate Pitta, acidity, gastritis or ulcers",
+      "Contains salt — note if on a salt-restricted diet or with high blood pressure",
+      "The peppers enhance drug absorption — caution alongside medication",
+      "Avoid medicinal doses in pregnancy"
+    ],
+    "citations": [
+      {
+        "source_id": "bhavaprakasha",
+        "locator": "Hiṅgvaṣṭaka cūrṇa",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "avipattikar",
+    "name": "Avipattikar Churna",
+    "sanskrit_name": "Avipattikara cūrṇa",
+    "type": "churna (powder)",
+    "ingredients": [
+      "haritaki",
+      "ginger",
+      "clove",
+      "cardamom",
+      "pippali",
+      "amalaki",
+      "Trivrit (Operculina turpethum)",
+      "Sugar (Sharkara)"
+    ],
+    "description": "A classic formula for excess Pitta in the digestive tract. It pacifies acidity while gently promoting downward movement and elimination, helping clear heat and sour 'amlapitta' from the gut.",
+    "indications": [
+      {
+        "condition_id": "acidity",
+        "rationale": "Specifically formulated for amlapitta (hyperacidity): cooling and Pitta-pacifying ingredients soothe burning, while a mild laxative action helps clear excess Pitta downward.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "bhavaprakasha",
+            "locator": "Avipattikara cūrṇa",
+            "requires_verification": true
+          }
+        ]
+      }
+    ],
+    "typical_dosage": "~3-5 g with water, typically before or after meals, per guidance.",
+    "safety": [
+      "Contains a mild laxative (trivrit) — may loosen stools; reduce the dose if so",
+      "Contains sugar — note if diabetic",
+      "Avoid in pregnancy unless advised",
+      "Persistent acidity needs medical assessment (see the acidity red flags)"
+    ],
+    "citations": [
+      {
+        "source_id": "bhavaprakasha",
+        "locator": "Avipattikara cūrṇa",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "triphala_guggulu",
+    "name": "Triphala Guggulu",
+    "sanskrit_name": "Triphalā Guggulu",
+    "type": "vati (tablet)",
+    "ingredients": [
+      "haritaki",
+      "bibhitaki",
+      "amalaki",
+      "guggulu",
+      "pippali"
+    ],
+    "description": "Triphala combined with purified Guggulu resin and a little Pippali. A warming, anti-inflammatory, fat-scraping (lekhana) formula traditionally used for joint comfort and for clearing ama, often in conditions involving stiffness and swelling.",
+    "indications": [
+      {
+        "condition_id": "joint_discomfort",
+        "rationale": "Pairs Triphala's gut-cleansing, ama-reducing action with Guggulu's warming, anti-inflammatory 'amavatahara' effect on the joints.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "charaka",
+            "locator": "Guggulu yogas / āmavāta",
+            "requires_verification": true
+          }
+        ]
+      }
+    ],
+    "typical_dosage": "As tablets per practitioner guidance; use only purified (shodhita) guggulu.",
+    "safety": [
+      "Carries Guggulu's cautions: may cause stomach upset, may interact with thyroid, blood-thinning and other medicines",
+      "Avoid in pregnancy",
+      "Get persistent or severe joint problems properly diagnosed"
+    ],
+    "citations": [
+      {
+        "source_id": "bhavaprakasha",
+        "locator": "Triphalā Guggulu",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "dashamoola",
+    "name": "Dashamoola",
+    "sanskrit_name": "Daśamūla",
+    "type": "kwath (decoction)",
+    "ingredients": [
+      "Bilva (Aegle marmelos) root",
+      "Agnimantha (Premna spp.) root",
+      "Shyonaka (Oroxylum indicum) root",
+      "Gambhari / Kashmari (Gmelina arborea) root",
+      "Patala (Stereospermum suaveolens) root",
+      "Shalaparni (Desmodium gangeticum) root",
+      "Prishniparni (Uraria picta) root",
+      "Brihati (Solanum indicum) root",
+      "Kantakari (Solanum xanthocarpum / virginianum) root",
+      "Gokshura (Tribulus terrestris)"
+    ],
+    "description": "Daśamūla, the 'ten roots', is a classical group made up of five tree roots (bṛhat pañcamūla — Bilva, Agnimantha, Shyonaka, Gambhari, Patala) and five smaller/herbaceous roots (laghu pañcamūla — Shalaparni, Prishniparni, Brihati, Kantakari, and, per common pharmacopoeial usage, Gokshura). Together they form one of Ayurveda's most cited Vata-pacifying and śothahara (swelling/inflammation-moderating) groups. It is usually prepared as a kwath (decoction) of the coarse root powder boiled and reduced in water, and is traditionally used to settle aggravated Vata, ease stiffness and discomfort, support the breath and chest, and rebuild strength during general or POSTPARTUM debility (classically through Dashamoola-based preparations such as Dashamularishta, used in sūtikā paricarya — post-delivery care). The blend is largely warming (uṣṇa) and grounding; because two of its herbaceous roots are Solanum species (Kantakari, Brihati) and it includes Gokshura, it should be regarded as a potent compound rather than a gentle everyday tonic, and is most often used as a base within larger Vata formulas.",
+    "typical_dosage": "As a kwath (decoction): roughly 30-60 ml of the prepared decoction once or twice daily, or as directed; classically the coarse powder is boiled in water and reduced before straining. Best taken under qualified guidance, especially in convalescence. Fermented liquid forms (e.g. Dashamularishta) are dosed differently per their label (commonly 12-24 ml diluted with water after food).",
+    "indications": [
+      {
+        "condition_id": "respiratory_support",
+        "rationale": "Two of the herbaceous roots (Kantakari and Brihati) are classically described as kāsa-śvāsahara (cough/breath-easing) drugs, and the warming decoction is traditionally used to ease bronchial tightness and support comfortable breathing. As a whole-blend application this is best treated as traditional wellness support rather than a discrete classical Dashamoola indication. Educational respiratory wellness support only — not a treatment for asthma, COPD, or any respiratory disease.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "charaka",
+            "locator": "Kāsa / śvāsa context for constituent Solanum roots (Cikitsāsthāna)",
+            "requires_verification": true
+          },
+          {
+            "source_id": "ashtanga_hridaya",
+            "locator": "Daśamūla group; kāsa-śvāsa usage",
+            "requires_verification": true
+          }
+        ]
+      },
+      {
+        "condition_id": "joint_discomfort",
+        "rationale": "Daśamūla is a principal Vata-pacifying and śothahara group; the warming roots are traditionally used for stiffness, aches and the discomfort of Vata- and āmavāta-type joint complaints, and it is a common base in joint formulas. The vātahara/śothahara group attribution is genuinely classical, but its application to ongoing joint discomfort as commonly marketed is a traditional extrapolation. Educational joint-comfort support only — not a treatment for arthritis or any joint disease.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "charaka",
+            "locator": "Daśamūla as vātahara / śothahara group (Cikitsāsthāna / Sūtrasthāna gaṇa context)",
+            "requires_verification": true
+          },
+          {
+            "source_id": "sushruta",
+            "locator": "Pañcamūla / Daśamūla in Vata management",
+            "requires_verification": true
+          }
+        ]
+      },
+      {
+        "condition_id": "fatigue",
+        "rationale": "Daśamūla-based preparations (notably Dashamularishta) are traditionally given as a strengthening, restorative tonic during general weakness and postpartum recovery (sūtikā paricarya), to support return of appetite and energy. Educational low-energy/recovery support only.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "bhavaprakasha",
+            "locator": "Daśamūla / Daśamūlāriṣṭa (restorative / sūtikā use)",
+            "requires_verification": true
+          },
+          {
+            "source_id": "modern_research",
+            "locator": "No specific peer-reviewed clinical trial identified for this claim; cited only as a placeholder — must be replaced with a verifiable reference before any preliminary-evidence claim is made",
+            "note": "Placeholder, not a real citation — do not present as evidence",
+            "requires_verification": true
+          }
+        ]
+      }
+    ],
+    "safety": [
+      "Educational information only — not a substitute for professional diagnosis or care; persistent or severe breathing problems, joint disease, or unexplained fatigue need medical assessment.",
+      "Warming/potent blend: contains two Solanum species (Kantakari — Solanum xanthocarpum/virginianum; Brihati — Solanum indicum) which carry steroidal-alkaloid constituents (e.g. solasodine type). Avoid high or prolonged self-dosing; large or extended doses may aggravate Pitta or feel heating in those who already run hot.",
+      "Acidity / heartburn / gastritis / peptic ulcer: the heating nature may worsen these — use cautiously and stop if burning or reflux occurs.",
+      "Pregnancy: Dashamoola (and Dashamularishta) is classically a POSTPARTUM formula, not an antenatal one; several constituents are heating/potent. Do not self-prescribe in pregnancy — use only under a qualified practitioner's direction. Postpartum and breastfeeding use should likewise be practitioner-guided.",
+      "Children and the elderly: use only under qualified guidance and at adjusted doses.",
+      "Interactions — check with a clinician before regular use if you take: antidiabetic medication or insulin (Gokshura may influence blood sugar, and arishta forms add sugar); diuretics or have kidney concerns (Gokshura has a diuretic action); blood-pressure medication; sedatives or other CNS-active drugs; or any prescription medicine for a chronic condition.",
+      "Fermented liquid forms (e.g. Dashamularishta) contain a small amount of self-generated alcohol plus added sugar — avoid or seek advice if you are avoiding alcohol, are pregnant/breastfeeding, are diabetic, are giving it to children, or have liver disease.",
+      "Ingredient identity varies widely between brands: some 'ten root' products substitute species (e.g. Gokshura/Punarnava or Solanum substitutions) and root material is often adulterated — buy only from reputable, pharmacopoeially tested sources.",
+      "Discontinue and seek advice if you notice digestive upset, heartburn, palpitations, or any adverse reaction."
+    ],
+    "citations": [
+      {
+        "source_id": "charaka",
+        "locator": "Daśamūla group (bṛhat + laghu pañcamūla); vātahara / śothahara contexts",
+        "requires_verification": true
+      },
+      {
+        "source_id": "sushruta",
+        "locator": "Pañcamūla / Daśamūla in materia medica and Vata management",
+        "requires_verification": true
+      },
+      {
+        "source_id": "ashtanga_hridaya",
+        "locator": "Daśamūla as a standard gaṇa (group)",
+        "requires_verification": true
+      },
+      {
+        "source_id": "bhavaprakasha",
+        "locator": "Daśamūla and Daśamūlāriṣṭa",
+        "requires_verification": true
+      },
+      {
+        "source_id": "api",
+        "locator": "Ayurvedic Pharmacopoeia of India — identity and standards for Dashamoola constituent roots",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "talisadi",
+    "name": "Talisadi Churna",
+    "sanskrit_name": "Tāliśādi cūrṇa",
+    "type": "churna (powder)",
+    "ingredients": [
+      "Talisapatra (Abies webbiana / spectabilis leaf)",
+      "black_pepper",
+      "pippali",
+      "ginger",
+      "Vamsha lochana (bamboo silica)",
+      "cardamom",
+      "Cinnamon (Tvak)",
+      "Rock sugar (Sitopala)"
+    ],
+    "description": "A classical Talisapatra-based respiratory and digestive powder, closely related to Sitopaladi but built around Talisapatra (silver fir leaf) with the three pungents (Trikatu-like spices — black pepper, Pippali, ginger), bamboo silica, cardamom, cinnamon and a large proportion of rock sugar. The graded proportions (traditionally increasing from Talisapatra up through the sugar) balance warming, Kapha-clearing, expectorant spices against soothing, demulcent sweet ingredients. Traditionally taken with honey or ghee for cough, congestion and weak digestion (it is classed among the dipana-pachana and kasahara yogas). This is supportive wellness use, not a treatment for any lung disease.",
+    "typical_dosage": "~1-3 g of powder with honey or ghee, 2-3 times daily during symptoms; lower, age-appropriate doses for children per guidance. Take short courses, not continuously.",
+    "safety": [
+      "Contains a high proportion of rock sugar — note if you are diabetic or watching blood sugar.",
+      "Warming, pungent spices (black pepper, Pippali, ginger, cinnamon) can aggravate Pitta, acidity, gastritis or reflux in sensitive people — reduce or avoid if you run hot or have an irritated/ulcerated gut.",
+      "Contains TWO peppers (black pepper and Pippali); their piperine can significantly enhance the absorption of some medicines, potentially raising their blood levels — separate from medication by a couple of hours and check with a professional, especially if on prescription drugs.",
+      "Use age-appropriate doses for children and confirm honey is appropriate — never give honey to infants under 1 year.",
+      "Avoid medicinal doses in pregnancy unless advised by a qualified practitioner.",
+      "Not intended for long-term continuous use — it is a warming, pungent blend best used in short courses during symptoms.",
+      "Persistent, severe or worsening cough or breathlessness, fever, or coughing up blood needs medical assessment — this is supportive only, not a treatment for asthma, pneumonia or other lung disease."
+    ],
+    "indications": [
+      {
+        "condition_id": "cold_cough",
+        "rationale": "A classic kasahara (anti-cough) formula: warming, expectorant spices (black pepper, Pippali, ginger, cinnamon) help loosen and clear Kapha-type congestion, while bamboo silica, cardamom and rock sugar soothe the throat and airways, making it traditionally used for both productive and irritating cough and for everyday chest/sinus congestion.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "bhavaprakasha",
+            "locator": "Tāliśādi cūrṇa",
+            "requires_verification": true,
+            "note": "Talisadi is most fully attested in later compendia (e.g. Bhaishajya Ratnavali), which is not among this dataset's source_ids; cited to the nearest available materia-medica/classical source pending exact verse confirmation."
+          },
+          {
+            "source_id": "ashtanga_hridaya",
+            "locator": "kāsa (cough) cikitsā yogas",
+            "requires_verification": true
+          }
+        ]
+      },
+      {
+        "condition_id": "agnimandya",
+        "rationale": "The pungent Trikatu-like spices (black pepper, Pippali, ginger) plus cardamom and cinnamon act as dipana-pachana agents, kindling a sluggish digestive fire and relieving the loss of appetite that often accompanies Kapha and respiratory complaints.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "bhavaprakasha",
+            "locator": "Tāliśādi cūrṇa — dipana-pachana",
+            "requires_verification": true
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "source_id": "bhavaprakasha",
+        "locator": "Tāliśādi cūrṇa",
+        "requires_verification": true
+      },
+      {
+        "source_id": "ashtanga_hridaya",
+        "locator": "kāsa / śvāsa cikitsā",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "mahasudarshan",
+    "name": "Mahasudarshan Churna",
+    "sanskrit_name": "Mahāsudarśana cūrṇa",
+    "type": "churna (powder)",
+    "ingredients": [
+      "Chiretta (Kirata-tikta, Swertia chirata)",
+      "kalmegh",
+      "haritaki",
+      "bibhitaki",
+      "amalaki",
+      "ginger",
+      "pippali",
+      "black_pepper",
+      "turmeric",
+      "cardamom",
+      "clove"
+    ],
+    "description": "A famously bitter, large multi-herb formula (the classical recipe lists dozens of botanicals) built around intensely bitter herbs such as Chiretta (Kirata-tikta) and Kalmegh, supported by Triphala, warming digestive spices (Trikatu), turmeric and aromatics. Traditionally classed as a tikta (bitter) and pachana (digestive/ama-clearing) formula, it has long been the household 'fever powder' of Ayurveda, used to clear ama and heat, kindle a sluggish agni after illness, and support seasonal resilience. In a modern educational app it is presented as a traditional immune-and-recovery support, not a treatment for any specific infection. Note: the precise multi-herb composition varies between manufacturers; the ingredient list shown here is representative, not exhaustive, and should be confirmed against an official source (e.g. the Ayurvedic Pharmacopoeia of India).",
+    "indications": [
+      {
+        "condition_id": "low_immunity",
+        "rationale": "A bitter, ama-clearing (pachana) and liver-supportive blend centred on Chiretta and Kalmegh, traditionally given during and after febrile illness to clear residual heat and ama, rekindle digestion and support recovery and seasonal resilience. Note this is an interpretive reframing of a classical 'jvarahara' (fever) yoga rather than a directly evidenced immunity claim.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "bhavaprakasha",
+            "locator": "Kirāta-tikta / Bhūnimba (bitter jvarahara dravyas)",
+            "requires_verification": true
+          },
+          {
+            "source_id": "modern_research",
+            "locator": "Preliminary in-vitro/animal immunomodulatory and hepatoprotective signals exist for the single herbs Andrographis (Kalmegh) and Swertia (Chiretta), but no controlled study of the Mahasudarshan formula itself is attached here — treat as unverified single-herb evidence only",
+            "requires_verification": true
+          }
+        ],
+        "note": "Classically a 'jvarahara' (fever-relieving) yoga; reframed here as general resilience/recovery support. Not a substitute for medical assessment of fever."
+      },
+      {
+        "condition_id": "cold_cough",
+        "rationale": "Bitter, drying and mildly warming through its Trikatu and aromatic components; traditionally used to clear ama and Kapha and to support the body during low-grade feverish colds with sluggish digestion.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "ashtanga_hridaya",
+            "locator": "Jvara cikitsā — bitter (tikta) and dīpana-pācana yogas",
+            "requires_verification": true
+          }
+        ]
+      }
+    ],
+    "typical_dosage": "~1-3 g of powder with warm water (sometimes with a little honey), 1-2 times daily, usually in short courses. The taste is extremely bitter; tablet/capsule forms are common for palatability. Use the lowest effective amount and follow product labelling or practitioner guidance.",
+    "safety": [
+      "Very bitter and drying — can be hard on the stomach; may cause nausea or loss of appetite in sensitive people. Take with food or as tablets if needed",
+      "Contains the strongly heating Trikatu spices (ginger, pippali, black pepper) plus clove — can aggravate Pitta, acidity, heartburn, gastritis or ulcers, and may not suit those who run hot; reduce or avoid if these apply",
+      "Fever is a medical sign: high, persistent, recurring or severe fever (or fever with rash, stiff neck, breathlessness, confusion or in infants/elderly) needs prompt medical care — this is a traditional support, not a treatment for infection",
+      "Contains pungent peppers (piperine) which can increase the absorption and blood levels of many medicines — separate from medication and check with a professional",
+      "Bitter, liver-active herbs (Chiretta, Kalmegh) may not suit those with liver disease, gallstones or on hepatically-metabolised drugs without advice; stop and seek care if jaundice, dark urine or marked abdominal pain occur",
+      "Andrographis (Kalmegh) may lower blood sugar and blood pressure and may have mild antiplatelet/immune-stimulating effects — caution with diabetes, blood-pressure or blood-thinning medication, and with autoimmune conditions or immunosuppressants",
+      "Contains turmeric, which can add mild blood-thinning and drug-interaction cautions and may stimulate the gallbladder — caution with blood thinners, before surgery, or with gallstones/bile-duct obstruction",
+      "Avoid in pregnancy and while breastfeeding unless specifically advised (Kalmegh in particular is best avoided in pregnancy and when trying to conceive); not recommended for young children except under qualified guidance",
+      "Choose products tested for heavy metals and correct botanical identity; formulas vary widely between manufacturers"
+    ],
+    "citations": [
+      {
+        "source_id": "bhavaprakasha",
+        "locator": "Bitter jvarahara dravyas (Kirāta-tikta, Bhūnimba) — basis of the Mahāsudarśana group",
+        "requires_verification": true
+      },
+      {
+        "source_id": "ashtanga_hridaya",
+        "locator": "Jvara cikitsā — tikta/pācana fever formulas",
+        "requires_verification": true
+      },
+      {
+        "source_id": "api",
+        "locator": "Mahāsudarśana cūrṇa — composition and dosage (confirm against official volume)",
+        "requires_verification": true
+      }
+    ]
+  },
+  {
+    "id": "nishamalaki",
+    "name": "Nishamalaki",
+    "sanskrit_name": "Niśāmalakī",
+    "type": "churna (powder)",
+    "ingredients": [
+      "turmeric",
+      "amalaki"
+    ],
+    "description": "A simple two-ingredient powder pairing Nisha/Haridra (turmeric) with Amalaki (amla), traditionally used as a daily metabolic and rasayana support. Turmeric is pungent-bitter and heating in potency (ushna virya), light and drying, and acts as a Kapha-and-ama-scraping (lekhana) herb; despite being heating it is classically Pitta-pacifying in ordinary amounts (it does not aggravate Pitta the way a sharply hot spice would). It is traditionally used in the broad 'prameha' category (classical metabolic/urinary disorders). Amalaki is cooling, sour-but-sweet in post-digestive effect, tridoshic and vitamin-C-rich, and is a classic rasayana that balances the blend. The pair is a well-known folk and classical churna taken for general metabolic and blood-sugar wellness. This is a lifestyle wellness blend, not a treatment for diabetes.",
+    "typical_dosage": "~1-3 g of the powder (often roughly equal parts turmeric and amalaki) once or twice daily with warm water, typically before meals or on an empty stomach. Start low and adjust per guidance; keep turmeric within ordinary culinary/low medicinal amounts rather than high-dose extracts.",
+    "indications": [
+      {
+        "condition_id": "blood_sugar",
+        "rationale": "Turmeric (Haridra) is a classically described Kapha-medas-scraping (lekhana) herb used within the broad prameha category, and Amalaki is a cooling rasayana traditionally combined with it to support healthy metabolism. The pair is a long-standing folk and classical churna for metabolic/blood-sugar wellness. Honest evidence note: this is traditional use; the specific turmeric+amla combination has only weak/mixed and largely unverified modern glycemic data, so the claim is held at the traditional tier. This is lifestyle metabolic support, not a substitute for diabetes diagnosis or treatment.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "bhavaprakasha",
+            "locator": "Haridrā (Haritakyādi varga) — pramehaghna / lekhana properties",
+            "requires_verification": true
+          },
+          {
+            "source_id": "charaka",
+            "locator": "Prameha context — Haridrā in metabolic yogas (Cikitsāsthāna, Prameha)",
+            "requires_verification": true
+          },
+          {
+            "source_id": "modern_research",
+            "locator": "PLACEHOLDER — attach a specific RCT/study on curcumin/turmeric (± amla) and glycemic markers (journal, year, DOI); current evidence is weak/mixed",
+            "requires_verification": true
+          }
+        ]
+      },
+      {
+        "condition_id": "liver_wellness",
+        "rationale": "Turmeric is traditionally regarded as a deepana-pachana and 'yakrit'-supporting herb, and Amalaki is a classical rasayana for Pitta and the liver; together they are used as gentle daily support for healthy liver and digestive function. Traditional use only — not a treatment for any liver disease.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "bhavaprakasha",
+            "locator": "Haridrā and Āmalakī — dravyaguṇa",
+            "requires_verification": true
+          }
+        ]
+      },
+      {
+        "condition_id": "skin_health",
+        "rationale": "Turmeric (Haridra) is the classic 'varnya' / 'kushtaghna' blood-and-skin herb, and Amalaki's cooling rasayana action supports a clear complexion; the pair is traditionally used to support healthy skin from within.",
+        "evidence_tier": "traditional",
+        "citations": [
+          {
+            "source_id": "bhavaprakasha",
+            "locator": "Haridrā — varṇya / kuṣṭhaghna; Āmalakī — rasāyana",
+            "requires_verification": true
+          },
+          {
+            "source_id": "sushruta",
+            "locator": "Kuṣṭha / rakta (skin & blood)",
+            "requires_verification": true
+          }
+        ]
+      }
+    ],
+    "safety": [
+      "Educational wellness information only — not a diagnosis, treatment or cure for diabetes. If you have diabetes, prediabetes or any blood-sugar concern, this does not replace medical diagnosis, monitoring or prescribed medication.",
+      "If you take blood-sugar-lowering medication (e.g. metformin, sulfonylureas, insulin), turmeric may add to the effect — monitor closely and consult your doctor to avoid hypoglycemia.",
+      "Turmeric may have a mild blood-thinning effect — use caution with anticoagulant/antiplatelet medicines and stop well before any planned surgery; amla in large amounts may add to this.",
+      "Turmeric is heating (ushna virya); high doses can cause stomach upset and may aggravate acidity, reflux or gastritis, and may not suit very heat-prone (high-Pitta) individuals — reduce or stop if it causes burning.",
+      "Turmeric is generally avoided with active gallstones or bile-duct obstruction (it stimulates the gallbladder).",
+      "Concentrated curcumin extracts have rarely been linked to liver injury — use ordinary culinary-grade turmeric powder amounts rather than high-dose extracts unless advised; stop and seek advice if you feel unwell.",
+      "Amalaki is cooling and lightly laxative — large amounts may loosen stools.",
+      "Avoid medicinal doses in pregnancy and while breastfeeding unless advised by a qualified practitioner.",
+      "Turmeric and amla tannins can reduce absorption of iron and some other nutrients/medicines — separate from iron supplements and other oral medicines by ~2 hours. This is especially relevant if a product adds black pepper/piperine, which can further raise blood levels of many medications.",
+      "Use standardised, heavy-metal-tested products from a reputable source."
+    ],
+    "citations": [
+      {
+        "source_id": "bhavaprakasha",
+        "locator": "Haridrā and Āmalakī — dravyaguṇa (Haritakyādi varga)",
+        "requires_verification": true
+      },
+      {
+        "source_id": "api",
+        "locator": "Haridrā (Curcuma longa) and Āmalakī (Phyllanthus emblica / Emblica officinalis) — identity, properties, dosage",
+        "requires_verification": true
+      }
+    ]
+  }
+]

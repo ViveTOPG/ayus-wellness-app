@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Āyus · Your Ayurveda Wellness Companion</title>
+<meta name="description" content="Feel better every day with Āyus — personalised Ayurvedic check-ins, dosha insights, cited herbs, daily rituals, and a private wellness profile. Rooted in Indian heritage, honest about evidence." />
+<meta property="og:title" content="Āyus · Your Ayurveda Wellness Companion" />
+<meta property="og:description" content="Rooted in the Vedas, guided by evidence. Build your profile, discover your dosha, and live a daily wellness rhythm." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta name="theme-color" content="#1a4634" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link rel="manifest" href="manifest.json" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" />
+<script>
+try{
+  var t=JSON.parse(localStorage.getItem('ayus.theme'));
+  if(t!=='dark'&&t!=='light')t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';
+  document.documentElement.setAttribute('data-theme',t);
+}catch(e){}
+try{
+  var c=JSON.parse(localStorage.getItem('ayus.comfort'))||{};
+  var root=document.documentElement;
+  root.setAttribute('data-text',c.textSize||'normal');
+  root.setAttribute('data-calm',c.calm?'1':'0');
+  root.setAttribute('data-simple',c.simple===false?'0':'1');
+  root.setAttribute('data-contrast',c.contrast?'1':'0');
+  if(c.calm)document.documentElement.classList.add('pref-calm');
+}catch(e){}
+</script>
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="platform.css" />
+<link rel="stylesheet" href="engage.css" />
+<link rel="stylesheet" href="tools.css" />
+</head>
+<body class="has-bottom-nav platform-v6 engage-v5 easy-for-everyone">
+
+<a class="skip-link" href="#home" data-action="go:home">Skip to content</a>
+
+<div id="ariaLive" aria-live="polite" aria-atomic="true" class="sr-only"></div>
+<div id="ariaAssertive" aria-live="assertive" aria-atomic="true" class="sr-only"></div>
+
+<!-- ===================== ONBOARDING OVERLAY ===================== -->
+<div id="onboarding" class="onboarding hidden">
+  <div class="ob-backdrop"></div>
+  <div class="ob-card ob-card-wide">
+    <button class="ob-close" data-action="closeOnboarding" aria-label="Skip">&times;</button>
+    <div class="ob-steps" id="obSteps">
+      <div class="ob-step active" data-ob="1">
+        <div class="ob-icon"><span class="om-lg">ॐ</span></div>
+        <div class="ob-kicker">5,000 years of wisdom · private on your device</div>
+        <h2>Welcome to Āyus</h2>
+        <p>Your calm companion for everyday wellness — rooted in classical Ayurveda, honest about modern evidence, and designed so anyone can understand it.</p>
+        <button class="btn btn-primary" data-action="nextOnboarding">Let's begin <span aria-hidden="true">→</span></button>
+      </div>
+      <div class="ob-step" data-ob="2">
+        <div class="ob-icon"><span class="ob-emoji">🪷</span></div>
+        <h2>What should we call you?</h2>
+        <p>A first name makes your space feel personal. Everything stays only on this device.</p>
+        <label class="ob-field">
+          <span class="sr-only">Your name</span>
+          <input id="obName" type="text" maxlength="40" placeholder="Your first name" autocomplete="given-name" />
+        </label>
+        <button class="btn btn-primary" data-action="nextOnboarding">Continue <span aria-hidden="true">→</span></button>
+      </div>
+      <div class="ob-step" data-ob="3">
+        <div class="ob-icon"><span class="ob-emoji">🎯</span></div>
+        <h2>What do you want to improve?</h2>
+        <p>Pick up to three. We'll personalise tips, rituals, and check-ins for you.</p>
+        <div class="ob-goals" id="obGoals" role="group" aria-label="Wellness goals">
+          <button type="button" class="goal-chip" data-goal="sleep">Better sleep</button>
+          <button type="button" class="goal-chip" data-goal="stress">Less stress</button>
+          <button type="button" class="goal-chip" data-goal="digestion">Easier digestion</button>
+          <button type="button" class="goal-chip" data-goal="energy">More energy</button>
+          <button type="button" class="goal-chip" data-goal="immunity">Stronger immunity</button>
+          <button type="button" class="goal-chip" data-goal="skin">Clearer skin</button>
+          <button type="button" class="goal-chip" data-goal="weight">Healthy weight</button>
+          <button type="button" class="goal-chip" data-goal="focus">Calm focus</button>
+        </div>
+        <button class="btn btn-primary" data-action="nextOnboarding">Looks good <span aria-hidden="true">→</span></button>
+      </div>
+      <div class="ob-step" data-ob="4">
+        <div class="ob-icon"><span class="ob-emoji">🌿</span></div>
+        <h2>Honest, not hype</h2>
+        <p>Every herb shows <strong>why</strong> it is suggested, how strong the evidence is, and the original source — classical text or modern research.</p>
+        <button class="btn btn-primary" data-action="nextOnboarding">I appreciate that <span aria-hidden="true">→</span></button>
+      </div>
+      <div class="ob-step" data-ob="5">
+        <div class="ob-icon"><span class="ob-emoji">✨</span></div>
+        <h2>Make it easy for you</h2>
+        <p>Works great for teens and for parents — pick what feels comfortable. You can change this anytime in Profile.</p>
+        <div class="ob-comfort" id="obComfort" role="group" aria-label="Comfort settings">
+          <label class="comfort-toggle">
+            <input type="checkbox" id="obTextLarge" data-comfort="textLarge" />
+            <span><strong>Larger text</strong><em>Easier to read on any phone</em></span>
+          </label>
+          <label class="comfort-toggle">
+            <input type="checkbox" id="obCalm" data-comfort="calm" />
+            <span><strong>Calm mode</strong><em>Fewer animations, simpler home</em></span>
+          </label>
+          <label class="comfort-toggle">
+            <input type="checkbox" id="obSimple" data-comfort="simple" checked />
+            <span><strong>Plain language</strong><em>Clear words first, Sanskrit when you want it</em></span>
+          </label>
+        </div>
+        <button class="btn btn-primary" data-action="nextOnboarding">Save &amp; continue <span aria-hidden="true">→</span></button>
+      </div>
+      <div class="ob-step" data-ob="6">
+        <div class="ob-icon"><span class="ob-emoji">🪔</span></div>
+        <h2>You're ready</h2>
+        <p class="ob-ready-lead">Three simple moves — that's the whole app:</p>
+        <ol class="ob-howto">
+          <li><strong>Check-in</strong> — tell us how you feel</li>
+          <li><strong>See your plan</strong> — clear tips &amp; cited herbs</li>
+          <li><strong>Do one small ritual</strong> — keep a gentle streak</li>
+        </ol>
+        <div class="ob-cta">
+          <button class="btn btn-primary" data-action="finishOnboarding" data-next="checkin">Start my first check-in <span aria-hidden="true">→</span></button>
+          <button class="btn btn-ghost btn-sm" data-action="finishOnboarding" data-next="quiz">Discover my body type first</button>
+          <button class="btn btn-ghost btn-sm" data-action="finishOnboarding" data-next="home">Just look around</button>
+        </div>
+      </div>
+    </div>
+    <div class="ob-dots" id="obDots">
+      <span class="ob-dot on" data-ob="1"></span>
+      <span class="ob-dot" data-ob="2"></span>
+      <span class="ob-dot" data-ob="3"></span>
+      <span class="ob-dot" data-ob="4"></span>
+      <span class="ob-dot" data-ob="5"></span>
+      <span class="ob-dot" data-ob="6"></span>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== TOP BAR ===================== -->
+<header class="topbar" role="banner">
+  <div class="brand" data-action="go:home" tabindex="0" role="button" aria-label="Go home">
+    <span class="om">ॐ</span>
+    <span>
+      <span class="bname">Āyus</span>
+      <span class="btag">Science of life</span>
+    </span>
+  </div>
+  <nav class="nav" id="mainNav" aria-label="Primary">
+    <button data-action="go:home" data-screen="home">Today</button>
+    <button data-action="startCheckin" data-screen="intake">Check-in</button>
+    <button data-action="go:tools" data-screen="tools">Tools</button>
+    <button data-action="go:library" data-screen="library">Herbs</button>
+    <button data-action="go:market" data-screen="market">Catalog</button>
+    <button data-action="openQuiz" data-screen="quiz">Dosha</button>
+  </nav>
+  <div class="topbar-actions">
+    <button class="nav-icon theme-toggle" id="themeBtn" data-action="toggleTheme" aria-label="Toggle dark mode" title="Toggle theme"></button>
+    <button class="nav-icon nav-profile desktop-only" data-action="openMySpace" data-screen="myspace" aria-label="My profile" title="My profile">
+      <span class="nav-avatar" id="navAvatar">ॐ</span>
+    </button>
+    <button class="hamburger" id="hamburgerBtn" data-action="toggleMobileNav" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile nav drawer (secondary + full menu) -->
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <button class="mobile-nav-backdrop" data-action="closeMobileNav" aria-label="Close navigation menu"></button>
+  <div class="mobile-nav-panel" role="dialog" aria-label="Menu">
+    <div class="mobile-nav-brand">
+      <span class="om">ॐ</span>
+      <div>
+        <span class="bname">Āyus</span>
+        <div class="mobile-nav-hello" id="mobileHello">Your wellness space</div>
+      </div>
+      <button class="mobile-nav-x" data-action="closeMobileNav" aria-label="Close menu">&times;</button>
+    </div>
+    <p class="mobile-nav-label">Primary</p>
+    <button data-action="go:home" data-screen="home">Today</button>
+    <button data-action="startCheckin" data-screen="intake">Check-in</button>
+    <button data-action="go:tools" data-screen="tools">Tools · calc, progress, kitchen</button>
+    <button data-action="go:library" data-screen="library">Herb apothecary</button>
+    <button data-action="go:market" data-screen="market">Catalog · vitamins &amp; formulas</button>
+    <button data-action="go:stack" data-screen="stack">My Stack</button>
+    <button data-action="openMySpace" data-screen="myspace">Profile</button>
+    <div class="mobile-nav-divider"></div>
+    <p class="mobile-nav-label">Explore</p>
+    <button data-action="toolsOpen" data-tab="calc">Body calculators</button>
+    <button data-action="toolsOpen" data-tab="progress">Progress tracking</button>
+    <button data-action="toolsOpen" data-tab="kitchen">Kitchen recipes</button>
+    <button data-action="go:journal" data-screen="journal">Health journal</button>
+    <button data-action="openQuiz" data-screen="quiz">Know your dosha</button>
+    <button data-action="go:heritage" data-screen="heritage">Indian heritage</button>
+    <div class="mobile-nav-divider"></div>
+    <button data-action="toggleTheme">◐ Light / dark mode</button>
+    <button data-action="openHelp">? How to use Āyus</button>
+    <button data-action="openMySpace" data-screen="myspace">♿ Comfort settings</button>
+  </div>
+</div>
+
+<!-- ===================== HOME ===================== -->
+<main id="home" class="screen active" tabindex="-1">
+  <!-- v2–v5 ENGAGE: Instagram-style wellness home -->
+  <section class="engage-home" id="engageHome" hidden>
+    <div class="ig-top">
+      <div class="ig-brand" data-action="go:home">Āyus</div>
+      <div class="ig-top-actions">
+        <span class="xp-chip" id="xpChip">0 XP</span>
+        <button type="button" class="ig-icon-btn" data-action="go:reels" aria-label="Reels">▷</button>
+        <button type="button" class="ig-icon-btn" data-action="go:stack" aria-label="Stack">☰</button>
+      </div>
+    </div>
+
+    <!-- Stories -->
+    <div class="stories-rail" id="storiesRail" aria-label="Stories"></div>
+
+    <!-- Compact status strip -->
+    <div class="status-strip wrap-tight">
+      <div class="streak-pill mini" id="streakCard" aria-live="polite">
+        <span class="streak-flame" aria-hidden="true">🪔</span>
+        <span class="streak-n" id="streakNum">0</span>
+        <span class="streak-l">day streak</span>
+      </div>
+      <button type="button" class="btn btn-primary btn-sm" data-action="startCheckin">Check-in</button>
+    </div>
+
+    <!-- Always-clear next step (all ages) -->
+    <div class="coach-card wrap-tight" id="coachCard" aria-live="polite"></div>
+
+    <!-- Quick path chips -->
+    <div class="quick-path wrap-tight" id="quickPath" aria-label="Quick actions">
+      <button type="button" class="qp-chip qp-primary" data-action="startCheckin">
+        <span class="qp-ic" aria-hidden="true">🌿</span>
+        <span class="qp-t">I feel off</span>
+        <span class="qp-s">2-min check-in</span>
+      </button>
+      <button type="button" class="qp-chip" data-action="toolsOpen" data-tab="calc">
+        <span class="qp-ic" aria-hidden="true">⚖</span>
+        <span class="qp-t">Body numbers</span>
+        <span class="qp-s">BMI · BMR · macros</span>
+      </button>
+      <button type="button" class="qp-chip" data-action="toolsOpen" data-tab="kitchen">
+        <span class="qp-ic" aria-hidden="true">🍲</span>
+        <span class="qp-t">Kitchen</span>
+        <span class="qp-s">Simple recipes</span>
+      </button>
+      <button type="button" class="qp-chip" data-action="toolsOpen" data-tab="progress">
+        <span class="qp-ic" aria-hidden="true">📈</span>
+        <span class="qp-t">Progress</span>
+        <span class="qp-s">Mood · weight</span>
+      </button>
+    </div>
+
+    <!-- Rituals compact -->
+    <div class="dash-card dash-ritual engage-block" id="dashRitual">
+      <div class="dash-card-head">
+        <h3>Today's small wins</h3>
+        <span class="dash-progress" id="habitProgress">0/5</span>
+      </div>
+      <p class="coach-hint" id="ritualHint">Tap any row when you do it — no pressure.</p>
+      <div class="habit-list" id="habitList" role="list"></div>
+    </div>
+
+    <!-- Challenges -->
+    <div class="engage-block calm-hide">
+      <div class="engage-block-head">
+        <h3>Challenges</h3>
+        <button type="button" class="linkish" data-action="go:explore">Explore</button>
+      </div>
+      <div id="challengeList" class="challenge-list"></div>
+    </div>
+
+    <!-- Badges -->
+    <div class="engage-block calm-hide">
+      <div class="engage-block-head"><h3>Achievements</h3></div>
+      <div id="badgeRow" class="badge-row"></div>
+    </div>
+
+    <div id="platformGuide" class="platform-guide-mount" hidden></div>
+
+    <!-- Social feed -->
+    <div class="engage-block feed-block">
+      <div class="engage-block-head">
+        <h3>For you</h3>
+        <button type="button" class="linkish" data-action="go:reels">Reels</button>
+      </div>
+      <div id="igFeed" class="ig-feed"></div>
+    </div>
+
+    <!-- Hidden hooks for app.js renderHome still expecting some nodes -->
+    <div class="sr-only" aria-hidden="true">
+      <div id="todayKicker"></div>
+      <div id="todayTitle"></div>
+      <div id="todaySub"></div>
+      <div id="pulseStats"></div>
+      <div id="focusTitle"></div>
+      <div id="focusChips"></div>
+      <div id="focusActions"></div>
+      <div id="dailyTip"></div>
+    </div>
+  </section>
+
+  <section class="today-dash wrap" id="todayDash" hidden></section>
+
+  <!-- Guest / marketing hero (hidden once profile onboarded) -->
+  <section class="hero" id="guestHero">
+    <div class="mandala" aria-hidden="true">
+      <svg viewBox="0 0 600 600" fill="none">
+        <defs>
+          <radialGradient id="mandala-glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="rgba(217,138,43,0.08)"/>
+            <stop offset="100%" stop-color="transparent"/>
+          </radialGradient>
+        </defs>
+        <circle cx="300" cy="300" r="290" fill="url(#mandala-glow)"/>
+        <g class="spin-slow" stroke="#1f4d3a" stroke-opacity="0.3" stroke-width="0.8">
+          <circle cx="300" cy="300" r="278"/>
+          <circle cx="300" cy="300" r="232"/>
+          <circle cx="300" cy="300" r="186"/>
+          <g id="petalsA"></g>
+        </g>
+        <g class="spin-rev" stroke="#d98a2b" stroke-opacity="0.4" stroke-width="0.8">
+          <circle cx="300" cy="300" r="120"/>
+          <g id="petalsB"></g>
+        </g>
+        <circle cx="300" cy="300" r="60" fill="#1f4d3a" fill-opacity="0.05"/>
+        <circle cx="300" cy="300" r="6" fill="#d98a2b" fill-opacity="0.3"/>
+      </svg>
+    </div>
+    <div class="hero-inner wrap">
+      <span class="eyebrow"><span class="eyebrow-dot"></span>Rooted in India · guided by evidence</span>
+      <h1>Feel better with<br><em>clear, honest guidance</em></h1>
+      <p class="sanskrit simple-hide">सर्वे भवन्तु सुखिनः — may all beings be well</p>
+      <p class="lead">Tell Āyus how you feel. Get a simple plan — lifestyle tips, cited herbs, and one next step. Built for everyone: teens, parents, and lifelong learners. Private on your device.</p>
+      <div class="hero-cta">
+        <button class="btn btn-primary btn-lg" data-action="startCheckin">I want to feel better <span aria-hidden="true">→</span></button>
+        <button class="btn btn-ghost btn-lg" data-action="openQuiz">What's my body type?</button>
+      </div>
+      <button class="hero-textlink" data-action="openHelp">New here? 60-second how-to <span aria-hidden="true">→</span></button>
+      <div class="stat-strip" id="statStrip"></div>
+      <div class="scrollcue"><span class="scrollcue-line"></span></div>
+    </div>
+  </section>
+
+  <!-- Value pillars -->
+  <section id="how" class="band">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="kicker">How Āyus helps you</div>
+        <h2>Simple steps. Deep wisdom.</h2>
+        <p>No overwhelm. Plain language first — Sanskrit when it adds meaning. You always see <em>why</em> something is suggested.</p>
+      </div>
+      <div class="steps3">
+        <div class="step-card reveal">
+          <div class="step-no">01</div>
+          <div class="step-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div>
+          <h3>Check in with your body</h3>
+          <p>Tell us what's going on in everyday words. We map it to classical Ayurvedic understanding.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-no">02</div>
+          <div class="step-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="4"/></svg></div>
+          <h3>See the clear picture</h3>
+          <p>Dosha view, red flags, and cited herbs — strongest evidence first, never oversold.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-no">03</div>
+          <div class="step-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>Live a daily rhythm</h3>
+          <p>A personalised dinacharya, journal, and streaks so good habits stick — gently.</p>
+        </div>
+      </div>
+
+      <div class="value-row reveal">
+        <div class="value-pill"><span>🔒</span> Private on your device</div>
+        <div class="value-pill"><span>📜</span> Every claim has a source</div>
+        <div class="value-pill"><span>🇮🇳</span> Indian Vedic heritage</div>
+        <div class="value-pill"><span>💚</span> Educational, not medical advice</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guest daily tip (dashboard has its own mount) -->
+  <section class="band band-tight" id="guestTipBand">
+    <div class="wrap">
+      <div class="daily-tip reveal" id="dailyTipGuest"></div>
+    </div>
+  </section>
+
+  <!-- heritage teaser -->
+  <section class="band dark" id="homeHeritageTeaser">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="kicker kicker-turmeric">Our living heritage</div>
+        <h2>The science of life</h2>
+        <p class="muted">Āyurveda — <em>āyus</em> (life) + <em>veda</em> (knowledge) — grew from the Vedas into the world's oldest continuously practised system of medicine. We carry it forward honestly: every recommendation keeps its source.</p>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-gold" data-action="go:heritage">Walk through the history <span aria-hidden="true">→</span></button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===================== INTAKE (deep intake) ===================== -->
+<main id="intake" class="screen">
+  <section class="intake wrap intake-deep">
+    <div class="progress progress-steps" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="5" id="intakeProgress">
+      <span class="step-dot on" data-n="1">1</span>
+      <span class="step-line"></span>
+      <span class="step-dot" data-n="2">2</span>
+      <span class="step-line"></span>
+      <span class="step-dot" data-n="3">3</span>
+      <span class="step-line"></span>
+      <span class="step-dot" data-n="4">4</span>
+      <span class="step-line"></span>
+      <span class="step-dot" data-n="5">5</span>
+    </div>
+    <p class="intake-phase" id="intakePhase">Choose your concern</p>
+
+    <!-- STEP 1: Choose category only -->
+    <div class="q-step active" data-step="1">
+      <h2 class="q-title">Where shall we look?</h2>
+      <p class="q-sub">Pick an area of health. Next you will choose the specific problem.</p>
+      <div class="searchbar">
+        <svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="search" type="text" placeholder="Or search any concern…" autocomplete="off" aria-label="Search a concern" />
+        <kbd class="search-kbd">ESC</kbd>
+      </div>
+      <div id="catGrid" class="grid-cards"></div>
+    </div>
+
+    <!-- STEP 1b: Problems for that category (own page) -->
+    <div class="q-step" data-step="1b">
+      <h2 class="q-title" id="concernPageTitle">Choose the problem</h2>
+      <p class="q-sub" id="concernPageSub">Select what matches how you feel — we will open a full problem page next.</p>
+      <div id="concernGrid" class="grid-cards concern-page-grid"></div>
+      <div class="q-nav">
+        <button class="btn btn-ghost btn-sm" data-action="toStep:1"><span class="btn-arrow">←</span> All categories</button>
+      </div>
+    </div>
+
+    <!-- STEP 2: Problem detail page -->
+    <div class="q-step" data-step="2">
+      <div id="problemPage" class="problem-page"></div>
+      <div class="q-nav">
+        <button class="btn btn-ghost btn-sm" data-action="toStep:1b"><span class="btn-arrow">←</span> Back to problems</button>
+        <button class="btn btn-primary btn-sm" data-action="toStep:3">Start personal questions <span class="btn-arrow">→</span></button>
+      </div>
+    </div>
+
+    <!-- STEP 3–4: Deep questionnaire (rendered dynamically) -->
+    <div class="q-step" data-step="3">
+      <div id="deepQuiz" class="deep-quiz"></div>
+    </div>
+
+    <!-- STEP 5: Confirm & reveal -->
+    <div class="q-step" data-step="5">
+      <div id="intakeSummary" class="intake-summary"></div>
+      <div class="q-nav">
+        <button class="btn btn-ghost btn-sm" data-action="deepQuizBack"><span class="btn-arrow">←</span> Back</button>
+        <button class="btn btn-gold btn-sm" id="revealBtn" data-action="analyze">Reveal how &amp; why — then your plan ✦</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===================== ANALYZING ===================== -->
+<main id="analyzing" class="screen">
+  <section class="analyzing">
+    <div>
+      <div class="pulse-wrap">
+        <span class="pulse-ring"></span><span class="pulse-ring"></span><span class="pulse-ring"></span>
+        <span class="pulse-core">ॐ</span>
+      </div>
+      <p class="amsg" id="amsg" aria-live="polite">Consulting the classics…</p>
+      <div class="adots"><span class="adot"></span><span class="adot"></span><span class="adot"></span></div>
+    </div>
+  </section>
+</main>
+
+<!-- ===================== RESULT ===================== -->
+<main id="result" class="screen">
+  <section class="result wrap" id="resultBody"></section>
+</main>
+
+<!-- ===================== PRAKRITI QUIZ ===================== -->
+<main id="quiz" class="screen">
+  <section class="intake wrap">
+    <div id="quizIntro">
+      <div class="section-head mb-30">
+        <div class="kicker">Prakṛti · your nature</div>
+        <h2>Discover your constitution</h2>
+        <p>Ayurveda holds that each of us is born with a unique balance of the three doṣas — Vāta, Pitta and Kapha. Knowing yours helps everything else make sense. Seven quick questions, about a minute.</p>
+      </div>
+      <div class="quiz-doshas">
+        <div class="qd"><span class="qd-dot" style="background:var(--sky)"></span><b>Vāta</b><span>air &amp; ether — movement</span></div>
+        <div class="qd"><span class="qd-dot" style="background:var(--terracotta)"></span><b>Pitta</b><span>fire &amp; water — transformation</span></div>
+        <div class="qd"><span class="qd-dot" style="background:var(--green-2)"></span><b>Kapha</b><span>earth &amp; water — structure</span></div>
+      </div>
+      <div class="text-center mt-34">
+        <button class="btn btn-primary btn-lg" data-action="beginQuiz">Begin the quiz <span aria-hidden="true">→</span></button>
+      </div>
+    </div>
+    <div id="quizFlow" class="hidden">
+      <div class="progress" id="quizProgress" role="progressbar"></div>
+      <div id="quizQ" aria-live="polite"></div>
+    </div>
+    <div id="quizResult" class="hidden"></div>
+  </section>
+</main>
+
+<!-- ===================== MY SPACE / PROFILE ===================== -->
+<main id="myspace" class="screen">
+  <section class="band band-top">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Your private wellness profile</div>
+        <h2>My Āyus</h2>
+        <p>Name, goals, constitution, routines, and favourites — remembered only in this browser. Build it once; it personalises everything.</p>
+      </div>
+      <div id="mySpaceBody"></div>
+    </div>
+  </section>
+</main>
+
+<!-- ===================== HERITAGE ===================== -->
+<main id="heritage" class="screen">
+  <section class="band dark heritage">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="kicker kicker-turmeric">Our Indian Vedic heritage</div>
+        <h2>How this knowledge came to be</h2>
+        <p class="muted">A living thread from Vedic hymns to today's evidence — traditionally dated; the timeline below is the broadly accepted arc.</p>
+      </div>
+      <div class="timeline-v">
+        <div class="tv-item reveal"><div class="era">c. 1500–1000 BCE · The Vedas</div><h4>Hymns &amp; healing herbs</h4><p>The Ṛgveda and especially the Atharvaveda hold healing charms and the earliest praises of medicinal plants (oṣadhi). Health, plants and prayer are woven together — the seedbed of a medical tradition.</p></div>
+        <div class="tv-item reveal"><div class="era">c. 1000–600 BCE · Āyurveda forms</div><h4>The science of life</h4><p>Āyurveda emerges as a systematic body of knowledge — traditionally regarded as an upaveda (auxiliary knowledge) of the Atharvaveda — organising health around balance, digestion and lifestyle.</p></div>
+        <div class="tv-item reveal"><div class="era">c. 600 BCE–400 CE · The Great Triad</div><h4>Charaka, Suśruta, Vāgbhaṭa</h4><p>The Bṛhat Trayī is composed: the Charaka Saṃhitā (internal medicine), the Suśruta Saṃhitā (surgery &amp; materia medica), later distilled by Vāgbhaṭa in the Aṣṭāṅga Hṛdaya. These remain the bedrock texts.</p></div>
+        <div class="tv-item reveal"><div class="era">c. 700–1600 CE · The Nighaṇṭus</div><h4>Cataloguing the plants</h4><p>Materia-medica lexicons such as the Bhāvaprakāśa Nighaṇṭu catalogue each herb's taste, potency and action (dravyaguṇa) — the property-level detail this engine leans on most.</p></div>
+        <div class="tv-item reveal"><div class="era">Today · Tradition meets evidence</div><h4>Honest by design</h4><p>Modern research and the Ayurvedic Pharmacopoeia of India sit alongside the classics. This engine carries every claim with its source <em>and</em> an honesty rating — never overstating what is proven.</p></div>
+      </div>
+
+      <div class="section-head reveal mt-70">
+        <div class="kicker kicker-turmeric">First principles</div>
+        <h2>The ideas it all rests on</h2>
+      </div>
+      <div class="concept-grid">
+        <div class="concept reveal"><div class="sk">दोष</div><h5>Doṣa</h5><p>Three functional energies — Vāta (movement), Pitta (transformation), Kapha (structure). Wellness is their balance.</p></div>
+        <div class="concept reveal"><div class="sk">अग्नि</div><h5>Agni</h5><p>The digestive &amp; metabolic fire. Strong agni means food becomes nourishment, not toxic residue (ama).</p></div>
+        <div class="concept reveal"><div class="sk">धातु</div><h5>Dhātu</h5><p>The seven body tissues, each formed from the last — from plasma all the way to reproductive essence.</p></div>
+        <div class="concept reveal"><div class="sk">ओजस्</div><h5>Ojas</h5><p>The subtle essence of healthy digestion &amp; tissue — the basis of immunity, stamina and lustre.</p></div>
+        <div class="concept reveal"><div class="sk">रसायन</div><h5>Rasāyana</h5><p>Rejuvenation: practices and herbs that restore vitality and slow decline.</p></div>
+        <div class="concept reveal"><div class="sk">द्रव्यगुण</div><h5>Dravyaguṇa</h5><p>How a herb acts — its taste (rasa), potency (vīrya) and post-digestive effect (vipāka).</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="kicker">Why you can trust it</div>
+        <h2>Honesty over hype</h2>
+        <p>Every recommendation forms a chain: <em>concern → herb → why → evidence → source</em>. The evidence tier tells you exactly how strong the backing is — per use.</p>
+      </div>
+      <div class="tiers-explain">
+        <div class="tier-x reveal"><span class="tier" data-t="classical"><span class="tb"></span>Classical text</span><p>Documented in a classical text. Traditional use only — no modern study claimed.</p></div>
+        <div class="tier-x reveal"><span class="tier" data-t="traditional"><span class="tb"></span>Established tradition</span><p>Widespread, long-standing traditional use across lineages and texts.</p></div>
+        <div class="tier-x reveal"><span class="tier" data-t="preliminary"><span class="tb"></span>Preliminary research</span><p>Early lab, animal, or small human studies suggest activity — promising, not proven.</p></div>
+        <div class="tier-x reveal"><span class="tier" data-t="clinical"><span class="tb"></span>Clinical evidence</span><p>Supported by one or more controlled human trials (RCTs) for that specific use.</p></div>
+      </div>
+
+      <div class="section-head reveal mt-70">
+        <div class="kicker">The library</div>
+        <h2>Sources we stand on</h2>
+        <p>The public-domain classical corpus, the standard materia medica, and the official Indian pharmacopoeia — plus a transparent slot for modern studies.</p>
+      </div>
+      <div class="sources-list" id="sourcesList"></div>
+      <div class="text-center mt-40">
+        <button class="btn btn-primary btn-lg" data-action="startCheckin">Try your check-in now <span aria-hidden="true">→</span></button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===================== TOOLS (calculators · progress · kitchen) ===================== -->
+<main id="tools" class="screen" tabindex="-1">
+  <section class="band band-top tools-screen">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">One app · all tools</div>
+        <h2>Tools</h2>
+        <p>Body calculators, progress tracking, and kitchen recipes — the same Āyus you already use. Private on this device.</p>
+      </div>
+      <div id="toolsBody" class="tools-body"></div>
+    </div>
+  </section>
+</main>
+
+<!-- ===================== HERB LIBRARY ===================== -->
+<main id="library" class="screen">
+  <section class="band band-top">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">The materia medica</div>
+        <h2>Explore the apothecary</h2>
+        <p>Every herb and classical formula in the engine — its properties, traditional uses, safety, and sources.</p>
+      </div>
+      <div class="lib-type" id="libType" role="group" aria-label="Browse type">
+        <button class="tchip selected" data-type="herb">Herbs</button>
+        <button class="tchip" data-type="formulation">Formulas</button>
+      </div>
+      <div class="searchbar mb-18">
+        <svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="libSearch" type="text" placeholder="Search by name, Sanskrit or botanical — e.g. ashwagandha, Triphala…" autocomplete="off" aria-label="Search the apothecary" />
+      </div>
+      <div class="lib-filters" id="libFilters" role="group" aria-label="Filter by evidence">
+        <button class="fchip selected" data-tier="all">All</button>
+        <button class="fchip" data-tier="clinical"><span class="tb" style="background:#0f6e56"></span>Clinical</button>
+        <button class="fchip" data-tier="preliminary"><span class="tb" style="background:#e3a626"></span>Preliminary</button>
+        <button class="fchip" data-tier="traditional"><span class="tb" style="background:#2f6a4d"></span>Traditional</button>
+        <button class="fchip" data-tier="classical"><span class="tb" style="background:#9a9079"></span>Classical</button>
+      </div>
+      <div id="libCount" class="lib-count" aria-live="polite"></div>
+      <div id="libGrid" class="lib-grid"></div>
+    </div>
+  </section>
+</main>
+
+<!-- ===================== EXPLORE ===================== -->
+<main id="explore" class="screen">
+  <section class="explore-screen">
+    <div class="ig-top">
+      <div class="ig-brand">Explore</div>
+      <button type="button" class="ig-icon-btn" data-action="go:home" aria-label="Home">⌂</button>
+    </div>
+    <div class="explore-search wrap-tight">
+      <input type="search" id="exploreSearch" placeholder="Search tips, herbs, vitamins…" aria-label="Search explore" />
+    </div>
+    <div id="exploreGrid" class="explore-grid"></div>
+  </section>
+</main>
+
+<!-- ===================== REELS ===================== -->
+<main id="reels" class="screen">
+  <section class="reels-screen">
+    <div class="ig-top reels-top">
+      <button type="button" class="ig-icon-btn" data-action="go:home" aria-label="Back">‹</button>
+      <div class="ig-brand">Reels</div>
+      <span></span>
+    </div>
+    <div id="reelsRail" class="reels-rail"></div>
+  </section>
+</main>
+
+<!-- Story overlay -->
+<div id="storyOverlay" class="story-overlay" aria-hidden="true">
+  <div class="story-segments" id="storySegments"></div>
+  <div class="story-progress-track"><i id="storyProgress"></i></div>
+  <button type="button" class="story-close" data-action="closeStory" aria-label="Close">×</button>
+  <div class="story-tap left" id="storyTapLeft" aria-hidden="true"></div>
+  <div class="story-tap right" id="storyTapRight" aria-hidden="true"></div>
+  <div id="storyBody" class="story-body"></div>
+</div>
+
+<!-- ===================== MARKET / CATALOG ===================== -->
+<main id="market" class="screen">
+  <section class="band band-top">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Educational catalog</div>
+        <h2>Vitamins, nutraceuticals &amp; classics</h2>
+        <p>Browse classical formulas and modern essentials—ranked by your goals, dosha, and journal signals. Private on-device matching. Not a pharmacy.</p>
+      </div>
+      <div id="marketBody"></div>
+    </div>
+  </section>
+</main>
+
+<!-- ===================== MY STACK ===================== -->
+<main id="stack" class="screen">
+  <section class="band band-top">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Dinacharya · regimen</div>
+        <h2>My Stack</h2>
+        <p>Your personal timing board for supplements and formulas. Data flows into Today’s guide so everything stays coherent.</p>
+      </div>
+      <div id="stackBody"></div>
+    </div>
+  </section>
+</main>
+
+<!-- ===================== JOURNAL ===================== -->
+<main id="journal" class="screen">
+  <section class="band band-top">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Notice · nourish · refine</div>
+        <h2>Health journal</h2>
+        <p>One minute a day. Mood and energy entries feed your wellness pulse on Today — and help you spot what truly helps.</p>
+      </div>
+      <div class="journal-new">
+        <div class="journal-form">
+          <div class="journal-row">
+            <label class="journal-label">How are you feeling?</label>
+            <div class="mood-picker" id="moodPicker" role="radiogroup" aria-label="Mood">
+              <button class="mood-btn" data-mood="great" role="radio" aria-checked="false" aria-label="Great" title="Great">😊</button>
+              <button class="mood-btn" data-mood="good" role="radio" aria-checked="false" aria-label="Good" title="Good">🙂</button>
+              <button class="mood-btn" data-mood="okay" role="radio" aria-checked="false" aria-label="Okay" title="Okay">😐</button>
+              <button class="mood-btn" data-mood="low" role="radio" aria-checked="false" aria-label="Low" title="Low">😔</button>
+              <button class="mood-btn" data-mood="bad" role="radio" aria-checked="false" aria-label="Bad" title="Bad">😣</button>
+            </div>
+          </div>
+          <div class="journal-row">
+            <label class="journal-label" for="journalEnergy">Energy level</label>
+            <input type="range" id="journalEnergy" min="1" max="5" value="3" class="energy-slider" />
+            <div class="energy-labels"><span>Low</span><span>High</span></div>
+          </div>
+          <div class="journal-row">
+            <label class="journal-label" for="journalNotes">Notes (optional)</label>
+            <textarea id="journalNotes" class="journal-textarea" placeholder="How did you sleep? What did you eat? Any symptoms?" rows="3"></textarea>
+          </div>
+          <button class="btn btn-primary btn-sm" data-action="saveJournal">Save entry</button>
+        </div>
+      </div>
+      <div class="journal-history" id="journalHistory">
+        <h3 class="journal-history-title">Recent entries</h3>
+        <div id="journalList"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===================== MODAL ===================== -->
+<div id="modal" class="modal" aria-hidden="true">
+  <div class="modal-backdrop" data-action="closeModal"></div>
+  <div class="modal-card" id="modalCard" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1"></div>
+</div>
+
+<!-- ===================== TOAST ===================== -->
+<div class="toast" id="toast"></div>
+<div class="toast toast-undo" id="toastUndo"><span id="toastUndoMsg"></span><button class="toast-undo-btn" id="toastUndoBtn">Undo</button></div>
+
+<!-- ===================== BOTTOM NAV (clear for every age) ===================== -->
+<nav class="bottom-nav" id="bottomNav" aria-label="Main">
+  <button data-action="go:home" data-screen="home" aria-label="Home">
+    <span class="bn-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1v-9.5Z"/></svg></span>
+    <span>Home</span>
+  </button>
+  <button data-action="go:tools" data-screen="tools" aria-label="Tools — calculators, progress, kitchen">
+    <span class="bn-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16M4 12h10M4 17h13"/><circle cx="18" cy="12" r="2"/><circle cx="15" cy="17" r="2"/></svg></span>
+    <span>Tools</span>
+  </button>
+  <button data-action="startCheckin" data-screen="intake" aria-label="Check-in — how I feel" class="bn-center">
+    <span class="bn-fab" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
+    </span>
+    <span>Check-in</span>
+  </button>
+  <button data-action="go:library" data-screen="library" aria-label="Herbs library">
+    <span class="bn-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+    <span>Herbs</span>
+  </button>
+  <button data-action="openMySpace" data-screen="myspace" aria-label="Profile and settings">
+    <span class="bn-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="9" r="3.5"/><path d="M5 19c1.5-3 4-4.5 7-4.5S17.5 16 19 19"/></svg></span>
+    <span>You</span>
+  </button>
+</nav>
+
+<!-- Floating help (all ages) -->
+<button type="button" class="help-fab" id="helpFab" data-action="openHelp" aria-label="How to use this app" title="Help">?</button>
+
+<!-- Help sheet -->
+<div id="helpSheet" class="help-sheet" aria-hidden="true" hidden>
+  <div class="help-backdrop" data-action="closeHelp"></div>
+  <div class="help-panel" role="dialog" aria-modal="true" aria-labelledby="helpTitle" tabindex="-1">
+    <div class="help-head">
+      <h2 id="helpTitle">How Āyus works</h2>
+      <button type="button" class="help-x" data-action="closeHelp" aria-label="Close help">&times;</button>
+    </div>
+    <div class="help-body">
+      <p class="help-lead">No medical degree needed. Three steps — for any age.</p>
+      <div class="help-step">
+        <span class="help-n">1</span>
+        <div>
+          <h3>Check-in</h3>
+          <p>Tap the big <strong>Check-in</strong> button. Pick what feels off (sleep, stress, digestion…). Answer a few plain questions.</p>
+        </div>
+      </div>
+      <div class="help-step">
+        <span class="help-n">2</span>
+        <div>
+          <h3>Get your plan</h3>
+          <p>You'll see why it might be happening, simple habits to try, and herbs with honest sources — not hype.</p>
+        </div>
+      </div>
+      <div class="help-step">
+        <span class="help-n">3</span>
+        <div>
+          <h3>Do one small thing</h3>
+          <p>Check off a daily ritual on Home. Log your mood when you want. Streaks are gentle — skip a day, start again.</p>
+        </div>
+      </div>
+      <div class="help-step">
+        <span class="help-n">+</span>
+        <div>
+          <h3>Tools (all in this app)</h3>
+          <p><strong>Calculators</strong> for BMI, calories, water · <strong>Progress</strong> for mood &amp; weight · <strong>Kitchen</strong> for simple recipes. Open from the bottom <strong>Tools</strong> tab.</p>
+        </div>
+      </div>
+      <div class="help-glossary">
+        <h3>Words made simple</h3>
+        <dl>
+          <dt>Dosha / body type</dt><dd>Your natural pattern: movement (Vāta), heat (Pitta), or steady (Kapha).</dd>
+          <dt>Check-in</dt><dd>A short guided chat about how you feel right now.</dd>
+          <dt>Tools</dt><dd>Calculators, progress tracking, and kitchen recipes — same app.</dd>
+          <dt>Evidence tier</dt><dd>How strong the research is — from traditional texts to clinical trials.</dd>
+          <dt>Stack</dt><dd>A private list of herbs/vitamins you like, for your own notes.</dd>
+        </dl>
+      </div>
+      <div class="help-actions">
+        <button type="button" class="btn btn-primary" data-action="startCheckin" data-also="closeHelp">Try a check-in</button>
+        <button type="button" class="btn btn-ghost" data-action="openMySpace" data-also="closeHelp">Comfort settings</button>
+      </div>
+      <p class="help-foot">Tip: open <strong>You → Comfort</strong> for larger text, calm mode, and plain language.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="om-mini">ॐ</div>
+  <p class="foot-tagline">सर्वे भवन्तु सुखिनः · may all beings be well</p>
+  <nav class="foot-links" aria-label="Footer">
+    <button data-action="go:home">Today</button>
+    <button data-action="startCheckin">Check-in</button>
+    <button data-action="go:tools">Tools</button>
+    <button data-action="toolsOpen" data-tab="calc">Calculators</button>
+    <button data-action="toolsOpen" data-tab="kitchen">Kitchen</button>
+    <button data-action="go:library">Herbs</button>
+    <button data-action="go:market">Catalog</button>
+    <button data-action="go:journal">Journal</button>
+    <button data-action="openMySpace">Profile</button>
+  </nav>
+  <p class="mt-14 disclaimer-text">Āyus Platform · educational Ayurveda + nutraceutical guidance. Not medical advice — does not diagnose, treat, prescribe, or sell medicines. Always consult a qualified professional.</p>
+</footer>
+
+<!-- SW update notification -->
+<button id="swUpdate" class="sw-update hidden">New version available — tap to update</button>
+
+<!-- data error fallback (hidden by default) -->
+<div id="dataError" class="hidden">
+  <div class="data-error-wrap">
+    <span class="om" style="font-size:48px">ॐ</span>
+    <h2>Unable to load wellness data</h2>
+    <p>The knowledge base failed to load. Please refresh the page or try again later.</p>
+    <button class="btn btn-primary mt-18" data-action="reloadPage">Reload page</button>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="catalog-data.js"></script>
+<script src="engage-data.js"></script>
+<script src="recipes-data.js"></script>
+<script src="calculators.js"></script>
+<script src="icons.js"></script>
+<script src="personalize.js"></script>
+<script src="app.js"></script>
+<script src="tools.js"></script>
+<script src="platform.js"></script>
+<script src="engage.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js').then(function (reg) {
+      reg.addEventListener('updatefound', function () {
+        var sw = reg.installing;
+        sw.addEventListener('statechange', function () {
+          if (sw.state === 'installed' && navigator.serviceWorker.controller) {
+            var u = document.getElementById('swUpdate');
+            if (u) { u.classList.remove('hidden'); u.onclick = function () { sw.postMessage('skipWaiting'); location.reload(); }; }
+          }
+        });
+      });
+    }).catch(function () {});
+  }
+</script>
+</body>
+</html>

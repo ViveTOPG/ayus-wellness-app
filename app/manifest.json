@@ -1,0 +1,17 @@
+{
+  "name": "Āyus Platform · Ayurveda & Wellness",
+  "short_name": "Āyus",
+  "description": "Personalised Ayurveda, dinacharya, herb library, vitamin & nutraceutical catalog, and My Stack — private on-device guidance.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#faf6ec",
+  "theme_color": "#1f4d3a",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%231f4d3a'/><text x='50' y='62' font-size='42' text-anchor='middle' fill='%23f7e9c8' font-family='serif'>%E0%A5%83</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

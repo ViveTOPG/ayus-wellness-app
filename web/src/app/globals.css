@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-green: var(--green);
+  --color-brand-green-2: var(--green-2);
+  --color-brand-green-3: var(--green-3);
+  --color-brand-saffron: var(--saffron);
+  --color-brand-terracotta: var(--terracotta);
+  --color-brand-gold: var(--gold);
+  --color-brand-rose: var(--rose);
+  --color-brand-indigo: var(--indigo);
+  --color-brand-sky: var(--sky);
+  
+  --font-sans: "Mukta", sans-serif;
+  --font-display: "Cormorant Garamond", serif;
+}
+
+@layer base {
+  :root {
+    --bg: #faf6ec;
+    --paper: #fffdf8;
+    --ink: #2a2722;
+    --green: #1f4d3a;
+    --green-2: #2f6a4d;
+    --green-3: #3c8360;
+    --saffron: #d98a2b;
+    --terracotta: #b5532a;
+    --gold: #b8902e;
+    --rose: #b14e6a;
+    --indigo: #4b4a87;
+    --sky: #2f7d9a;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14110d;
+      --paper: #211c15;
+      --ink: #efe7d6;
+      --green: #84c8a6;
+      --green-2: #6fb795;
+      --green-3: #5da684;
+      --saffron: #eaa64d;
+      --terracotta: #df8157;
+      --gold: #ddba5e;
+      --rose: #d98aa0;
+      --indigo: #9b99dd;
+      --sky: #74bcd6;
+    }
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
