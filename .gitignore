@@ -60,3 +60,6 @@ build/
 
 # Optional CI (add when token has workflow scope)
 .github/workflows/
+
+.vercel
+
