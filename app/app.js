@@ -2459,6 +2459,8 @@
   var MOON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M20 14.4A8 8 0 1 1 9.6 4 6.2 6.2 0 0 0 20 14.4Z"/></svg>';
   var ROOT_BG = { light: '#f7f1e4', dark: '#14110d' };
   function applyTheme(t) {
+    /* Only light or dark; anything else falls back to light */
+    t = t === 'dark' ? 'dark' : 'light';
     document.documentElement.setAttribute('data-theme', t);
     var bg = ROOT_BG[t] || ROOT_BG.light;
     document.documentElement.style.backgroundColor = bg;
@@ -2469,7 +2471,12 @@
   }
   function toggleTheme() { applyTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'); }
   function initTheme() {
-    var t = document.documentElement.getAttribute('data-theme') || Store.get('theme', 'light');
+    /* Default theme is light only (never auto from OS prefers-color-scheme) */
+    var stored = Store.get('theme', null);
+    var attr = document.documentElement.getAttribute('data-theme');
+    var t = 'light';
+    if (stored === 'dark' || stored === 'light') t = stored;
+    else if (attr === 'dark' || attr === 'light') t = attr;
     applyTheme(t);
   }
 
