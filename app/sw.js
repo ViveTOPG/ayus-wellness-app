@@ -1,5 +1,5 @@
 /* Ayus service worker — network-first for fresh updates, offline fallback */
-var CACHE_NAME = 'ayus-v22-media-photos';
+var CACHE_NAME = 'ayus-v23-design-polish';
 var ASSETS = [
   './',
   './index.html',
@@ -8,6 +8,7 @@ var ASSETS = [
   './engage.css',
   './tools.css',
   './media.css',
+  './design-polish.css',
   './app.js',
   './tools.js',
   './calculators.js',

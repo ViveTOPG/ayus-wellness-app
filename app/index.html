@@ -40,6 +40,7 @@ try{
 <link rel="stylesheet" href="engage.css" />
 <link rel="stylesheet" href="tools.css" />
 <link rel="stylesheet" href="media.css" />
+<link rel="stylesheet" href="design-polish.css" />
 </head>
 <body class="has-bottom-nav platform-v6 engage-v5 easy-for-everyone">
 
@@ -344,7 +345,6 @@ try{
       </div>
       <button class="hero-textlink" data-action="openHelp">New here? 60-second how-to <span aria-hidden="true">→</span></button>
       <div class="stat-strip" id="statStrip"></div>
-      <div class="photo-mosaic reveal" id="heroMosaic" aria-hidden="true"></div>
       <div class="scrollcue"><span class="scrollcue-line"></span></div>
     </div>
   </section>
@@ -352,14 +352,6 @@ try{
   <!-- Value pillars -->
   <section id="how" class="band">
     <div class="wrap">
-      <div class="section-media reveal tall" id="howMedia">
-        <div class="media-cover" data-media="section:how"></div>
-        <div class="section-media-copy">
-          <div class="kicker">How Āyus helps you</div>
-          <h2>Simple steps. Deep wisdom.</h2>
-          <p>No overwhelm. Plain language first — you always see why something is suggested.</p>
-        </div>
-      </div>
       <div class="section-head reveal">
         <div class="kicker">How Āyus helps you</div>
         <h2>Simple steps. Deep wisdom.</h2>
@@ -367,21 +359,18 @@ try{
       </div>
       <div class="steps3">
         <div class="step-card reveal">
-          <div class="step-photo"><div class="media-cover" data-media="photo:checkin"></div></div>
           <div class="step-no">01</div>
           <div class="step-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div>
           <h3>Check in with your body</h3>
           <p>Tell us what's going on in everyday words. We map it to classical Ayurvedic understanding.</p>
         </div>
         <div class="step-card reveal">
-          <div class="step-photo"><div class="media-cover" data-media="photo:herbs"></div></div>
           <div class="step-no">02</div>
           <div class="step-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="4"/></svg></div>
           <h3>See the clear picture</h3>
           <p>Dosha view, red flags, and cited herbs — strongest evidence first, never oversold.</p>
         </div>
         <div class="step-card reveal">
-          <div class="step-photo"><div class="media-cover" data-media="photo:morning"></div></div>
           <div class="step-no">03</div>
           <div class="step-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
           <h3>Live a daily rhythm</h3>
@@ -654,30 +643,27 @@ try{
       <div class="section-media tall">
         <div class="media-cover" data-media="section:library"></div>
         <div class="section-media-copy">
-          <div class="kicker">The materia medica</div>
-          <h2>Explore the apothecary</h2>
-          <p>Herbs and formulas with photos, properties, safety, and sources.</p>
+          <div class="kicker">Materia medica</div>
+          <h2>Herb apothecary</h2>
+          <p>Browse herbs &amp; classical formulas — clear names, evidence tiers, and sources.</p>
         </div>
       </div>
-      <div class="section-head">
-        <div class="kicker">The materia medica</div>
-        <h2>Explore the apothecary</h2>
-        <p>Every herb and classical formula in the engine — its properties, traditional uses, safety, and sources.</p>
-      </div>
-      <div class="lib-type" id="libType" role="group" aria-label="Browse type">
-        <button class="tchip selected" data-type="herb">Herbs</button>
-        <button class="tchip" data-type="formulation">Formulas</button>
-      </div>
-      <div class="searchbar mb-18">
-        <svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        <input id="libSearch" type="text" placeholder="Search by name, Sanskrit or botanical — e.g. ashwagandha, Triphala…" autocomplete="off" aria-label="Search the apothecary" />
-      </div>
-      <div class="lib-filters" id="libFilters" role="group" aria-label="Filter by evidence">
-        <button class="fchip selected" data-tier="all">All</button>
-        <button class="fchip" data-tier="clinical"><span class="tb" style="background:#0f6e56"></span>Clinical</button>
-        <button class="fchip" data-tier="preliminary"><span class="tb" style="background:#e3a626"></span>Preliminary</button>
-        <button class="fchip" data-tier="traditional"><span class="tb" style="background:#2f6a4d"></span>Traditional</button>
-        <button class="fchip" data-tier="classical"><span class="tb" style="background:#9a9079"></span>Classical</button>
+      <div class="lib-toolbar">
+        <div class="lib-type" id="libType" role="group" aria-label="Browse type">
+          <button class="tchip selected" data-type="herb">Herbs</button>
+          <button class="tchip" data-type="formulation">Formulas</button>
+        </div>
+        <div class="searchbar">
+          <svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="libSearch" type="text" placeholder="Search name, Sanskrit, botanical…" autocomplete="off" aria-label="Search the apothecary" />
+        </div>
+        <div class="lib-filters" id="libFilters" role="group" aria-label="Filter by evidence">
+          <button class="fchip selected" data-tier="all">All</button>
+          <button class="fchip" data-tier="clinical"><span class="tb" style="background:#0f6e56"></span>Clinical</button>
+          <button class="fchip" data-tier="preliminary"><span class="tb" style="background:#e3a626"></span>Preliminary</button>
+          <button class="fchip" data-tier="traditional"><span class="tb" style="background:#2f6a4d"></span>Traditional</button>
+          <button class="fchip" data-tier="classical"><span class="tb" style="background:#9a9079"></span>Classical</button>
+        </div>
       </div>
       <div id="libCount" class="lib-count" aria-live="polite"></div>
       <div id="libGrid" class="lib-grid"></div>
@@ -984,3 +970,4 @@ try{
 </script>
 </body>
 </html>
+                                                                                                   
