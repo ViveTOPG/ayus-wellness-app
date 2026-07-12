@@ -661,3 +661,215 @@ body.calm-mode .sol-card-v2 .sc-media,
 body.calm-mode .lib-card-v2 .lc-media {
   height: 72px !important;
 }
+
+/* ========== Evidence tier chips + indication rows (global fix) ========== */
+.tier.evidence-chip,
+.tier {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 6px !important;
+  flex: 0 0 auto !important;
+  width: auto !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+  white-space: nowrap !important;
+  line-height: 1.2 !important;
+  vertical-align: middle;
+}
+.tier .tb {
+  flex: 0 0 auto !important;
+  width: 7px !important;
+  height: 7px !important;
+  min-width: 7px !important;
+  max-width: none !important;
+  border-radius: 50% !important;
+  display: inline-block !important;
+}
+.tier .tier-text {
+  display: inline !important;
+  white-space: nowrap !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  overflow: visible !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  color: inherit !important;
+  line-height: inherit !important;
+}
+
+/* Indication list — traditionally used for */
+.ind-item {
+  background: var(--paper) !important;
+  border: 1px solid var(--line) !important;
+  border-left: 3px solid var(--green-2) !important;
+  border-radius: 14px !important;
+  padding: 14px 14px 14px 16px !important;
+  margin: 0 0 12px 0 !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+.ind-item:hover {
+  border-left-color: var(--saffron) !important;
+  box-shadow: 0 4px 14px -8px rgba(22, 61, 45, 0.16) !important;
+}
+.ind-item .ind-head {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  gap: 8px !important;
+  margin: 0 0 10px 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+}
+.ind-item .ind-title-row {
+  display: block !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+.ind-item .ind-cond {
+  display: block !important;
+  font-weight: 600 !important;
+  font-size: 15.5px !important;
+  color: var(--ink) !important;
+  line-height: 1.35 !important;
+  overflow-wrap: anywhere !important;
+  word-break: break-word !important;
+  max-width: 100% !important;
+}
+.ind-item .tier,
+.ind-item .evidence-chip {
+  align-self: flex-start !important;
+  margin: 0 !important;
+}
+.ind-item .ind-why,
+.ind-item p {
+  font-size: 14px !important;
+  color: var(--ink-soft) !important;
+  line-height: 1.65 !important;
+  margin: 0 !important;
+  max-width: 100% !important;
+  overflow-wrap: anywhere !important;
+  word-break: break-word !important;
+}
+.ind-item .ind-cites {
+  margin-top: 10px !important;
+  display: grid !important;
+  gap: 6px !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  padding-top: 10px !important;
+  border-top: 1px solid var(--line-soft) !important;
+}
+.ind-item .cite {
+  align-items: flex-start !important;
+  gap: 8px !important;
+}
+
+/* Wider screens: title left, chip right on one row */
+@media (min-width: 520px) {
+  .ind-item .ind-head {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+    gap: 12px 16px !important;
+  }
+  .ind-item .ind-title-row {
+    flex: 1 1 auto !important;
+    width: auto !important;
+    min-width: 0 !important;
+  }
+  .ind-item .tier,
+  .ind-item .evidence-chip {
+    flex: 0 0 auto !important;
+    align-self: flex-start !important;
+    margin-top: 1px !important;
+  }
+}
+
+/* Very narrow: allow chip to wrap cleanly under title */
+@media (max-width: 380px) {
+  .tier .tier-text {
+    white-space: normal !important;
+    line-height: 1.25 !important;
+  }
+  .tier.evidence-chip {
+    white-space: normal !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Modal body breathing room for indication lists */
+.modal-body .modal-section-title {
+  margin: 24px 0 12px !important;
+  font-size: clamp(22px, 4vw, 26px) !important;
+  line-height: 1.15 !important;
+}
+.modal-body {
+  padding: 22px 18px 28px !important;
+}
+@media (min-width: 600px) {
+  .modal-body {
+    padding: 28px 28px 34px !important;
+  }
+}
+
+/* Prop grid + typical use in modal */
+.prop-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 140px), 1fr)) !important;
+  gap: 10px !important;
+}
+.prop {
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+.prop .pv {
+  overflow-wrap: anywhere !important;
+  word-break: break-word !important;
+}
+
+/* Library row: chip never collides with CTA */
+.lib-card-v2 .lc-row {
+  align-items: center !important;
+  gap: 8px !important;
+}
+.lib-card-v2 .lc-row .tier {
+  flex: 0 1 auto !important;
+  max-width: calc(100% - 80px) !important;
+}
+.lib-card-v2 .lc-cta {
+  flex: 0 0 auto !important;
+  margin-left: auto !important;
+}
+
+/* Sol card badges stay in one neat row */
+.sol-card-v2 .sc-badges {
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+}
+.sol-card-v2 .sc-badges .tier {
+  max-width: 100% !important;
+}
+
+/* Filter chips with tier dots — keep text intact */
+.fchip {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  white-space: nowrap !important;
+  max-width: 100% !important;
+}
+.fchip .tb {
+  flex: none !important;
+  width: 8px !important;
+  height: 8px !important;
+  max-width: none !important;
+}

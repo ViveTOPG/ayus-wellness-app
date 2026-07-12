@@ -33,7 +33,31 @@
     preliminary: 'Preliminary research',
     clinical: 'Clinical evidence'
   };
+  /* Compact labels for tight badge UIs (full text stays in title/aria) */
+  var TIER_SHORT = {
+    classical: 'Classical',
+    traditional: 'Traditional',
+    preliminary: 'Preliminary',
+    clinical: 'Clinical'
+  };
   var TIER_COUNT = Object.keys(TIER_LABEL).length;
+
+  function tierBadge(tier, opts) {
+    opts = opts || {};
+    var full = TIER_LABEL[tier] || tier || '—';
+    var short = TIER_SHORT[tier] || full;
+    var useShort = opts.short !== false; /* default compact */
+    var label = useShort ? short : full;
+    return h('span', {
+      'class': 'tier evidence-chip' + (opts.cls ? ' ' + opts.cls : ''),
+      'data-t': tier || 'classical',
+      'title': full,
+      'aria-label': 'Evidence: ' + full
+    }, [
+      h('span', { 'class': 'tb', 'aria-hidden': 'true' }),
+      h('span', { 'class': 'tier-text' }, [label])
+    ]);
+  }
   var CAT_ORDER = ['Digestion & gut', 'Mind & emotions', 'Energy & immunity', 'Skin & hair',
     'Joints & body', 'Breath & allergy', 'Heart & metabolic', "Women's wellness",
     'Urinary care', 'Eyes & mouth', 'Pain management', 'Reproductive health', 'Metabolic health', 'Mental health'];
@@ -976,9 +1000,7 @@
       h('div', { 'class': 'sc-body' }, [
         h('div', { 'class': 'sc-badges' }, [
           h('span', { 'class': 'kind-pill ' + r.kind }, [kindLabel]),
-          h('span', { 'class': 'tier', 'data-t': r.tier }, [
-            h('span', { 'class': 'tb' }), TIER_LABEL[r.tier]
-          ])
+          tierBadge(r.tier)
         ]),
         h('button', {
           'class': 'sc-name sc-link',
@@ -2090,16 +2112,17 @@
     return (inds || []).slice().sort(function (a, b) { return TIER_RANK[b.evidence_tier] - TIER_RANK[a.evidence_tier]; }).map(function (ind) {
       var c = CMAP[ind.condition_id];
       var cites = (ind.citations || []).map(citeHtml).join('');
+      var condName = c ? c.name : ind.condition_id;
       return h('div', { 'class': 'ind-item' }, [
         h('div', { 'class': 'ind-head' }, [
-          h('span', { 'class': 'ind-cond' }, [esc(c ? c.name : ind.condition_id)]),
-          h('span', { 'class': 'tier', 'data-t': ind.evidence_tier }, [
-            h('span', { 'class': 'tb' }), TIER_LABEL[ind.evidence_tier]
-          ])
-        ].join('')),
-        h('p', null, [esc(ind.rationale)]),
-        h('div', { 'class': 'ind-cites' }, [cites])
-      ].join(''));
+          h('div', { 'class': 'ind-title-row' }, [
+            h('span', { 'class': 'ind-cond' }, [esc(condName)])
+          ]),
+          tierBadge(ind.evidence_tier)
+        ]),
+        h('p', { 'class': 'ind-why' }, [esc(ind.rationale)]),
+        cites ? h('div', { 'class': 'ind-cites' }, [cites]) : ''
+      ]);
     }).join('');
   }
   function safetyHtml(s) { return (s || []).map(function (x) { return h('li', null, [esc(x)]); }).join(''); }
@@ -2125,7 +2148,7 @@
         item.botanical_name ? h('div', { 'class': 'lc-bot' }, [esc(item.botanical_name)]) : '',
         tags ? h('div', { 'class': 'lc-tags' }, [tags]) : '',
         h('div', { 'class': 'lc-row' }, [
-          h('span', { 'class': 'tier', 'data-t': bt }, [h('span', { 'class': 'tb' }), TIER_LABEL[bt]]),
+          tierBadge(bt),
           h('span', { 'class': 'lc-cta' }, ['Details →'])
         ])
       ])
@@ -2153,7 +2176,7 @@
         ingr ? h('div', { 'class': 'lc-ingr' }, [esc(ingr) + (f.ingredients.length > 3 ? ' …' : '')]) : '',
         tags ? h('div', { 'class': 'lc-tags' }, [tags]) : '',
         h('div', { 'class': 'lc-row' }, [
-          h('span', { 'class': 'tier', 'data-t': bt }, [h('span', { 'class': 'tb' }), TIER_LABEL[bt]]),
+          tierBadge(bt),
           h('span', { 'class': 'lc-cta' }, ['Details →'])
         ])
       ])
@@ -2242,18 +2265,7 @@
     ].join('')) +
     (herb.typical_dosage ? h('div', { 'class': 'prop', 'style': 'margin-top:14px' }, [h('div', { 'class': 'pk' }, ['Typical use']), h('div', { 'class': 'pv' }, [esc(herb.typical_dosage)])]) : '');
 
-    var inds = (herb.indications || []).slice().sort(function (a, b) { return TIER_RANK[b.evidence_tier] - TIER_RANK[a.evidence_tier]; }).map(function (ind) {
-      var c = CMAP[ind.condition_id];
-      var cites = (ind.citations || []).map(citeHtml).join('');
-      return h('div', { 'class': 'ind-item' }, [
-        h('div', { 'class': 'ind-head' }, [
-          h('span', { 'class': 'ind-cond' }, [esc(c ? c.name : ind.condition_id)]),
-          h('span', { 'class': 'tier', 'data-t': ind.evidence_tier }, [h('span', { 'class': 'tb' }), TIER_LABEL[ind.evidence_tier]])
-        ].join('')),
-        h('p', null, [esc(ind.rationale)]),
-        h('div', { 'class': 'ind-cites' }, [cites])
-      ].join(''));
-    }).join('');
+    var inds = indHtml(herb.indications);
 
     var safety = (herb.safety || []).map(function (s) { return h('li', null, [esc(s)]); }).join('');
 
