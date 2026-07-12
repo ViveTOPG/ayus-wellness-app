@@ -337,6 +337,9 @@
     if (screen === 'tools' && window.AyusTools && window.AyusTools.render) {
       try { window.AyusTools.render(); } catch (e) {}
     }
+    if (window.AyusPaintMedia) {
+      try { window.AyusPaintMedia(); } catch (e) {}
+    }
     try { window.scrollTo({ top: 0, behavior: 'auto' }); } catch (e) { window.scrollTo(0, 0); }
     setTimeout(function () {
       var focusEl = t && t.querySelector('h1, h2, [tabindex]');
@@ -472,7 +475,11 @@
       if (!counts[cat]) return;
       var meta = D.categoryMeta[cat] || { icon: 'leaf', accent: 'green' };
       var color = ACCENT[meta.accent] || ACCENT.green;
-      html += h('button', { 'class': 'tile', 'data-cat': cat, 'data-action': 'pickCategory' }, [
+      var catPhoto = window.AyusMedia
+        ? '<div class="tile-photo">' + window.AyusMedia.cover('category', cat, '', 500) + '</div>'
+        : '';
+      html += h('button', { 'class': 'tile has-photo', 'data-cat': cat, 'data-action': 'pickCategory' }, [
+        catPhoto,
         h('span', { 'class': 'tico', 'style': 'color:' + color }, [svg(meta.icon, 'tico')]),
         h('h4', null, [esc(cat)]),
         h('div', { 'class': 'meta' }, [counts[cat] + ' concern' + (counts[cat] > 1 ? 's' : '')])
@@ -969,7 +976,11 @@
       nameInner, h('span', { 'class': 'sc-arrow', 'aria-hidden': 'true' }, ['\u203A'])
     ]);
 
+    var solPhoto = window.AyusMedia
+      ? '<div class="sc-photo">' + window.AyusMedia.cover(r.kind === 'herb' ? 'herb' : 'photo', r.kind === 'herb' ? r.id : 'spices', '', 700) + '</div>'
+      : '';
     return h('div', { 'class': 'sol-card' }, [
+      solPhoto,
       h('div', { 'class': 'sc-top' }, [
         nameHtml,
         h('span', { 'class': 'kind-pill ' + r.kind }, [r.kind])
@@ -2079,7 +2090,11 @@
       var c = CMAP[i.condition_id]; return h('span', { 'class': 'lc-tag' }, [esc(c ? c.name : i.condition_id)]);
     }).join('');
     var bt = herbBestTier(item);
-    return h('button', { 'class': 'lib-card', 'data-action': 'openHerb', 'data-id': item.id, 'aria-label': esc(item.common_name) + ' details' }, [
+    var photo = window.AyusMedia
+      ? '<div class="lc-photo">' + window.AyusMedia.cover('herb', item.id, '', 600) + '</div>'
+      : '';
+    return h('button', { 'class': 'lib-card has-photo', 'data-action': 'openHerb', 'data-id': item.id, 'aria-label': esc(item.common_name) + ' details' }, [
+      photo,
       h('div', { 'class': 'lc-name' }, [esc(item.common_name)]),
       item.sanskrit_name ? h('div', { 'class': 'lc-sk' }, [esc(item.sanskrit_name)]) : '',
       item.botanical_name ? h('div', { 'class': 'lc-bot' }, [esc(item.botanical_name)]) : '',
@@ -2092,7 +2107,11 @@
     var tags = (f.indications || []).slice(0, 3).map(function (i) { var c = CMAP[i.condition_id]; return h('span', { 'class': 'lc-tag' }, [esc(c ? c.name : i.condition_id)]); }).join('');
     var bt = herbBestTier(f);
     var ingr = (f.ingredients || []).slice(0, 3).map(function (x) { var hh = D.herbs.find(function (z) { return z.id === x; }); return hh ? hh.common_name : x; }).join(' \u00b7 ');
-    return h('button', { 'class': 'lib-card', 'data-action': 'openFormulation', 'data-id': f.id, 'aria-label': esc(f.name) + ' details' }, [
+    var photo = window.AyusMedia
+      ? '<div class="lc-photo">' + window.AyusMedia.cover('photo', 'spices', '', 600) + '</div>'
+      : '';
+    return h('button', { 'class': 'lib-card has-photo', 'data-action': 'openFormulation', 'data-id': f.id, 'aria-label': esc(f.name) + ' details' }, [
+      photo,
       h('div', { 'class': 'lc-name' }, [esc(f.name)]),
       f.sanskrit_name ? h('div', { 'class': 'lc-sk' }, [esc(f.sanskrit_name)]) : '',
       f.type ? h('div', { 'class': 'lc-bot' }, [esc(f.type)]) : '',
@@ -2199,13 +2218,16 @@
 
     var safety = (herb.safety || []).map(function (s) { return h('li', null, [esc(s)]); }).join('');
 
-    var html = h('div', { 'class': 'modal-head' }, [
-      h('button', { 'class': 'modal-close', 'data-action': 'closeModal', 'aria-label': 'Close' }, ['\u00d7']),
-      h('button', { 'class': 'fav-toggle' + (isFav(herb.id) ? ' on' : ''), 'aria-label': 'Save to favourites', 'aria-pressed': String(isFav(herb.id)), 'data-action': 'toggleFavUI', 'data-id': herb.id }, [svg('heart')]),
-      h('div', { 'class': 'mh-name', 'id': 'modalTitle' }, [esc(herb.common_name)]),
-      herb.sanskrit_name ? h('span', { 'class': 'mh-sk' }, [esc(herb.sanskrit_name)]) : '',
-      herb.botanical_name ? h('div', { 'class': 'mh-bot' }, [esc(herb.botanical_name)]) : ''
-    ].join('')) +
+    var headStyle = window.AyusMedia
+      ? ' style="' + window.AyusMedia.photoStyle('herb', herb.id, 1000) + '"'
+      : '';
+    var html = '<div class="modal-head has-photo"' + headStyle + '>' +
+      h('button', { 'class': 'modal-close', 'data-action': 'closeModal', 'aria-label': 'Close' }, ['\u00d7']) +
+      h('button', { 'class': 'fav-toggle' + (isFav(herb.id) ? ' on' : ''), 'aria-label': 'Save to favourites', 'aria-pressed': String(isFav(herb.id)), 'data-action': 'toggleFavUI', 'data-id': herb.id }, [svg('heart')]) +
+      h('div', { 'class': 'mh-name', 'id': 'modalTitle' }, [esc(herb.common_name)]) +
+      (herb.sanskrit_name ? h('span', { 'class': 'mh-sk' }, [esc(herb.sanskrit_name)]) : '') +
+      (herb.botanical_name ? h('div', { 'class': 'mh-bot' }, [esc(herb.botanical_name)]) : '') +
+    '</div>' +
     h('div', { 'class': 'modal-body' }, [
       props,
       h('div', { 'class': 'modal-section-title' }, ['Traditionally used for']),

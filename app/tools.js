@@ -616,13 +616,16 @@
     }
 
     var cards = list.map(function (r) {
+      var photo = window.AyusMedia
+        ? '<div class="recipe-photo">' + window.AyusMedia.cover('recipe', r.id, '', 700) + '</div>'
+        : h('div', { 'class': 'recipe-emoji', 'aria-hidden': 'true' }, [r.emoji || '🍲']);
       return h('button', {
         type: 'button',
-        'class': 'recipe-card',
+        'class': 'recipe-card has-photo',
         'data-action': 'toolsOpenRecipe',
         'data-id': r.id
       }, [
-        h('div', { 'class': 'recipe-emoji', 'aria-hidden': 'true' }, [r.emoji || '🍲']),
+        photo,
         h('div', { 'class': 'recipe-body' }, [
           h('div', { 'class': 'recipe-name' }, [esc(r.name)]),
           r.sanskrit ? h('div', { 'class': 'recipe-sk' }, [esc(r.sanskrit)]) : '',
@@ -636,7 +639,12 @@
       ].join(''));
     }).join('');
 
+    var kitchenBanner = window.AyusMedia
+      ? '<div class="section-media"><div class="media-cover" style="' + window.AyusMedia.photoStyle('section', 'tools_kitchen', 1200) + '"></div><div class="section-media-copy"><div class="kicker">Kitchen</div><h3>Cook with the seasons</h3><p>Warm spices, simple bowls, and teas rooted in dinacharya.</p></div></div>'
+      : '';
+
     return h('div', { 'class': 'tools-kitchen' }, [
+      kitchenBanner,
       h('p', { 'class': 'kitchen-lead' }, [
         'Simple Ayurvedic kitchen ideas — home recipes, not prescriptions. Adjust for your season and how you feel.'
       ]),
@@ -654,8 +662,12 @@
     var steps = (r.steps || []).map(function (s, i) {
       return h('li', null, [h('span', { 'class': 'step-n' }, [String(i + 1)]), ' ', esc(s)]);
     }).join('');
+    var heroPhoto = window.AyusMedia
+      ? '<div class="recipe-detail-photo">' + window.AyusMedia.cover('recipe', r.id, '', 1000) + '</div>'
+      : '';
     return h('div', { 'class': 'recipe-detail panel-like' }, [
       h('button', { type: 'button', 'class': 'btn btn-ghost btn-sm', 'data-action': 'toolsCloseRecipe' }, ['← All recipes']),
+      heroPhoto,
       h('div', { 'class': 'recipe-detail-head' }, [
         h('span', { 'class': 'recipe-emoji lg', 'aria-hidden': 'true' }, [r.emoji || '🍲']),
         h('div', null, [
@@ -704,7 +716,22 @@
     else if (state.tab === 'progress') body = renderProgress();
     else body = renderKitchen();
 
+    var bannerKey = state.tab === 'calc' ? 'tools_calc' : state.tab === 'progress' ? 'tools_progress' : 'tools_kitchen';
+    var banner =
+      window.AyusMedia && state.tab !== 'kitchen'
+        ? '<div class="section-media tools-hero-media"><div class="media-cover" style="' +
+          window.AyusMedia.photoStyle('section', bannerKey, 1200) +
+          '"></div><div class="section-media-copy"><div class="kicker">Tools</div><h3>' +
+          (state.tab === 'calc' ? 'Know your numbers' : 'Track your journey') +
+          '</h3><p>' +
+          (state.tab === 'calc'
+            ? 'BMI, metabolism, water, and macros — private on this device.'
+            : 'Mood, energy, and body measurements in one calm view.') +
+          '</p></div></div>'
+        : '';
+
     root.innerHTML =
+      banner +
       h('div', { 'class': 'tools-tabs', role: 'tablist', 'aria-label': 'Tools sections' }, [tabBar]) +
       h('div', { 'class': 'tools-panel' }, [body]);
   }

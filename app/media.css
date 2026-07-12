@@ -1,0 +1,418 @@
+/* ===========================================================================
+   Āyus photography layer — covers, thumbs, section banners
+   =========================================================================== */
+
+.media-cover,
+.media-img {
+  background-color: #1a4634;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.media-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0;
+}
+.media-img.media-fallback,
+.media-cover.media-fallback {
+  background-image: linear-gradient(145deg, #1a4634, #2a6248, #c9952a) !important;
+  object-fit: none;
+  color: transparent;
+  font-size: 0;
+}
+
+/* Section photo banners */
+.section-media {
+  position: relative;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  min-height: 160px;
+  margin-bottom: 22px;
+  box-shadow: var(--shadow-sm);
+  max-width: 100%;
+}
+.section-media.tall { min-height: 220px; }
+.section-media .media-cover {
+  position: absolute;
+  inset: 0;
+}
+.section-media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15, 36, 28, 0.15) 0%, rgba(15, 36, 28, 0.72) 100%);
+  pointer-events: none;
+}
+.section-media-copy {
+  position: relative;
+  z-index: 1;
+  padding: 28px 22px 22px;
+  color: #f7e9c8;
+  max-width: 100%;
+}
+.section-media-copy .kicker {
+  color: #eaa64d;
+  margin-bottom: 8px;
+}
+.section-media-copy h2,
+.section-media-copy h3 {
+  color: #f7e9c8;
+  margin: 0 0 6px;
+  font-family: var(--display);
+  font-size: clamp(26px, 5vw, 36px);
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+}
+.section-media-copy p {
+  margin: 0;
+  color: rgba(247, 233, 200, 0.88);
+  font-size: 14.5px;
+  line-height: 1.55;
+  max-width: 48ch;
+}
+
+/* Guest hero photo backdrop */
+.hero.has-photo {
+  position: relative;
+  overflow: hidden;
+}
+.hero-photo {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center 30%;
+  opacity: 0.28;
+  pointer-events: none;
+}
+.hero-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(247, 241, 228, 0.55) 0%, var(--bg) 78%);
+}
+[data-theme="dark"] .hero-photo {
+  opacity: 0.35;
+}
+[data-theme="dark"] .hero-photo::after {
+  background: linear-gradient(180deg, rgba(20, 17, 13, 0.5) 0%, var(--bg) 80%);
+}
+.hero .hero-inner,
+.hero .mandala { position: relative; z-index: 1; }
+
+/* Step cards with photos */
+.step-card {
+  overflow: hidden;
+}
+.step-card .step-photo {
+  height: 120px;
+  margin: -32px -28px 16px;
+  border-radius: 0;
+  position: relative;
+}
+.step-card .step-photo .media-cover {
+  position: absolute;
+  inset: 0;
+}
+.step-card .step-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, var(--paper) 100%);
+}
+
+/* Category / concern tiles */
+.tile.has-photo {
+  padding-top: 0;
+  overflow: hidden;
+}
+.tile-photo {
+  height: 88px;
+  margin: 0 -22px 12px;
+  position: relative;
+}
+.tile-photo .media-cover {
+  position: absolute;
+  inset: 0;
+}
+.tile-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 30%, var(--paper) 100%);
+}
+@media (max-width: 720px) {
+  .tile-photo { height: 72px; margin: 0 -14px 10px; }
+}
+
+/* Library herb / formula cards */
+.lib-card.has-photo {
+  padding-top: 0;
+}
+.lib-card .lc-photo {
+  height: 140px;
+  margin: 0 0 12px;
+  border-radius: var(--r-lg) var(--r-lg) 0 0;
+  margin-left: -26px;
+  margin-right: -26px;
+  margin-top: -26px;
+  width: calc(100% + 52px);
+  position: relative;
+  overflow: hidden;
+}
+.lib-card .lc-photo .media-cover {
+  position: absolute;
+  inset: 0;
+  transition: transform 0.5s var(--ease);
+}
+.lib-card:hover .lc-photo .media-cover {
+  transform: scale(1.05);
+}
+.lib-card .lc-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 45%, rgba(255, 253, 248, 0.95) 100%);
+  pointer-events: none;
+}
+[data-theme="dark"] .lib-card .lc-photo::after {
+  background: linear-gradient(180deg, transparent 45%, rgba(33, 28, 21, 0.95) 100%);
+}
+
+/* Feed / explore photo media */
+.ig-media.has-photo {
+  background-size: cover !important;
+  background-position: center !important;
+  min-height: 300px;
+}
+.ig-media.has-photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.55) 100%);
+  z-index: 0;
+}
+.ig-media.has-photo .ig-media-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.explore-tile.has-photo {
+  background-size: cover !important;
+  background-position: center !important;
+}
+.explore-tile.has-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.65) 100%);
+}
+
+/* Stories with photos */
+.story-avatar.has-photo {
+  background-size: cover !important;
+  background-position: center !important;
+  border: 2px solid var(--paper);
+}
+.story-body.has-photo {
+  background-size: cover !important;
+  background-position: center !important;
+}
+.story-body.has-photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, rgba(15, 36, 28, 0.55), rgba(15, 36, 28, 0.78));
+  z-index: 0;
+}
+.story-body.has-photo > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Recipe cards */
+.recipe-card.has-photo {
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+.recipe-card .recipe-photo {
+  width: 100%;
+  height: 140px;
+  position: relative;
+}
+.recipe-card .recipe-photo .media-cover {
+  position: absolute;
+  inset: 0;
+}
+.recipe-card .recipe-body {
+  padding: 14px 16px 16px;
+}
+.recipe-detail-photo {
+  height: 200px;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  margin: 12px 0 16px;
+  position: relative;
+  max-width: 100%;
+}
+.recipe-detail-photo .media-cover {
+  position: absolute;
+  inset: 0;
+}
+
+/* Tools / progress / heritage photo strips */
+.tools-hero-media,
+.screen-banner {
+  margin-bottom: 18px;
+}
+.tools-tab-photo {
+  height: 100px;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  margin-bottom: 14px;
+  position: relative;
+}
+.tools-tab-photo .media-cover {
+  position: absolute;
+  inset: 0;
+}
+.tools-tab-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(15, 36, 28, 0.55), transparent 70%);
+}
+
+/* Product cards */
+.product-card.has-photo {
+  padding-top: 0;
+  overflow: hidden;
+}
+.product-card .pc-photo {
+  height: 120px;
+  margin: 0 -16px 10px;
+  width: calc(100% + 32px);
+  position: relative;
+}
+.product-card .pc-photo .media-cover {
+  position: absolute;
+  inset: 0;
+}
+
+/* Onboarding visual */
+.ob-step .ob-photo {
+  width: 100%;
+  max-width: 280px;
+  height: 120px;
+  margin: 0 auto 14px;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  position: relative;
+}
+.ob-step .ob-photo .media-cover {
+  position: absolute;
+  inset: 0;
+}
+
+/* Heritage timeline images */
+.tv-item .tv-photo {
+  height: 100px;
+  border-radius: var(--r-sm);
+  overflow: hidden;
+  margin-bottom: 10px;
+  position: relative;
+}
+.tv-item .tv-photo .media-cover {
+  position: absolute;
+  inset: 0;
+}
+
+/* Quick path photo accents */
+.qp-chip .qp-photo {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: none;
+  position: relative;
+  margin-bottom: 4px;
+}
+.qp-chip .qp-photo .media-cover {
+  position: absolute;
+  inset: 0;
+}
+
+/* Sol-card herb result thumb */
+.sol-card .sc-photo {
+  height: 100px;
+  margin: -var(--card-pad) -var(--card-pad) 14px;
+  width: calc(100% + 2 * var(--card-pad));
+  border-radius: var(--r-lg) var(--r-lg) 0 0;
+  position: relative;
+  overflow: hidden;
+}
+.sol-card .sc-photo .media-cover {
+  position: absolute;
+  inset: 0;
+}
+.sol-card .sc-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, var(--paper) 100%);
+}
+
+/* Modal herb head photo strip */
+.modal-head.has-photo {
+  background-size: cover !important;
+  background-position: center !important;
+  position: relative;
+}
+.modal-head.has-photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(26, 70, 52, 0.88), rgba(15, 42, 30, 0.75));
+  z-index: 0;
+}
+.modal-head.has-photo > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Photo grid on home (guest) */
+.photo-mosaic {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin: 28px 0 8px;
+  max-width: 100%;
+}
+.photo-mosaic .pm-item {
+  aspect-ratio: 1;
+  border-radius: var(--r-sm);
+  overflow: hidden;
+  position: relative;
+  box-shadow: var(--shadow-xs);
+}
+.photo-mosaic .pm-item:first-child {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.photo-mosaic .media-cover {
+  position: absolute;
+  inset: 0;
+}
+@media (max-width: 560px) {
+  .photo-mosaic { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .photo-mosaic .pm-item:first-child { grid-column: span 1; grid-row: span 1; }
+}
+
+/* Reduce motion: no zoom */
+@media (prefers-reduced-motion: reduce) {
+  .lib-card:hover .lc-photo .media-cover { transform: none; }
+}

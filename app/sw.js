@@ -1,5 +1,5 @@
 /* Ayus service worker — network-first for fresh updates, offline fallback */
-var CACHE_NAME = 'ayus-v21-unified-tools';
+var CACHE_NAME = 'ayus-v22-media-photos';
 var ASSETS = [
   './',
   './index.html',
@@ -7,10 +7,12 @@ var ASSETS = [
   './platform.css',
   './engage.css',
   './tools.css',
+  './media.css',
   './app.js',
   './tools.js',
   './calculators.js',
   './recipes-data.js',
+  './media-data.js',
   './platform.js',
   './engage.js',
   './engage-data.js',

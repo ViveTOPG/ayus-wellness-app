@@ -137,7 +137,9 @@
           '" data-action="openStory" data-i="' +
           i +
           '">' +
-          '<span class="story-avatar">' +
+          '<span class="story-avatar has-photo" style="' +
+          (window.AyusMedia ? window.AyusMedia.photoStyle('story', s.id, 200) : '') +
+          '">' +
           s.icon +
           '</span>' +
           '<span class="story-label">' +
@@ -184,7 +186,10 @@
     }
     var body = el('storyBody');
     if (body) {
-      body.className = 'story-body ' + s.gradient;
+      body.className = 'story-body has-photo ' + s.gradient;
+      if (window.AyusMedia) {
+        body.style.backgroundImage = "url('" + window.AyusMedia.url('story', s.id, 1200) + "')";
+      }
       body.innerHTML =
         '<div class="story-emoji">' +
         s.icon +
@@ -257,8 +262,12 @@
       '</span></div>' +
       (p.type === 'reel' ? '<span class="ig-badge">Reel</span>' : '') +
       '</header>' +
-      '<div class="ig-media ' +
-      esc(p.media) +
+      '<div class="ig-media has-photo ' +
+      esc(p.media || '') +
+      '" style="' +
+      (window.AyusMedia
+        ? window.AyusMedia.photoStyle(p.herbId ? 'herb' : 'post', p.herbId || p.id, 1000)
+        : '') +
       '"' +
       mediaAction +
       ' role="button" tabindex="0">' +
@@ -361,10 +370,20 @@
     g.innerHTML = items
       .map(function (p, i) {
         var tall = i % 5 === 0 ? ' tall' : '';
+        var photo =
+          window.AyusMedia
+            ? window.AyusMedia.photoStyle(
+                p.herbId ? 'herb' : p.productId ? 'photo' : 'post',
+                p.herbId || p.productId || p.id,
+                700
+              )
+            : '';
         return (
-          '<button type="button" class="explore-tile ' +
-          esc(p.media) +
+          '<button type="button" class="explore-tile has-photo ' +
+          esc(p.media || '') +
           tall +
+          '" style="' +
+          photo +
           '" data-action="exploreOpen" data-id="' +
           esc(p.id) +
           '">' +
@@ -387,8 +406,10 @@
     rail.innerHTML = reels
       .map(function (p) {
         return (
-          '<article class="reel-card ' +
-          esc(p.media) +
+          '<article class="reel-card has-photo ' +
+          esc(p.media || '') +
+          '" style="' +
+          (window.AyusMedia ? window.AyusMedia.photoStyle('post', p.id, 800) : '') +
           '">' +
           '<div class="reel-top"><span class="reel-live">REEL</span><span>' +
           esc(p.duration || '0:30') +

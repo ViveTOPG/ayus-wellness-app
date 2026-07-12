@@ -69,10 +69,17 @@
       score != null
         ? '<span class="pc-score" title="Personal match">Match ' + Math.min(99, Math.round(score)) + '</span>'
         : '';
+    var photo =
+      window.AyusMedia
+        ? '<div class="pc-photo"><div class="media-cover" style="background-image:url(\'' +
+          window.AyusMedia.hash(p.id, 600) +
+          "')\"></div></div>"
+        : '';
     return (
-      '<article class="product-card reveal in" data-action="openProduct" data-id="' +
+      '<article class="product-card has-photo reveal in" data-action="openProduct" data-id="' +
       esc(p.id) +
       '">' +
+      photo +
       '<div class="pc-top">' +
       '<span class="pc-cat">' +
       esc(cat ? cat.label : p.category) +

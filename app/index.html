@@ -39,6 +39,7 @@ try{
 <link rel="stylesheet" href="platform.css" />
 <link rel="stylesheet" href="engage.css" />
 <link rel="stylesheet" href="tools.css" />
+<link rel="stylesheet" href="media.css" />
 </head>
 <body class="has-bottom-nav platform-v6 engage-v5 easy-for-everyone">
 
@@ -307,7 +308,8 @@ try{
   <section class="today-dash wrap" id="todayDash" hidden></section>
 
   <!-- Guest / marketing hero (hidden once profile onboarded) -->
-  <section class="hero" id="guestHero">
+  <section class="hero has-photo" id="guestHero">
+    <div class="hero-photo" id="heroPhoto" aria-hidden="true"></div>
     <div class="mandala" aria-hidden="true">
       <svg viewBox="0 0 600 600" fill="none">
         <defs>
@@ -342,6 +344,7 @@ try{
       </div>
       <button class="hero-textlink" data-action="openHelp">New here? 60-second how-to <span aria-hidden="true">→</span></button>
       <div class="stat-strip" id="statStrip"></div>
+      <div class="photo-mosaic reveal" id="heroMosaic" aria-hidden="true"></div>
       <div class="scrollcue"><span class="scrollcue-line"></span></div>
     </div>
   </section>
@@ -349,6 +352,14 @@ try{
   <!-- Value pillars -->
   <section id="how" class="band">
     <div class="wrap">
+      <div class="section-media reveal tall" id="howMedia">
+        <div class="media-cover" data-media="section:how"></div>
+        <div class="section-media-copy">
+          <div class="kicker">How Āyus helps you</div>
+          <h2>Simple steps. Deep wisdom.</h2>
+          <p>No overwhelm. Plain language first — you always see why something is suggested.</p>
+        </div>
+      </div>
       <div class="section-head reveal">
         <div class="kicker">How Āyus helps you</div>
         <h2>Simple steps. Deep wisdom.</h2>
@@ -356,18 +367,21 @@ try{
       </div>
       <div class="steps3">
         <div class="step-card reveal">
+          <div class="step-photo"><div class="media-cover" data-media="photo:checkin"></div></div>
           <div class="step-no">01</div>
           <div class="step-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div>
           <h3>Check in with your body</h3>
           <p>Tell us what's going on in everyday words. We map it to classical Ayurvedic understanding.</p>
         </div>
         <div class="step-card reveal">
+          <div class="step-photo"><div class="media-cover" data-media="photo:herbs"></div></div>
           <div class="step-no">02</div>
           <div class="step-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="4"/></svg></div>
           <h3>See the clear picture</h3>
           <p>Dosha view, red flags, and cited herbs — strongest evidence first, never oversold.</p>
         </div>
         <div class="step-card reveal">
+          <div class="step-photo"><div class="media-cover" data-media="photo:morning"></div></div>
           <div class="step-no">03</div>
           <div class="step-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
           <h3>Live a daily rhythm</h3>
@@ -394,6 +408,14 @@ try{
   <!-- heritage teaser -->
   <section class="band dark" id="homeHeritageTeaser">
     <div class="wrap">
+      <div class="section-media reveal tall">
+        <div class="media-cover" data-media="section:heritage"></div>
+        <div class="section-media-copy">
+          <div class="kicker">Our living heritage</div>
+          <h2>The science of life</h2>
+          <p>Āyurveda — āyus (life) + veda (knowledge) — 5,000 years of living wisdom, carried forward honestly.</p>
+        </div>
+      </div>
       <div class="section-head reveal">
         <div class="kicker kicker-turmeric">Our living heritage</div>
         <h2>The science of life</h2>
@@ -409,6 +431,14 @@ try{
 <!-- ===================== INTAKE (deep intake) ===================== -->
 <main id="intake" class="screen">
   <section class="intake wrap intake-deep">
+    <div class="section-media" style="margin-bottom:16px">
+      <div class="media-cover" data-media="section:checkin"></div>
+      <div class="section-media-copy">
+        <div class="kicker">Check-in</div>
+        <h3>How are you feeling?</h3>
+        <p>A short guided path from concern to clear, cited guidance.</p>
+      </div>
+    </div>
     <div class="progress progress-steps" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="5" id="intakeProgress">
       <span class="step-dot on" data-n="1">1</span>
       <span class="step-line"></span>
@@ -538,11 +568,11 @@ try{
         <p class="muted">A living thread from Vedic hymns to today's evidence — traditionally dated; the timeline below is the broadly accepted arc.</p>
       </div>
       <div class="timeline-v">
-        <div class="tv-item reveal"><div class="era">c. 1500–1000 BCE · The Vedas</div><h4>Hymns &amp; healing herbs</h4><p>The Ṛgveda and especially the Atharvaveda hold healing charms and the earliest praises of medicinal plants (oṣadhi). Health, plants and prayer are woven together — the seedbed of a medical tradition.</p></div>
-        <div class="tv-item reveal"><div class="era">c. 1000–600 BCE · Āyurveda forms</div><h4>The science of life</h4><p>Āyurveda emerges as a systematic body of knowledge — traditionally regarded as an upaveda (auxiliary knowledge) of the Atharvaveda — organising health around balance, digestion and lifestyle.</p></div>
-        <div class="tv-item reveal"><div class="era">c. 600 BCE–400 CE · The Great Triad</div><h4>Charaka, Suśruta, Vāgbhaṭa</h4><p>The Bṛhat Trayī is composed: the Charaka Saṃhitā (internal medicine), the Suśruta Saṃhitā (surgery &amp; materia medica), later distilled by Vāgbhaṭa in the Aṣṭāṅga Hṛdaya. These remain the bedrock texts.</p></div>
-        <div class="tv-item reveal"><div class="era">c. 700–1600 CE · The Nighaṇṭus</div><h4>Cataloguing the plants</h4><p>Materia-medica lexicons such as the Bhāvaprakāśa Nighaṇṭu catalogue each herb's taste, potency and action (dravyaguṇa) — the property-level detail this engine leans on most.</p></div>
-        <div class="tv-item reveal"><div class="era">Today · Tradition meets evidence</div><h4>Honest by design</h4><p>Modern research and the Ayurvedic Pharmacopoeia of India sit alongside the classics. This engine carries every claim with its source <em>and</em> an honesty rating — never overstating what is proven.</p></div>
+        <div class="tv-item reveal"><div class="tv-photo"><div class="media-cover" data-media="photo:books"></div></div><div class="era">c. 1500–1000 BCE · The Vedas</div><h4>Hymns &amp; healing herbs</h4><p>The Ṛgveda and especially the Atharvaveda hold healing charms and the earliest praises of medicinal plants (oṣadhi). Health, plants and prayer are woven together — the seedbed of a medical tradition.</p></div>
+        <div class="tv-item reveal"><div class="tv-photo"><div class="media-cover" data-media="photo:lotus"></div></div><div class="era">c. 1000–600 BCE · Āyurveda forms</div><h4>The science of life</h4><p>Āyurveda emerges as a systematic body of knowledge — traditionally regarded as an upaveda (auxiliary knowledge) of the Atharvaveda — organising health around balance, digestion and lifestyle.</p></div>
+        <div class="tv-item reveal"><div class="tv-photo"><div class="media-cover" data-media="photo:heritage"></div></div><div class="era">c. 600 BCE–400 CE · The Great Triad</div><h4>Charaka, Suśruta, Vāgbhaṭa</h4><p>The Bṛhat Trayī is composed: the Charaka Saṃhitā (internal medicine), the Suśruta Saṃhitā (surgery &amp; materia medica), later distilled by Vāgbhaṭa in the Aṣṭāṅga Hṛdaya. These remain the bedrock texts.</p></div>
+        <div class="tv-item reveal"><div class="tv-photo"><div class="media-cover" data-media="photo:herbs"></div></div><div class="era">c. 700–1600 CE · The Nighaṇṭus</div><h4>Cataloguing the plants</h4><p>Materia-medica lexicons such as the Bhāvaprakāśa Nighaṇṭu catalogue each herb's taste, potency and action (dravyaguṇa) — the property-level detail this engine leans on most.</p></div>
+        <div class="tv-item reveal"><div class="tv-photo"><div class="media-cover" data-media="photo:spices"></div></div><div class="era">Today · Tradition meets evidence</div><h4>Honest by design</h4><p>Modern research and the Ayurvedic Pharmacopoeia of India sit alongside the classics. This engine carries every claim with its source <em>and</em> an honesty rating — never overstating what is proven.</p></div>
       </div>
 
       <div class="section-head reveal mt-70">
@@ -591,6 +621,14 @@ try{
 <main id="tools" class="screen" tabindex="-1">
   <section class="band band-top tools-screen">
     <div class="wrap">
+      <div class="section-media tall">
+        <div class="media-cover" data-media="section:tools"></div>
+        <div class="section-media-copy">
+          <div class="kicker">One app · all tools</div>
+          <h2>Tools</h2>
+          <p>Calculators, progress, and kitchen — photos of real practice, not stock gimmicks.</p>
+        </div>
+      </div>
       <div class="section-head">
         <div class="kicker">One app · all tools</div>
         <h2>Tools</h2>
@@ -605,6 +643,14 @@ try{
 <main id="library" class="screen">
   <section class="band band-top">
     <div class="wrap">
+      <div class="section-media tall">
+        <div class="media-cover" data-media="section:library"></div>
+        <div class="section-media-copy">
+          <div class="kicker">The materia medica</div>
+          <h2>Explore the apothecary</h2>
+          <p>Herbs and formulas with photos, properties, safety, and sources.</p>
+        </div>
+      </div>
       <div class="section-head">
         <div class="kicker">The materia medica</div>
         <h2>Explore the apothecary</h2>
@@ -867,6 +913,7 @@ try{
 <script src="catalog-data.js"></script>
 <script src="engage-data.js"></script>
 <script src="recipes-data.js"></script>
+<script src="media-data.js"></script>
 <script src="calculators.js"></script>
 <script src="icons.js"></script>
 <script src="personalize.js"></script>
@@ -874,6 +921,36 @@ try{
 <script src="tools.js"></script>
 <script src="platform.js"></script>
 <script src="engage.js"></script>
+<script>
+/* Apply data-media covers + hero photo after media library loads */
+(function () {
+  function paintMedia() {
+    if (!window.AyusMedia) return;
+    var hero = document.getElementById('heroPhoto');
+    if (hero) hero.style.backgroundImage = "url('" + window.AyusMedia.url('section', 'hero', 1600) + "')";
+    var mosaic = document.getElementById('heroMosaic');
+    if (mosaic && !mosaic.dataset.ready) {
+      var keys = ['herbs', 'spices', 'tea', 'morning', 'kitchen'];
+      mosaic.innerHTML = keys.map(function (k, i) {
+        return '<div class="pm-item">' + window.AyusMedia.cover('photo', k, '', i === 0 ? 900 : 500) + '</div>';
+      }).join('');
+      mosaic.dataset.ready = '1';
+    }
+    document.querySelectorAll('[data-media]').forEach(function (node) {
+      if (node.dataset.painted) return;
+      var raw = node.getAttribute('data-media') || '';
+      var parts = raw.split(':');
+      var kind = parts[0] || 'photo';
+      var key = parts[1] || 'nature';
+      node.style.backgroundImage = "url('" + window.AyusMedia.url(kind, key, 1100) + "')";
+      node.dataset.painted = '1';
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', paintMedia);
+  else paintMedia();
+  window.AyusPaintMedia = paintMedia;
+})();
+</script>
 <script>
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./sw.js').then(function (reg) {
