@@ -397,14 +397,6 @@ try{
   <!-- heritage teaser -->
   <section class="band dark" id="homeHeritageTeaser">
     <div class="wrap">
-      <div class="section-media reveal tall">
-        <div class="media-cover" data-media="section:heritage"></div>
-        <div class="section-media-copy">
-          <div class="kicker">Our living heritage</div>
-          <h2>The science of life</h2>
-          <p>Āyurveda — āyus (life) + veda (knowledge) — 5,000 years of living wisdom, carried forward honestly.</p>
-        </div>
-      </div>
       <div class="section-head reveal">
         <div class="kicker kicker-turmeric">Our living heritage</div>
         <h2>The science of life</h2>
@@ -930,14 +922,6 @@ try{
     if (!window.AyusMedia) return;
     var hero = document.getElementById('heroPhoto');
     if (hero) hero.style.backgroundImage = "url('" + window.AyusMedia.url('section', 'hero', 1600) + "')";
-    var mosaic = document.getElementById('heroMosaic');
-    if (mosaic && !mosaic.dataset.ready) {
-      var keys = ['herbs', 'spices', 'tea', 'morning', 'kitchen'];
-      mosaic.innerHTML = keys.map(function (k, i) {
-        return '<div class="pm-item">' + window.AyusMedia.cover('photo', k, '', i === 0 ? 900 : 500) + '</div>';
-      }).join('');
-      mosaic.dataset.ready = '1';
-    }
     document.querySelectorAll('[data-media]').forEach(function (node) {
       if (node.dataset.painted) return;
       var raw = node.getAttribute('data-media') || '';
@@ -970,4 +954,3 @@ try{
 </script>
 </body>
 </html>
-                                                                                                   
