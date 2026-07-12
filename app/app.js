@@ -2147,9 +2147,9 @@
         item.sanskrit_name ? h('div', { 'class': 'lc-sk' }, [esc(item.sanskrit_name)]) : '',
         item.botanical_name ? h('div', { 'class': 'lc-bot' }, [esc(item.botanical_name)]) : '',
         tags ? h('div', { 'class': 'lc-tags' }, [tags]) : '',
-        h('div', { 'class': 'lc-row' }, [
-          tierBadge(bt),
-          h('span', { 'class': 'lc-cta' }, ['Details →'])
+        h('div', { 'class': 'lc-foot' }, [
+          h('div', { 'class': 'lc-foot-tier' }, [tierBadge(bt)]),
+          h('span', { 'class': 'lc-cta' }, ['View details →'])
         ])
       ])
     ].join(''));
@@ -2175,9 +2175,9 @@
         f.type ? h('div', { 'class': 'lc-bot' }, [esc(f.type)]) : '',
         ingr ? h('div', { 'class': 'lc-ingr' }, [esc(ingr) + (f.ingredients.length > 3 ? ' …' : '')]) : '',
         tags ? h('div', { 'class': 'lc-tags' }, [tags]) : '',
-        h('div', { 'class': 'lc-row' }, [
-          tierBadge(bt),
-          h('span', { 'class': 'lc-cta' }, ['Details →'])
+        h('div', { 'class': 'lc-foot' }, [
+          h('div', { 'class': 'lc-foot-tier' }, [tierBadge(bt)]),
+          h('span', { 'class': 'lc-cta' }, ['View details →'])
         ])
       ])
     ].join(''));
